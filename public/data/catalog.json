@@ -1,1 +1,220 @@
-{"schemaVersion":2,"fingerprint":"b1de598125af41c789925d22e1579e78911bc2249d15f40f515a648fbeb9d545","episodes":[{"id":"zc-02","number":2,"title":"Итоговый","year":2015,"publishedAt":"2015-12-25T17:46:31+03:00","localCoverPath":"/covers/zc-02.jpg","dataPath":"/data/episodes/zc-02.json","topicCount":19,"minuteClipCount":88},{"id":"zc-08","number":8,"title":"Эксклюзивный","year":2016,"publishedAt":"2016-02-13T18:19:28+03:00","localCoverPath":"/covers/zc-08.jpg","dataPath":"/data/episodes/zc-08.json","topicCount":22,"minuteClipCount":112},{"id":"zc-48","number":48,"title":"Плотное ядро аудитории без случайных людей","year":2017,"publishedAt":"2017-01-16T00:41:44+03:00","localCoverPath":"/covers/zc-48.jpg","dataPath":"/data/episodes/zc-48.json","topicCount":23,"minuteClipCount":158},{"id":"zc-115","number":115,"title":"Английский язык (эксперимент)","year":2018,"publishedAt":"2018-09-17T23:01:11+03:00","localCoverPath":"/covers/zc-115.jpg","dataPath":"/data/episodes/zc-115.json","topicCount":23,"minuteClipCount":151},{"id":"zc-167","number":167,"title":"Я слышал, ты пишешь подкасты","year":2019,"publishedAt":"2019-12-04T07:30:15+03:00","localCoverPath":"/covers/zc-167.jpg","dataPath":"/data/episodes/zc-167.json","topicCount":23,"minuteClipCount":96},{"id":"zc-193","number":193,"title":"Поездатый подкаст","year":2020,"publishedAt":"2020-07-23T11:21:39+03:00","localCoverPath":"/covers/zc-193.jpg","dataPath":"/data/episodes/zc-193.json","topicCount":15,"minuteClipCount":165},{"id":"zc-211","number":211,"title":"Диверсифицированная женщина","year":2021,"publishedAt":"2021-02-05T19:09:35+03:00","localCoverPath":"/covers/zc-211.jpg","dataPath":"/data/episodes/zc-211.json","topicCount":25,"minuteClipCount":141},{"id":"zc-267","number":267,"title":"Тридцать кадров в секунду","year":2022,"publishedAt":"2022-10-23T16:04:07+03:00","localCoverPath":"/covers/zc-267.jpg","dataPath":"/data/episodes/zc-267.json","topicCount":29,"minuteClipCount":184},{"id":"zc-292","number":292,"title":"The Lies of P(hil)","year":2023,"publishedAt":"2023-09-25T17:48:41+03:00","localCoverPath":"/covers/zc-292.jpg","dataPath":"/data/episodes/zc-292.json","topicCount":25,"minuteClipCount":207},{"id":"zc-330","number":330,"title":"Чилловый подкаст","year":2024,"publishedAt":"2024-12-01T00:38:02+03:00","localCoverPath":"/covers/zc-330.jpg","dataPath":"/data/episodes/zc-330.json","topicCount":31,"minuteClipCount":179},{"id":"zc-360","number":360,"title":"Квик Скоуп Ноу Скоуп","year":2025,"publishedAt":"2025-10-19T16:43:45+03:00","localCoverPath":"/covers/zc-360.jpg","dataPath":"/data/episodes/zc-360.json","topicCount":27,"minuteClipCount":254},{"id":"zc-374","number":374,"title":"DLSSlop","year":2026,"publishedAt":"2026-03-20T00:05:22+03:00","localCoverPath":"/covers/zc-374.jpg","dataPath":"/data/episodes/zc-374.json","topicCount":21,"minuteClipCount":105}],"itemSets":{"topics":{"path":"/data/items-topics.json","count":283},"minute":{"path":"/data/items-minute.json","count":1840}}}
+{
+  "schemaVersion": 2,
+  "fingerprint": "df184c5745107a5ef8605acb0cf65da81edb4fece268f71e515f6520a7686274",
+  "episodes": [
+    {
+      "id": "zc-02",
+      "number": 2,
+      "title": "Итоговый",
+      "year": 2015,
+      "publishedAt": "2015-12-25T17:46:31+03:00",
+      "localCoverPath": "/covers/zc-02.jpg",
+      "dataPath": "/data/episodes/zc-02.json",
+      "durationSec": 6590,
+      "topicCount": 19,
+      "minuteClipCount": 88
+    },
+    {
+      "id": "zc-08",
+      "number": 8,
+      "title": "Эксклюзивный",
+      "year": 2016,
+      "publishedAt": "2016-02-13T18:19:28+03:00",
+      "localCoverPath": "/covers/zc-08.jpg",
+      "dataPath": "/data/episodes/zc-08.json",
+      "durationSec": 7800,
+      "topicCount": 22,
+      "minuteClipCount": 112
+    },
+    {
+      "id": "zc-48",
+      "number": 48,
+      "title": "Плотное ядро аудитории без случайных людей",
+      "year": 2017,
+      "publishedAt": "2017-01-16T00:41:44+03:00",
+      "localCoverPath": "/covers/zc-48.jpg",
+      "dataPath": "/data/episodes/zc-48.json",
+      "durationSec": 10297,
+      "topicCount": 23,
+      "minuteClipCount": 158
+    },
+    {
+      "id": "zc-115",
+      "number": 115,
+      "title": "Английский язык (эксперимент)",
+      "year": 2018,
+      "publishedAt": "2018-09-17T23:01:11+03:00",
+      "localCoverPath": "/covers/zc-115.jpg",
+      "dataPath": "/data/episodes/zc-115.json",
+      "durationSec": 9944,
+      "topicCount": 23,
+      "minuteClipCount": 151
+    },
+    {
+      "id": "zc-167",
+      "number": 167,
+      "title": "Я слышал, ты пишешь подкасты",
+      "year": 2019,
+      "publishedAt": "2019-12-04T07:30:15+03:00",
+      "localCoverPath": "/covers/zc-167.jpg",
+      "dataPath": "/data/episodes/zc-167.json",
+      "durationSec": 6935,
+      "topicCount": 23,
+      "minuteClipCount": 96
+    },
+    {
+      "id": "zc-193",
+      "number": 193,
+      "title": "Поездатый подкаст",
+      "year": 2020,
+      "publishedAt": "2020-07-23T11:21:39+03:00",
+      "localCoverPath": "/covers/zc-193.jpg",
+      "dataPath": "/data/episodes/zc-193.json",
+      "durationSec": 10684,
+      "topicCount": 15,
+      "minuteClipCount": 165
+    },
+    {
+      "id": "zc-211",
+      "number": 211,
+      "title": "Диверсифицированная женщина",
+      "year": 2021,
+      "publishedAt": "2021-02-05T19:09:35+03:00",
+      "localCoverPath": "/covers/zc-211.jpg",
+      "dataPath": "/data/episodes/zc-211.json",
+      "durationSec": 9054,
+      "topicCount": 25,
+      "minuteClipCount": 141
+    },
+    {
+      "id": "zc-267",
+      "number": 267,
+      "title": "Тридцать кадров в секунду",
+      "year": 2022,
+      "publishedAt": "2022-10-23T16:04:07+03:00",
+      "localCoverPath": "/covers/zc-267.jpg",
+      "dataPath": "/data/episodes/zc-267.json",
+      "durationSec": 11894,
+      "topicCount": 29,
+      "minuteClipCount": 184
+    },
+    {
+      "id": "zc-292",
+      "number": 292,
+      "title": "The Lies of P(hil)",
+      "year": 2023,
+      "publishedAt": "2023-09-25T17:48:41+03:00",
+      "localCoverPath": "/covers/zc-292.jpg",
+      "dataPath": "/data/episodes/zc-292.json",
+      "durationSec": 13189,
+      "topicCount": 25,
+      "minuteClipCount": 207
+    },
+    {
+      "id": "zc-330",
+      "number": 330,
+      "title": "Чилловый подкаст",
+      "year": 2024,
+      "publishedAt": "2024-12-01T00:38:02+03:00",
+      "localCoverPath": "/covers/zc-330.jpg",
+      "dataPath": "/data/episodes/zc-330.json",
+      "durationSec": 11691,
+      "topicCount": 31,
+      "minuteClipCount": 179
+    },
+    {
+      "id": "zc-360",
+      "number": 360,
+      "title": "Квик Скоуп Ноу Скоуп",
+      "year": 2025,
+      "publishedAt": "2025-10-19T16:43:45+03:00",
+      "localCoverPath": "/covers/zc-360.jpg",
+      "dataPath": "/data/episodes/zc-360.json",
+      "durationSec": 16586,
+      "topicCount": 27,
+      "minuteClipCount": 254
+    },
+    {
+      "id": "zc-374",
+      "number": 374,
+      "title": "DLSSlop",
+      "year": 2026,
+      "publishedAt": "2026-03-20T00:05:22+03:00",
+      "localCoverPath": "/covers/zc-374.jpg",
+      "dataPath": "/data/episodes/zc-374.json",
+      "durationSec": 6929,
+      "topicCount": 21,
+      "minuteClipCount": 105
+    },
+    {
+      "id": "zc-01",
+      "number": 1,
+      "title": "Пилотный",
+      "year": 2015,
+      "publishedAt": "2015-12-16T17:15:44+03:00",
+      "localCoverPath": "/covers/zc-01.jpg",
+      "dataPath": "/data/episodes/zc-01.json",
+      "durationSec": 7269,
+      "topicCount": 17,
+      "minuteClipCount": 113
+    },
+    {
+      "id": "zc-127",
+      "number": 127,
+      "title": "Год Третий",
+      "year": 2018,
+      "publishedAt": "2018-12-25T16:12:54+03:00",
+      "localCoverPath": "/covers/zc-127.jpg",
+      "dataPath": "/data/episodes/zc-127.json",
+      "durationSec": 9724,
+      "topicCount": 34,
+      "minuteClipCount": 143
+    },
+    {
+      "id": "zc-224",
+      "number": 224,
+      "title": "Выстраиваем нарратив",
+      "year": 2021,
+      "publishedAt": "2021-06-30T23:20:05+03:00",
+      "localCoverPath": "/covers/zc-224.jpg",
+      "dataPath": "/data/episodes/zc-224.json",
+      "durationSec": 13924,
+      "topicCount": 29,
+      "minuteClipCount": 208
+    },
+    {
+      "id": "zc-308",
+      "number": 308,
+      "title": "Причина дефрагментации",
+      "year": 2024,
+      "publishedAt": "2024-04-10T02:23:43+03:00",
+      "localCoverPath": "/covers/zc-308.jpg",
+      "dataPath": "/data/episodes/zc-308.json",
+      "durationSec": 15355,
+      "topicCount": 31,
+      "minuteClipCount": 235
+    },
+    {
+      "id": "zc-384",
+      "number": 384,
+      "title": "Вибрирующая ванночка",
+      "year": 2026,
+      "publishedAt": "2026-07-08T15:47:10+03:00",
+      "localCoverPath": "/covers/zc-384.jpg",
+      "dataPath": "/data/episodes/zc-384.json",
+      "durationSec": 12485,
+      "topicCount": 29,
+      "minuteClipCount": 195
+    }
+  ],
+  "itemSets": {
+    "topics": {
+      "path": "/data/items-topics.json",
+      "count": 423
+    },
+    "minute": {
+      "path": "/data/items-minute.json",
+      "count": 2734
+    }
+  }
+}

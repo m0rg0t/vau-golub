@@ -61,21 +61,71 @@ export const PhraseSchema = z
   .object({
     id: z.string().min(1),
     index: z.number().int().nonnegative(),
+    sourceSegmentStart: z.number().int().nonnegative(),
+    sourceSegmentEnd: z.number().int().nonnegative(),
     startSec: z.number().nonnegative(),
     endSec: z.number().positive(),
     text: z.string().trim().min(1),
+    complete: z.boolean(),
   })
   .refine((phrase) => phrase.startSec < phrase.endSec, {
     message: "Phrase start must precede its end",
   });
 
 export const TranscriptSchema = z.object({
-  schemaVersion: z.literal(1),
-  episodeId: EpisodeMetadataSchema.shape.id,
-  language: z.literal("ru"),
-  model: z.string().min(1),
-  phrases: z.array(PhraseSchema).min(1),
-});
+    schemaVersion: z.literal(1),
+    episodeId: EpisodeMetadataSchema.shape.id,
+    language: z.literal("ru"),
+    model: z.string().min(1),
+    sourceSegmentCount: z.number().int().positive(),
+    phrases: z.array(PhraseSchema).min(1),
+  })
+  .superRefine((transcript, context) => {
+    let previousStartSec = 0;
+    let previousEndSec = 0;
+    let expectedSourceSegment = 0;
+
+    for (const [index, phrase] of transcript.phrases.entries()) {
+      if (phrase.index !== index) {
+        context.addIssue({
+          code: "custom",
+          path: ["phrases", index, "index"],
+          message: "Phrase indices must be contiguous",
+        });
+      }
+      if (
+        phrase.startSec + 0.001 < previousStartSec ||
+        phrase.endSec + 0.001 < previousEndSec
+      ) {
+        context.addIssue({
+          code: "custom",
+          path: ["phrases", index, "startSec"],
+          message: "Phrase starts and ends must be monotonic",
+        });
+      }
+      if (
+        phrase.sourceSegmentStart !== expectedSourceSegment ||
+        phrase.sourceSegmentEnd < phrase.sourceSegmentStart
+      ) {
+        context.addIssue({
+          code: "custom",
+          path: ["phrases", index, "sourceSegmentStart"],
+          message: "Every source segment must belong to exactly one phrase",
+        });
+      }
+      previousStartSec = phrase.startSec;
+      previousEndSec = phrase.endSec;
+      expectedSourceSegment = phrase.sourceSegmentEnd + 1;
+    }
+
+    if (expectedSourceSegment !== transcript.sourceSegmentCount) {
+      context.addIssue({
+        code: "custom",
+        path: ["sourceSegmentCount"],
+        message: "Phrase mappings must cover every source segment",
+      });
+    }
+  });
 
 export type Transcript = z.infer<typeof TranscriptSchema>;
 export type Phrase = z.infer<typeof PhraseSchema>;

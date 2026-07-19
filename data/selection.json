@@ -4,7 +4,7 @@
     "type": "wordpress",
     "apiUrl": "https://zavtracast.ru/wp-json/wp/v2/posts",
     "categoryId": 2,
-    "snapshotAt": "2026-07-19T15:03:49.874Z"
+    "snapshotAt": "2026-07-19T15:31:24.329Z"
   },
   "seed": "zavtracast-sdvg:v1",
   "selectionAlgorithm": "one-per-year-v1",

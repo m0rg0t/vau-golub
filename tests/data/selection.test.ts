@@ -49,5 +49,11 @@ describe("committed starter selection", () => {
       true,
     );
     expect(metadata.every((episode) => episode.durationSec > 60 * 60)).toBe(true);
+    const covers = await Promise.all(
+      metadata.map((episode) =>
+        readFile(`public${episode.localCoverPath}`),
+      ),
+    );
+    expect(covers.every((cover) => cover.byteLength > 10_000)).toBe(true);
   });
 });

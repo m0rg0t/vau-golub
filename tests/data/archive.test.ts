@@ -1,9 +1,10 @@
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 
 import {
   decodeHtmlEntities,
   parseArchivePost,
   parseIsoDuration,
+  resolveEpisodeCover,
   seededYearIndex,
   type WordpressPost,
 } from "../../scripts/lib/archive";
@@ -53,5 +54,26 @@ describe("archive parsing", () => {
     expect(seededYearIndex("zavtracast-sdvg:v1", 2015, 2)).toBe(
       seededYearIndex("zavtracast-sdvg:v1", 2015, 2),
     );
+  });
+
+  it("prefers current featured media over a stale embedded thumbnail", async () => {
+    const parsed = parseArchivePost({
+      ...archivePost,
+      featured_media: 1086,
+    });
+    expect(parsed).not.toBeNull();
+    const fetchMock = vi.fn<typeof fetch>().mockResolvedValue(
+      Response.json({
+        source_url: "https://zavtracast.ru/wp-content/uploads/current.jpg",
+      }),
+    );
+
+    await expect(
+      resolveEpisodeCover(parsed!, fetchMock),
+    ).resolves.toMatchObject({
+      coverSourceUrl:
+        "https://zavtracast.ru/wp-content/uploads/current.jpg",
+      localCoverPath: "/covers/zc-02.jpg",
+    });
   });
 });

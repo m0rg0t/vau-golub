@@ -40,6 +40,35 @@ export type ArchiveEpisode = Omit<
   sourceDate: string;
 };
 
+async function fetchWithRetry(
+  url: URL,
+  fetchImplementation: typeof fetch,
+): Promise<Response> {
+  let lastError: unknown;
+  for (let attempt = 1; attempt <= 3; attempt += 1) {
+    try {
+      const response = await fetchImplementation(url);
+      if (
+        response.ok ||
+        (response.status !== 429 && response.status < 500)
+      ) {
+        return response;
+      }
+      lastError = new Error(`HTTP ${response.status}`);
+    } catch (error) {
+      lastError = error;
+    }
+    if (attempt < 3) {
+      await new Promise((resolveDelay) =>
+        setTimeout(resolveDelay, 2 ** (attempt - 1) * 500),
+      );
+    }
+  }
+  throw lastError instanceof Error
+    ? lastError
+    : new Error(`Request failed for ${url}`);
+}
+
 const HTML_ENTITIES: Record<string, string> = {
   amp: "&",
   apos: "'",
@@ -223,7 +252,7 @@ export async function fetchArchive(
   firstUrl.searchParams.set("page", "1");
   firstUrl.searchParams.set("_fields", fields);
 
-  const firstResponse = await fetchImplementation(firstUrl);
+  const firstResponse = await fetchWithRetry(firstUrl, fetchImplementation);
   if (!firstResponse.ok) {
     throw new Error(`Archive request failed: ${firstResponse.status}`);
   }
@@ -234,7 +263,7 @@ export async function fetchArchive(
   for (let page = 2; page <= totalPages; page += 1) {
     const pageUrl = new URL(firstUrl);
     pageUrl.searchParams.set("page", String(page));
-    const response = await fetchImplementation(pageUrl);
+    const response = await fetchWithRetry(pageUrl, fetchImplementation);
     if (!response.ok) {
       throw new Error(`Archive page ${page} failed: ${response.status}`);
     }
@@ -254,22 +283,21 @@ export async function resolveEpisodeCover(
     throw new Error(`Selected episode ${episode.id} has no source duration`);
   }
 
-  if (episode.coverSourceUrl && episode.localCoverPath) {
+  if (!episode.featuredMediaId) {
+    if (!episode.coverSourceUrl || !episode.localCoverPath) {
+      throw new Error(`Episode ${episode.id} has no cover or featured media`);
+    }
     return {
       ...EpisodeMetadataSchema.parse(episode),
       sourceDate: episode.sourceDate,
     };
   }
 
-  if (!episode.featuredMediaId) {
-    throw new Error(`Episode ${episode.id} has no cover or featured media`);
-  }
-
   const mediaUrl = new URL(
     `https://zavtracast.ru/wp-json/wp/v2/media/${episode.featuredMediaId}`,
   );
   mediaUrl.searchParams.set("_fields", "source_url");
-  const response = await fetchImplementation(mediaUrl);
+  const response = await fetchWithRetry(mediaUrl, fetchImplementation);
   if (!response.ok) {
     throw new Error(
       `Cover request for ${episode.id} failed: ${response.status}`,

@@ -8,6 +8,7 @@ export interface CatalogEpisode {
   publishedAt: string;
   localCoverPath: string;
   dataPath: string;
+  durationSec?: number;
   topicCount: number;
   minuteClipCount: number;
 }

@@ -78,6 +78,7 @@ async function main(): Promise<void> {
       publishedAt: payload.metadata.publishedAt,
       localCoverPath: payload.metadata.localCoverPath,
       dataPath: `/data/episodes/${payload.metadata.id}.json`,
+      durationSec: payload.metadata.durationSec,
       topicCount: payload.editorial.topics.length,
       minuteClipCount: payload.minuteClips.length,
     })),

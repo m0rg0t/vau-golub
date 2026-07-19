@@ -11,6 +11,9 @@ test("shows the Russian product shell without critical accessibility issues", as
   ).toBeVisible();
   await expect(page.getByText("Вау Голубь")).toBeVisible();
 
+  await page.getByText("Обработанные выпуски", { exact: true }).click();
+  await expect(page.getByText(/\d+ выпусков/)).toBeVisible();
+
   const results = await new AxeBuilder({ page })
     .withTags(["wcag2a", "wcag2aa"])
     .analyze();

@@ -43,6 +43,7 @@ import {
   type QueueState,
 } from "../domain/queue";
 
+import { BRAND } from "./brand";
 import type {
   Catalog,
   CatalogItem,
@@ -209,8 +210,51 @@ function TranscriptDialog({
   );
 }
 
+function ProcessedEpisodes({ episodes }: { episodes: Catalog["episodes"] }) {
+  return (
+    <details className="processed-episodes">
+      <summary>
+        <span>
+          <span className="section-kicker">Архив</span>
+          <strong>Обработанные выпуски</strong>
+        </span>
+        <span className="processed-count">{episodes.length} выпусков</span>
+      </summary>
+      <div className="processed-episodes-body">
+        <p>
+          Выпуски с полной расшифровкой, темами и минутными отрезками,
+          доступными в случайном эфире.
+        </p>
+        <ol className="processed-episodes-list">
+          {[...episodes]
+            .sort((left, right) => left.number - right.number)
+            .map((processedEpisode) => (
+              <li key={processedEpisode.id}>
+                <span className="processed-episode-number">
+                  №{processedEpisode.number}
+                </span>
+                <span className="processed-episode-main">
+                  <strong>{processedEpisode.title}</strong>
+                  <small>
+                    {processedEpisode.year} · {processedEpisode.durationSec
+                      ? formatTime(processedEpisode.durationSec)
+                      : "длительность уточняется"}
+                  </small>
+                </span>
+                <span className="processed-episode-stats">
+                  {processedEpisode.topicCount} тем · {processedEpisode.minuteClipCount} минут
+                </span>
+              </li>
+            ))}
+        </ol>
+      </div>
+    </details>
+  );
+}
+
 export function App() {
   const audioRef = useRef<HTMLAudioElement>(null);
+  const preloadAudioRef = useRef<HTMLAudioElement | null>(null);
   const sourceDialogRef = useRef<HTMLDialogElement>(null);
   const episodeCacheRef = useRef(new Map<string, EpisodeData>());
   const runEffectsRef = useRef<(effects: PlaybackEffect[]) => void>(() => {});
@@ -377,6 +421,37 @@ export function App() {
     [catalog, currentItem],
   );
 
+  useEffect(() => {
+    document.title = currentItem
+      ? `${currentItem.title} - ${BRAND.full}`
+      : BRAND.full;
+  }, [currentItem]);
+
+  const nextItemId = useMemo(() => {
+    if (!activeQueue) {
+      return null;
+    }
+    if (activeQueue.cursor < activeQueue.history.length - 1) {
+      return activeQueue.history[activeQueue.cursor + 1];
+    }
+    return activeQueue.remaining[0] ?? null;
+  }, [activeQueue]);
+  const nextCatalogItem = useMemo(
+    () =>
+      catalog && nextItemId
+        ? catalog.items[mode === "topics" ? "topics" : "minute"].find(
+            (item) => item.id === nextItemId,
+          ) ?? null
+        : null,
+    [catalog, mode, nextItemId],
+  );
+  const nextCatalogEpisode = useMemo(
+    () =>
+      catalog?.episodes.find((item) => item.id === nextCatalogItem?.episodeId) ??
+      null,
+    [catalog, nextCatalogItem],
+  );
+
   const moveQueue = useCallback(
     (direction: "back" | "next") => {
       if (!catalog) {
@@ -531,6 +606,71 @@ export function App() {
   ]);
 
   useEffect(() => {
+    const dispose = () => {
+      const preloadAudio = preloadAudioRef.current;
+      preloadAudioRef.current = null;
+      if (preloadAudio) {
+        preloadAudio.pause();
+        preloadAudio.removeAttribute("src");
+        preloadAudio.load();
+      }
+    };
+
+    if (!online || !nextCatalogItem || !nextCatalogEpisode) {
+      dispose();
+      return dispose;
+    }
+
+    let active = true;
+    let controller: AbortController | null = null;
+    const cached = episodeCacheRef.current.get(nextCatalogItem.episodeId);
+    const episodePromise = cached
+      ? Promise.resolve(cached)
+      : (() => {
+          controller = new AbortController();
+          return fetch(nextCatalogEpisode.dataPath, {
+            signal: controller.signal,
+          }).then(async (response) => {
+            if (!response.ok) {
+              throw new Error(`Выпуск ответил кодом ${response.status}`);
+            }
+            return (await response.json()) as EpisodeData;
+          });
+        })();
+
+    episodePromise
+      .then((nextEpisode) => {
+        if (!active) {
+          return;
+        }
+        episodeCacheRef.current.set(nextEpisode.metadata.id, nextEpisode);
+        const preloadAudio = new Audio();
+        preloadAudio.preload = "auto";
+        preloadAudio.addEventListener(
+          "loadedmetadata",
+          () => {
+            try {
+              preloadAudio.currentTime = nextCatalogItem.startSec;
+            } catch {
+              // The browser may not expose seeking until the stream is ready.
+            }
+          },
+          { once: true },
+        );
+        preloadAudio.src = nextEpisode.metadata.audioUrl;
+        preloadAudio.load();
+        preloadAudioRef.current = preloadAudio;
+      })
+      .catch(() => undefined);
+
+    return () => {
+      active = false;
+      controller?.abort();
+      dispose();
+    };
+  }, [nextCatalogEpisode, nextCatalogItem, online]);
+
+  useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       const target = event.target;
       if (
@@ -600,8 +740,8 @@ export function App() {
       <main className="state-page" aria-busy="true">
         <Radio className="state-mark" aria-hidden="true" />
         <p className="section-kicker">Ловим волну</p>
-        <h1>Синдром Дефицита</h1>
-        <p>Вау Голубь</p>
+        <h1>{BRAND.line1}</h1>
+        <p>{BRAND.line2}</p>
         <p>Перебираем годы, темы и голубей…</p>
         <LoaderCircle className="spinner" aria-hidden="true" />
       </main>
@@ -689,7 +829,7 @@ export function App() {
       )}
 
       <header className="site-header">
-        <a className="brand" href="#" aria-label="Завтракаст СДВГ — начало">
+        <a className="brand" href="#" aria-label={`${BRAND.full} — начало`}>
           <span className="brand-mark">
             <Radio aria-hidden="true" />
           </span>
@@ -904,6 +1044,8 @@ export function App() {
           )}
         </div>
       </section>
+
+      <ProcessedEpisodes episodes={catalog.episodes} />
 
       <footer className="site-footer">
         <p>

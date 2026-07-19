@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "type": "wordpress",
+    "apiUrl": "https://zavtracast.ru/wp-json/wp/v2/posts",
+    "categoryId": 2,
+    "snapshotAt": "2026-07-19T15:03:49.874Z"
+  },
+  "seed": "zavtracast-sdvg:v1",
+  "selectionAlgorithm": "one-per-year-v1",
+  "years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "eligibleCountsByYear": {
+    "2015": 2,
+    "2016": 45,
+    "2017": 38,
+    "2018": 42,
+    "2019": 43,
+    "2020": 42,
+    "2021": 34,
+    "2022": 31,
+    "2023": 27,
+    "2024": 33,
+    "2025": 34,
+    "2026": 17
+  },
+  "episodes": [
+    {
+      "year": 2015,
+      "id": "zc-02",
+      "sourceId": 13,
+      "sourceGuid": "http://zavtracast.ru/?p=13",
+      "slug": "02",
+      "number": 2,
+      "publishedAt": "2015-12-25T17:46:31+03:00",
+      "pageUrl": "https://zavtracast.ru/02.html"
+    },
+    {
+      "year": 2016,
+      "id": "zc-08",
+      "sourceId": 43,
+      "sourceGuid": "http://zavtracast.ru/?p=43",
+      "slug": "08",
+      "number": 8,
+      "publishedAt": "2016-02-13T18:19:28+03:00",
+      "pageUrl": "https://zavtracast.ru/08.html"
+    },
+    {
+      "year": 2017,
+      "id": "zc-48",
+      "sourceId": 960,
+      "sourceGuid": "http://zavtracast.ru/?p=960",
+      "slug": "48",
+      "number": 48,
+      "publishedAt": "2017-01-16T00:41:44+03:00",
+      "pageUrl": "https://zavtracast.ru/48.html"
+    },
+    {
+      "year": 2018,
+      "id": "zc-115",
+      "sourceId": 1771,
+      "sourceGuid": "https://zavtracast.ru/?p=1771",
+      "slug": "115",
+      "number": 115,
+      "publishedAt": "2018-09-17T23:01:11+03:00",
+      "pageUrl": "https://zavtracast.ru/115.html"
+    },
+    {
+      "year": 2019,
+      "id": "zc-167",
+      "sourceId": 2403,
+      "sourceGuid": "https://zavtracast.ru/?p=2403",
+      "slug": "167",
+      "number": 167,
+      "publishedAt": "2019-12-04T07:30:15+03:00",
+      "pageUrl": "https://zavtracast.ru/167.html"
+    },
+    {
+      "year": 2020,
+      "id": "zc-193",
+      "sourceId": 2743,
+      "sourceGuid": "https://zavtracast.ru/?p=2743",
+      "slug": "193",
+      "number": 193,
+      "publishedAt": "2020-07-23T11:21:39+03:00",
+      "pageUrl": "https://zavtracast.ru/193.html"
+    },
+    {
+      "year": 2021,
+      "id": "zc-211",
+      "sourceId": 2992,
+      "sourceGuid": "https://zavtracast.ru/?p=2992",
+      "slug": "211",
+      "number": 211,
+      "publishedAt": "2021-02-05T19:09:35+03:00",
+      "pageUrl": "https://zavtracast.ru/211.html"
+    },
+    {
+      "year": 2022,
+      "id": "zc-267",
+      "sourceId": 3513,
+      "sourceGuid": "https://zavtracast.ru/?p=3513",
+      "slug": "267",
+      "number": 267,
+      "publishedAt": "2022-10-23T16:04:07+03:00",
+      "pageUrl": "https://zavtracast.ru/267.html"
+    },
+    {
+      "year": 2023,
+      "id": "zc-292",
+      "sourceId": 3731,
+      "sourceGuid": "https://zavtracast.ru/?p=3731",
+      "slug": "292",
+      "number": 292,
+      "publishedAt": "2023-09-25T17:48:41+03:00",
+      "pageUrl": "https://zavtracast.ru/292.html"
+    },
+    {
+      "year": 2024,
+      "id": "zc-330",
+      "sourceId": 3997,
+      "sourceGuid": "https://zavtracast.ru/?p=3997",
+      "slug": "330",
+      "number": 330,
+      "publishedAt": "2024-12-01T00:38:02+03:00",
+      "pageUrl": "https://zavtracast.ru/330.html"
+    },
+    {
+      "year": 2025,
+      "id": "zc-360",
+      "sourceId": 4221,
+      "sourceGuid": "https://zavtracast.ru/?p=4221",
+      "slug": "360",
+      "number": 360,
+      "publishedAt": "2025-10-19T16:43:45+03:00",
+      "pageUrl": "https://zavtracast.ru/360.html"
+    },
+    {
+      "year": 2026,
+      "id": "zc-374",
+      "sourceId": 4352,
+      "sourceGuid": "https://zavtracast.ru/?p=4352",
+      "slug": "374",
+      "number": 374,
+      "publishedAt": "2026-03-20T00:05:22+03:00",
+      "pageUrl": "https://zavtracast.ru/374.html"
+    }
+  ]
+}

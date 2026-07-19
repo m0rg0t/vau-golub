@@ -29,7 +29,7 @@ npm run dev
 Переменные Whisper можно скопировать из `.env.example` или передать в оболочке:
 
 ```bash
-export WHISPER_API_BASE=http://192.168.3.21:12017
+export WHISPER_API_BASE=http://localhost:12017
 export WHISPER_MODEL=large-v3-turbo-q5_0
 ```
 

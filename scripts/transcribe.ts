@@ -16,7 +16,7 @@ import {
   validateWhisperResponse,
 } from "./lib/whisper";
 
-const DEFAULT_API_BASE = "http://192.168.3.21:12017";
+const DEFAULT_API_BASE = "http://localhost:12017";
 const DEFAULT_MODEL = "large-v3-turbo-q5_0";
 const PROMPT = [
   "Завтракаст — русскоязычный подкаст о технологиях, играх, кино и медиа.",
@@ -31,7 +31,6 @@ async function reusableResult(
   path: string,
   expected: {
     chunkSha256: string;
-    apiBase: string;
     model: string;
     promptSha256: string;
   },
@@ -41,7 +40,6 @@ async function reusableResult(
     const result = WhisperChunkResultSchema.parse(await readJson(path));
     return (
       result.chunk.sha256 === expected.chunkSha256 &&
-      result.request.apiBase === expected.apiBase &&
       result.request.model === expected.model &&
       result.request.promptSha256 === expected.promptSha256 &&
       result.request.pipelineVersion === PIPELINE_VERSION
@@ -94,7 +92,6 @@ async function main(): Promise<void> {
       if (
         await reusableResult(resultPath, {
           chunkSha256: chunk.sha256,
-          apiBase,
           model,
           promptSha256: PROMPT_SHA256,
         })

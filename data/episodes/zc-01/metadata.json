@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "zc-01",
+  "sourceId": 7,
+  "sourceGuid": "http://zavtracast.ru/?p=7",
+  "slug": "01",
+  "number": 1,
+  "title": "Пилотный",
+  "publishedAt": "2015-12-16T17:15:44+03:00",
+  "year": 2015,
+  "durationIso": "PT2H01M09S",
+  "durationSec": 7269,
+  "pageUrl": "https://zavtracast.ru/01.html",
+  "coverSourceUrl": "https://zavtracast.ru/wp-content/uploads/2015/12/1-e71_oxHbU4Bg_ypPnis__Q-1.jpg",
+  "localCoverPath": "/covers/zc-01.jpg",
+  "audioUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast-001_mixdown.mp3",
+  "summary": "Всем привет. Представляем пилотный выпуск нашего нового подкаста “Завтракаст” (ну или ZavtraCast если угодно). Почему такое название? Мы и сами не знаем и пожалуй, подумаем об этом завтра.",
+  "showNotes": []
+}

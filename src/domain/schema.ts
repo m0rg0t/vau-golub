@@ -56,6 +56,20 @@ export const SelectionSchema = z.object({
 
 export type EpisodeSelection = z.infer<typeof SelectionSchema>;
 
+export const AdditionalSelectionSchema = z.object({
+  schemaVersion: z.literal(1),
+  source: z.object({
+    type: z.literal("wordpress"),
+    apiUrl: HttpUrlSchema,
+    categoryId: z.number().int().positive(),
+    snapshotAt: z.iso.datetime({ offset: true }),
+  }),
+  selectionAlgorithm: z.literal("curated-extra-v1"),
+  episodes: z.array(SelectedEpisodeSchema).min(1),
+});
+
+export type AdditionalSelection = z.infer<typeof AdditionalSelectionSchema>;
+
 export const PhraseSchema = z
   .object({
     id: z.string().min(1),

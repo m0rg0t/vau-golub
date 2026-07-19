@@ -1,13 +1,5 @@
-import { readFile } from "node:fs/promises";
-import { resolve } from "node:path";
-
-import {
-  EpisodeMetadataSchema,
-  SelectionSchema,
-  type EpisodeMetadata,
-} from "../src/domain/schema";
-
-const projectRoot = resolve(import.meta.dirname, "..");
+import { loadSelectedEpisodes } from "./lib/catalog";
+import type { EpisodeMetadata } from "../src/domain/schema";
 
 export async function verifyAudioRange(
   episode: EpisodeMetadata,
@@ -44,23 +36,7 @@ export async function verifyAudioRange(
 }
 
 async function main(): Promise<void> {
-  const selection = SelectionSchema.parse(
-    JSON.parse(
-      await readFile(resolve(projectRoot, "data", "selection.json"), "utf8"),
-    ),
-  );
-  const episodes = await Promise.all(
-    selection.episodes.map(async ({ id }) =>
-      EpisodeMetadataSchema.parse(
-        JSON.parse(
-          await readFile(
-            resolve(projectRoot, "data", "episodes", id, "metadata.json"),
-            "utf8",
-          ),
-        ),
-      ),
-    ),
-  );
+  const episodes = await loadSelectedEpisodes();
 
   for (const episode of episodes) {
     await verifyAudioRange(episode);

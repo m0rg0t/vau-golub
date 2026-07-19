@@ -11,6 +11,7 @@
     "start": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext start",
     "data:select": "tsx scripts/select-episodes.ts",
     "data:select:check": "tsx scripts/select-episodes.ts --check",
+    "data:select:extra": "tsx scripts/select-extra-episodes.ts",
     "data:verify-audio": "tsx scripts/verify-audio.ts",
     "data:fetch": "tsx scripts/fetch-assets.ts",
     "data:split": "tsx scripts/split-audio.ts",

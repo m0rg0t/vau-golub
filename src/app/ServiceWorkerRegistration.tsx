@@ -11,8 +11,11 @@ export function ServiceWorkerRegistration() {
         .then((registration) => {
           const urls = performance
             .getEntriesByType("resource")
-            .map((entry) => entry.name)
-            .filter((value) => new URL(value).origin === window.location.origin);
+            .flatMap((entry) =>
+              new URL(entry.name).origin === window.location.origin
+                ? [entry.name]
+                : [],
+            );
           registration.active?.postMessage({ type: "CACHE_URLS", urls });
         })
         .catch(() => {

@@ -29,7 +29,7 @@ export const WhisperChunkResultSchema = z.object({
     sha256: z.string().regex(/^[a-f0-9]{64}$/),
   }),
   request: z.object({
-    apiBase: z.string().url(),
+    apiBase: z.url(),
     model: z.string().min(1),
     language: z.literal("ru"),
     promptSha256: z.string().regex(/^[a-f0-9]{64}$/),

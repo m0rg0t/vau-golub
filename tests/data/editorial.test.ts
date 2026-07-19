@@ -61,6 +61,15 @@ async function fixture() {
 }
 
 describe("editorial validation", () => {
+  it("publishes Russian WebVTT captions from phrase boundaries", async () => {
+    const captions = await readFile(
+      "public/data/episodes/zc-02.vtt",
+      "utf8",
+    );
+    expect(captions).toMatch(/^WEBVTT\n\n1\n00:00:\d{2}\.\d{3} --> /);
+    expect(captions).toContain("Добрый вечер");
+  });
+
   it("validates phrase-bound ranges and builds sentence clips", async () => {
     const data = await fixture();
     const validated = validateEpisodeData(

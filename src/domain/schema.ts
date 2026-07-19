@@ -1,7 +1,6 @@
 import { z } from "zod";
 
 const HttpUrlSchema = z
-  .string()
   .url()
   .refine((value) => value.startsWith("https://"), "URL must use HTTPS");
 
@@ -11,11 +10,11 @@ export const EpisodeMetadataSchema = z.object({
   schemaVersion: z.literal(1),
   id: z.string().regex(/^zc-[0-9]+(?:-[0-9]+)?$/),
   sourceId: z.number().int().positive(),
-  sourceGuid: z.string().url(),
+  sourceGuid: z.url(),
   slug: z.string().regex(/^[0-9]+(?:-[0-9]+)?$/),
   number: z.number().int().positive(),
   title: z.string().min(1),
-  publishedAt: z.string().datetime({ offset: true }),
+  publishedAt: z.iso.datetime({ offset: true }),
   year: YearSchema,
   durationIso: z.string().regex(/^PT(?:(?:\d+)H)?(?:(?:\d+)M)?(?:(?:\d+)S)?$/),
   durationSec: z.number().int().positive(),
@@ -46,7 +45,7 @@ export const SelectionSchema = z.object({
     type: z.literal("wordpress"),
     apiUrl: HttpUrlSchema,
     categoryId: z.number().int().positive(),
-    snapshotAt: z.string().datetime({ offset: true }),
+    snapshotAt: z.iso.datetime({ offset: true }),
   }),
   seed: z.string().min(1),
   selectionAlgorithm: z.literal("one-per-year-v1"),

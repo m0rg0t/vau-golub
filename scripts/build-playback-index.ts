@@ -8,7 +8,27 @@ import {
   readJson,
   textSha256,
   writeJsonAtomic,
+  writeTextAtomic,
 } from "./lib/files";
+
+function webVttTimestamp(seconds: number): string {
+  const milliseconds = Math.max(0, Math.round(seconds * 1000));
+  const hours = Math.floor(milliseconds / 3_600_000);
+  const minutes = Math.floor((milliseconds % 3_600_000) / 60_000);
+  const remainderSeconds = Math.floor((milliseconds % 60_000) / 1000);
+  const remainderMilliseconds = milliseconds % 1000;
+  return `${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:${String(remainderSeconds).padStart(2, "0")}.${String(remainderMilliseconds).padStart(3, "0")}`;
+}
+
+function buildCaptions(
+  phrases: Array<{ startSec: number; endSec: number; text: string }>,
+): string {
+  const cues = phrases.map(
+    (phrase, index) =>
+      `${index + 1}\n${webVttTimestamp(phrase.startSec)} --> ${webVttTimestamp(phrase.endSec)}\n${phrase.text.replaceAll(/\s+/g, " ").trim()}`,
+  );
+  return `WEBVTT\n\n${cues.join("\n\n")}\n`;
+}
 
 async function main(): Promise<void> {
   const metadataList = await loadSelectedEpisodes(argumentValue("--episode"));
@@ -39,6 +59,10 @@ async function main(): Promise<void> {
     await writeJsonAtomic(
       resolve(outputDirectory, `${metadata.id}.json`),
       payload,
+    );
+    await writeTextAtomic(
+      resolve(outputDirectory, `${metadata.id}.vtt`),
+      buildCaptions(payload.transcript.phrases),
     );
   }
 

@@ -93,7 +93,7 @@ describe("persistent random queue", () => {
 
     const restored = restoreQueueState(
       dataset,
-      JSON.parse(JSON.stringify(state)) as unknown,
+      structuredClone(state) as unknown,
       createSeededRandom("unused"),
     );
 

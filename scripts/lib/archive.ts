@@ -144,9 +144,12 @@ export function parseIsoDuration(duration: string): number {
 }
 
 function extractShowNotes(html: string): string[] {
-  return [...html.matchAll(/<li\b[^>]*>([\s\S]*?)<\/li>/gi)]
-    .map((match) => htmlToText(match[1]))
-    .filter(Boolean);
+  return [...html.matchAll(/<li\b[^>]*>([\s\S]*?)<\/li>/gi)].flatMap(
+    (match) => {
+      const text = htmlToText(match[1]);
+      return text ? [text] : [];
+    },
+  );
 }
 
 function extractDurationIso(html: string): string | null {
@@ -260,19 +263,24 @@ export async function fetchArchive(
   const totalPages = Number(firstResponse.headers.get("x-wp-totalpages") ?? 1);
   const posts = (await firstResponse.json()) as WordpressPost[];
 
-  for (let page = 2; page <= totalPages; page += 1) {
-    const pageUrl = new URL(firstUrl);
-    pageUrl.searchParams.set("page", String(page));
-    const response = await fetchWithRetry(pageUrl, fetchImplementation);
-    if (!response.ok) {
-      throw new Error(`Archive page ${page} failed: ${response.status}`);
-    }
-    posts.push(...((await response.json()) as WordpressPost[]));
-  }
+  const remainingPosts = await Promise.all(
+    Array.from({ length: Math.max(0, totalPages - 1) }, async (_, index) => {
+      const page = index + 2;
+      const pageUrl = new URL(firstUrl);
+      pageUrl.searchParams.set("page", String(page));
+      const response = await fetchWithRetry(pageUrl, fetchImplementation);
+      if (!response.ok) {
+        throw new Error(`Archive page ${page} failed: ${response.status}`);
+      }
+      return (await response.json()) as WordpressPost[];
+    }),
+  );
+  posts.push(...remainingPosts.flat());
 
-  return posts
-    .map(parseArchivePost)
-    .filter((episode): episode is ArchiveEpisode => episode !== null);
+  return posts.flatMap((post) => {
+    const episode = parseArchivePost(post);
+    return episode ? [episode] : [];
+  });
 }
 
 export async function resolveEpisodeCover(

@@ -15,9 +15,16 @@ export async function writeJsonAtomic(
   path: string,
   value: unknown,
 ): Promise<void> {
+  await writeTextAtomic(path, `${JSON.stringify(value, null, 2)}\n`);
+}
+
+export async function writeTextAtomic(
+  path: string,
+  value: string,
+): Promise<void> {
   await mkdir(dirname(path), { recursive: true });
   const temporaryPath = `${path}.${process.pid}.partial`;
-  await writeFile(temporaryPath, `${JSON.stringify(value, null, 2)}\n`, "utf8");
+  await writeFile(temporaryPath, value, "utf8");
   await rename(temporaryPath, path);
 }
 

@@ -52,6 +52,11 @@ import type {
 } from "./types";
 
 const STORAGE_PREFIX = "zavtracast-sdvg:v1";
+const RUSSIAN_DATE_FORMATTER = new Intl.DateTimeFormat("ru-RU", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+});
 const EMPTY_QUEUE = { topics: null, minute: null } satisfies Record<
   ListeningMode,
   QueueState<string> | null
@@ -206,6 +211,7 @@ function TranscriptDialog({
 
 export function App() {
   const audioRef = useRef<HTMLAudioElement>(null);
+  const sourceDialogRef = useRef<HTMLDialogElement>(null);
   const episodeCacheRef = useRef(new Map<string, EpisodeData>());
   const runEffectsRef = useRef<(effects: PlaybackEffect[]) => void>(() => {});
   const advanceRef = useRef<() => void>(() => {});
@@ -226,6 +232,24 @@ export function App() {
   const [sourceOpen, setSourceOpen] = useState(false);
   const [transcriptOpen, setTranscriptOpen] = useState(false);
   const [online, setOnline] = useState(true);
+
+  useEffect(() => {
+    const dialog = sourceDialogRef.current;
+    if (!dialog) return;
+    if (sourceOpen && !dialog.open) {
+      if (typeof dialog.showModal === "function") {
+        dialog.showModal();
+      } else {
+        dialog.setAttribute("open", "");
+      }
+    } else if (!sourceOpen && dialog.open) {
+      if (typeof dialog.close === "function") {
+        dialog.close();
+      } else {
+        dialog.removeAttribute("open");
+      }
+    }
+  }, [sourceOpen]);
 
   const dispatchPlayback = useCallback((event: PlaybackEvent) => {
     const transition = reducePlayback(playbackRef.current, event);
@@ -577,6 +601,7 @@ export function App() {
         <Radio className="state-mark" aria-hidden="true" />
         <p className="section-kicker">Ловим волну</p>
         <h1>Завтракаст СДВГ</h1>
+        <p>Синдром Дефицита Где Голубь</p>
         <p>Перебираем годы, темы и голубей…</p>
         <LoaderCircle className="spinner" aria-hidden="true" />
       </main>
@@ -644,7 +669,17 @@ export function App() {
             });
           }
         }}
-      />
+      >
+        {episode && (
+          <track
+            kind="captions"
+            src={`/data/episodes/${episode.metadata.id}.vtt`}
+            srcLang="ru"
+            label="Русский"
+            default
+          />
+        )}
+      </audio>
 
       {!online && (
         <div className="offline-banner" role="status">
@@ -879,19 +914,13 @@ export function App() {
       </footer>
 
       {sourceOpen && currentItem && catalogEpisode && (
-        <>
-          <button
-            type="button"
-            className="drawer-scrim"
-            aria-label="Закрыть информацию о выпуске"
-            onClick={() => setSourceOpen(false)}
-          />
-          <aside
-            className="source-drawer"
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="source-title"
-          >
+        <dialog
+          ref={sourceDialogRef}
+          className="source-drawer"
+          aria-labelledby="source-title"
+          onCancel={() => setSourceOpen(false)}
+          onClose={() => setSourceOpen(false)}
+        >
             <header className="drawer-header">
               <p className="section-kicker">Поймано в архиве</p>
               <button
@@ -917,11 +946,9 @@ export function App() {
             <h2 id="source-title">{catalogEpisode.title}</h2>
             <p className="drawer-date">
               <Clock3 aria-hidden="true" />
-              {new Intl.DateTimeFormat("ru-RU", {
-                day: "numeric",
-                month: "long",
-                year: "numeric",
-              }).format(new Date(catalogEpisode.publishedAt))}
+              {RUSSIAN_DATE_FORMATTER.format(
+                new Date(catalogEpisode.publishedAt),
+              )}
             </p>
             <p>{episode?.metadata.summary ?? currentItem.description}</p>
             {episode && (
@@ -935,8 +962,7 @@ export function App() {
                 <ExternalLink aria-hidden="true" />
               </a>
             )}
-          </aside>
-        </>
+        </dialog>
       )}
 
       {transcriptOpen && episode && currentItem && (

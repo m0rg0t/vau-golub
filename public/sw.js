@@ -1,5 +1,5 @@
 const CACHE_PREFIX = "zavtracast-sdvg-";
-const CACHE_NAME = `${CACHE_PREFIX}v2`;
+const CACHE_NAME = `${CACHE_PREFIX}v3`;
 const SHELL_ASSETS = [
   "/",
   "/manifest.webmanifest",
@@ -17,6 +17,7 @@ async function cacheDataset(cache) {
     const episodeData = Array.isArray(catalog.episodes)
       ? catalog.episodes.flatMap((episode) => [
           episode.dataPath,
+          episode.dataPath.replace(/\.json$/, ".vtt"),
           episode.localCoverPath,
         ])
       : [];
@@ -45,11 +46,11 @@ self.addEventListener("activate", (event) => {
       .keys()
       .then((keys) =>
         Promise.all(
-          keys
-            .filter(
-              (key) => key.startsWith(CACHE_PREFIX) && key !== CACHE_NAME,
-            )
-            .map((key) => caches.delete(key)),
+          keys.flatMap((key) =>
+            key.startsWith(CACHE_PREFIX) && key !== CACHE_NAME
+              ? [caches.delete(key)]
+              : [],
+          ),
         ),
       )
       .then(() => self.clients.claim()),
@@ -60,13 +61,13 @@ self.addEventListener("message", (event) => {
   if (event.data?.type !== "CACHE_URLS" || !Array.isArray(event.data.urls)) {
     return;
   }
-  const urls = event.data.urls.filter((value) => {
-    if (typeof value !== "string") return false;
+  const urls = event.data.urls.flatMap((value) => {
+    if (typeof value !== "string") return [];
     const url = new URL(value, self.location.origin);
-    return (
-      url.origin === self.location.origin &&
+    return url.origin === self.location.origin &&
       !url.pathname.toLowerCase().endsWith(".mp3")
-    );
+      ? [value]
+      : [];
   });
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) =>

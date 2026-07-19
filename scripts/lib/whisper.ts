@@ -14,6 +14,17 @@ export const WhisperSegmentSchema = z
     message: "Whisper segment start must precede its end",
   });
 
+const RawWhisperSegmentSchema = z.object({
+  start: z.number().nonnegative(),
+  end: z.number().nonnegative(),
+  text: z.string().trim().min(1),
+});
+
+const RawWhisperResponseSchema = z.object({
+  text: z.string(),
+  segments: z.array(RawWhisperSegmentSchema).min(1),
+});
+
 export const WhisperResponseSchema = z.object({
   text: z.string(),
   segments: z.array(WhisperSegmentSchema).min(1),
@@ -47,8 +58,21 @@ export function validateWhisperResponse(
   value: unknown,
   chunkDurationSec: number,
 ): WhisperResponse {
-  const response = WhisperResponseSchema.parse(value);
-  const normalizedSegments = response.segments.map((segment) => {
+  const response = RawWhisperResponseSchema.parse(value);
+  const normalizedSegments: WhisperResponse["segments"] = [];
+  for (const segment of response.segments) {
+    if (segment.start > segment.end) {
+      throw new Error("Whisper segment start must not follow its end");
+    }
+    if (segment.start === segment.end) {
+      const previous = normalizedSegments.at(-1);
+      const punctuation = segment.text.trim();
+      if (!previous || !/^[.,!?;:…)\]}]+$/u.test(punctuation)) {
+        throw new Error("Whisper zero-duration segment must be punctuation");
+      }
+      previous.text = `${previous.text.trimEnd()}${punctuation}`;
+      continue;
+    }
     if (segment.start >= chunkDurationSec) {
       throw new Error(
         `Whisper segment starts after its chunk: ${segment.start}s`,
@@ -59,13 +83,16 @@ export function validateWhisperResponse(
         `Whisper segment overshoots its chunk by more than one decode window`,
       );
     }
-    return {
+    normalizedSegments.push({
       ...segment,
       end: Math.min(segment.end, chunkDurationSec),
-    };
-  });
+    });
+  }
 
-  return { ...response, segments: normalizedSegments };
+  return WhisperResponseSchema.parse({
+    ...response,
+    segments: normalizedSegments,
+  });
 }
 
 export async function requestTranscription(

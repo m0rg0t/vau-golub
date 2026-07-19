@@ -85,4 +85,30 @@ describe("Whisper contract", () => {
       ),
     ).toThrow("starts after its chunk");
   });
+
+  it("merges zero-duration punctuation without accepting empty speech", () => {
+    const response = validateWhisperResponse(
+      {
+        text: "Фраза!",
+        segments: [
+          { start: 1, end: 2, text: " Фраза" },
+          { start: 2, end: 2, text: "!" },
+        ],
+      },
+      10,
+    );
+    expect(response.segments).toEqual([
+      { start: 1, end: 2, text: "Фраза!" },
+    ]);
+
+    expect(() =>
+      validateWhisperResponse(
+        {
+          text: "Слово",
+          segments: [{ start: 2, end: 2, text: "Слово" }],
+        },
+        10,
+      ),
+    ).toThrow("zero-duration segment must be punctuation");
+  });
 });

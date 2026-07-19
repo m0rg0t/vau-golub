@@ -7,9 +7,9 @@ test("shows the Russian product shell without critical accessibility issues", as
   await page.goto("/");
 
   await expect(
-    page.getByRole("heading", { name: "Завтракаст СДВГ" }),
+    page.getByRole("heading", { name: "Синдром Дефицита" }),
   ).toBeVisible();
-  await expect(page.getByText("Синдром Дефицита Где Голубь")).toBeVisible();
+  await expect(page.getByText("Вау Голубь")).toBeVisible();
 
   const results = await new AxeBuilder({ page })
     .withTags(["wcag2a", "wcag2aa"])

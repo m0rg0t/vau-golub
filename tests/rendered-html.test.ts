@@ -28,8 +28,9 @@ describe("static application shell", () => {
 
     expect(response.status).toBe(200);
     expect(response.headers.get("content-type")).toMatch(/^text\/html\b/i);
-    expect(html).toContain("<title>Завтракаст СДВГ</title>");
-    expect(html).toContain("Синдром Дефицита Где Голубь");
+    expect(html).toContain("<title>Синдром Дефицита Вау Голубь</title>");
+    expect(html).toContain("Синдром Дефицита");
+    expect(html).toContain("Вау Голубь");
     expect(html).toContain('lang="ru"');
     expect(html).not.toContain("codex-preview");
     expect(html).not.toContain("react-loading-skeleton");

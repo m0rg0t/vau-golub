@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Завтракаст СДВГ — Синдром Дефицита Где Голубь",
+  title: "Синдром Дефицита Вау Голубь",
   description:
     "Случайные темы и законченные минуты из разных эпох Завтракаста.",
   manifest: "/manifest.webmanifest",

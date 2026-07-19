@@ -4,7 +4,7 @@ import { App } from "@/src/app/App";
 import { ServiceWorkerRegistration } from "@/src/app/ServiceWorkerRegistration";
 
 export const metadata: Metadata = {
-  title: "Завтракаст СДВГ",
+  title: "Синдром Дефицита Вау Голубь",
   description:
     "Случайные темы и законченные минуты из разных эпох Завтракаста.",
 };

@@ -600,8 +600,8 @@ export function App() {
       <main className="state-page" aria-busy="true">
         <Radio className="state-mark" aria-hidden="true" />
         <p className="section-kicker">Ловим волну</p>
-        <h1>Завтракаст СДВГ</h1>
-        <p>Синдром Дефицита Где Голубь</p>
+        <h1>Синдром Дефицита</h1>
+        <p>Вау Голубь</p>
         <p>Перебираем годы, темы и голубей…</p>
         <LoaderCircle className="spinner" aria-hidden="true" />
       </main>
@@ -694,8 +694,8 @@ export function App() {
             <Radio aria-hidden="true" />
           </span>
           <span>
-            <h1>Завтракаст СДВГ</h1>
-            <small>Синдром Дефицита Где Голубь</small>
+            <h1>Синдром Дефицита</h1>
+            <small>Вау Голубь</small>
           </span>
         </a>
         <p className="on-air">

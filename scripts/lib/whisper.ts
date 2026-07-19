@@ -25,6 +25,13 @@ const RawWhisperResponseSchema = z.object({
   segments: z.array(RawWhisperSegmentSchema).min(1),
 });
 
+function comparableText(value: string): string {
+  return value
+    .toLocaleLowerCase("ru")
+    .replaceAll(/[^\p{L}\p{N}]+/gu, " ")
+    .trim();
+}
+
 export const WhisperResponseSchema = z.object({
   text: z.string(),
   segments: z.array(WhisperSegmentSchema).min(1),
@@ -67,11 +74,24 @@ export function validateWhisperResponse(
     if (segment.start === segment.end) {
       const previous = normalizedSegments.at(-1);
       const punctuation = segment.text.trim();
-      if (!previous || !/^[.,!?;:…)\]}]+$/u.test(punctuation)) {
-        throw new Error("Whisper zero-duration segment must be punctuation");
+      if (previous && /^[.,!?;:…)\]}]+$/u.test(punctuation)) {
+        previous.text = `${previous.text.trimEnd()}${punctuation}`;
+        continue;
       }
-      previous.text = `${previous.text.trimEnd()}${punctuation}`;
-      continue;
+      const duplicateText = comparableText(segment.text);
+      const recentContext = comparableText(
+        normalizedSegments
+          .slice(-4)
+          .map((candidate) => candidate.text)
+          .join(" "),
+      );
+      if (
+        duplicateText.length >= 8 &&
+        recentContext.includes(duplicateText)
+      ) {
+        continue;
+      }
+      throw new Error("Whisper zero-duration segment must be punctuation");
     }
     if (segment.start >= chunkDurationSec) {
       throw new Error(

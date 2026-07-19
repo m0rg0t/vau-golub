@@ -111,4 +111,31 @@ describe("Whisper contract", () => {
       ),
     ).toThrow("zero-duration segment must be punctuation");
   });
+
+  it("drops a zero-duration duplicate found in recent context", () => {
+    const response = validateWhisperResponse(
+      {
+        text: "Им удалось его достигнуть.",
+        segments: [
+          {
+            start: 1,
+            end: 2,
+            text: "Этот успех, ну, им удалось его достигнуть.",
+          },
+          {
+            start: 2,
+            end: 2,
+            text: " этот успех ну им удалось его достигнуть",
+          },
+          { start: 2.1, end: 3, text: "Следующая мысль." },
+        ],
+      },
+      10,
+    );
+
+    expect(response.segments.map((segment) => segment.text)).toEqual([
+      "Этот успех, ну, им удалось его достигнуть.",
+      "Следующая мысль.",
+    ]);
+  });
 });

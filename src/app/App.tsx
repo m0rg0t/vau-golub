@@ -236,9 +236,10 @@ function ProcessedEpisodes({ episodes }: { episodes: Catalog["episodes"] }) {
                 <span className="processed-episode-main">
                   <strong>{processedEpisode.title}</strong>
                   <small>
-                    {processedEpisode.year} · {processedEpisode.durationSec
-                      ? formatTime(processedEpisode.durationSec)
-                      : "длительность уточняется"}
+                    {processedEpisode.year}
+                    {processedEpisode.durationSec
+                      ? ` · ${formatTime(processedEpisode.durationSec)}`
+                      : ""}
                   </small>
                 </span>
                 <span className="processed-episode-stats">

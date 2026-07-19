@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+import { BRAND } from "@/src/app/brand";
+
 export const metadata: Metadata = {
-  title: "Синдром Дефицита Вау Голубь",
+  title: BRAND.full,
   description:
     "Случайные темы и законченные минуты из разных эпох Завтракаста.",
   manifest: "/manifest.webmanifest",

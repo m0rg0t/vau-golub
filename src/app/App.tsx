@@ -834,8 +834,8 @@ export function App() {
             <Radio aria-hidden="true" />
           </span>
           <span>
-            <h1>Синдром Дефицита</h1>
-            <small>Вау Голубь</small>
+            <h1>{BRAND.line1}</h1>
+            <small>{BRAND.line2}</small>
           </span>
         </a>
         <p className="on-air">
@@ -1049,8 +1049,11 @@ export function App() {
 
       <footer className="site-footer">
         <p>
-          Неформальный архивный приёмник. Аудио принадлежит авторам
-          Завтракаста.
+          Неформальный архивный приёмник. Аудио принадлежит авторам{" "}
+          <a href="https://zavtracast.ru" target="_blank" rel="noreferrer">
+            Завтракаста
+          </a>
+          .
         </p>
         <p>Пробел — пауза · ← → — перемотка 10 секунд</p>
       </footer>

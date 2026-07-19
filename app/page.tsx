@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 
 import { App } from "@/src/app/App";
+import { BRAND } from "@/src/app/brand";
 import { ServiceWorkerRegistration } from "@/src/app/ServiceWorkerRegistration";
 
 export const metadata: Metadata = {
-  title: "Синдром Дефицита Вау Голубь",
+  title: BRAND.full,
   description:
     "Случайные темы и законченные минуты из разных эпох Завтракаста.",
 };

@@ -29,8 +29,9 @@ describe("static application shell", () => {
     expect(response.status).toBe(200);
     expect(response.headers.get("content-type")).toMatch(/^text\/html\b/i);
     expect(html).toContain("<title>Синдром Дефицита Вау Голубь</title>");
-    expect(html).toContain("Синдром Дефицита");
-    expect(html).toContain("Вау Голубь");
+    // Body copy unique to the App shell — not satisfied by the <title> alone.
+    expect(html).toContain("Ловим волну");
+    expect(html).toContain("Перебираем годы, темы и голубей…");
     expect(html).toContain('lang="ru"');
     expect(html).not.toContain("codex-preview");
     expect(html).not.toContain("react-loading-skeleton");

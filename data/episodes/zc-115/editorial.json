@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "episodeId": "zc-115",
+  "topics": [
+    {
+      "id": "zc-115-topic-apple-event",
+      "startPhraseId": "zc-115-p-00010",
+      "endPhraseId": "zc-115-p-00120",
+      "startSec": 202,
+      "endSec": 1600.36,
+      "title": "Apple Watch Series 4 и новые iPhone",
+      "summary": "Ведущие разбирают презентацию Apple: медицинские функции и экосистему Apple Watch Series 4, рост цен на смартфоны, скромные улучшения iPhone XS и компромиссы более доступного iPhone XR."
+    },
+    {
+      "id": "zc-115-topic-elder-scrolls-blades",
+      "startPhraseId": "zc-115-p-00122",
+      "endPhraseId": "zc-115-p-00131",
+      "startSec": 1602.72,
+      "endSec": 1709.58,
+      "title": "Elder Scrolls: Blades отложили до декабря",
+      "summary": "Обсуждение мобильной Elder Scrolls: Blades, незаметного переноса релиза на декабрь и опасений, что бесплатная модель игры будет построена на таймерах, бустерах и навязчивых покупках."
+    },
+    {
+      "id": "zc-115-topic-bad-company-3",
+      "startPhraseId": "zc-115-p-00132",
+      "endPhraseId": "zc-115-p-00140",
+      "startSec": 1717.84,
+      "endSec": 1866.76,
+      "title": "Намёки на Battlefield: Bad Company 3",
+      "summary": "Активность Дэвида Голдфарба вокруг DICE и Bad Company становится поводом помечтать о третьей части или ремастере и вспомнить, насколько хорошо сохранились кампания и мультиплеер Bad Company 2."
+    },
+    {
+      "id": "zc-115-topic-destiny-forsaken",
+      "startPhraseId": "zc-115-p-00142",
+      "endPhraseId": "zc-115-p-00159",
+      "startSec": 1875.52,
+      "endSec": 2304,
+      "title": "Destiny 2: Forsaken возвращает старые привычки",
+      "summary": "Впечатления от Forsaken расходятся: одних утомляет знакомая формула Destiny, другие хвалят переработанную прогрессию, новую локацию с секретами и тактический режим Gambit."
+    },
+    {
+      "id": "zc-115-topic-forza-horizon-4",
+      "startPhraseId": "zc-115-p-00160",
+      "endPhraseId": "zc-115-p-00174",
+      "startSec": 2323.66,
+      "endSec": 2664.18,
+      "title": "Forza Horizon 4: идеальная автомобильная аркада",
+      "summary": "Демо Forza Horizon 4 впечатляет британскими пейзажами, сменой сезонов, HDR и улучшенной физикой; ведущие называют игру редким бесспорным хитом Microsoft, хотя спорят о пластиковой картинке и смысле Xbox при наличии ПК."
+    },
+    {
+      "id": "zc-115-topic-spider-man",
+      "startPhraseId": "zc-115-p-00175",
+      "endPhraseId": "zc-115-p-00235",
+      "startSec": 2670.42,
+      "endSec": 3587.94,
+      "title": "Marvel’s Spider-Man: отличный Паук в старом открытом мире",
+      "summary": "Большой спор о Spider-Man от Insomniac: ведущие хвалят полёты по Нью-Йорку, динамичные бои, взрослую историю и бережную работу с Marvel, но критикуют коллекционные задания, вышки и устаревшую структуру открытого мира."
+    },
+    {
+      "id": "zc-115-topic-division-platform-parity",
+      "startPhraseId": "zc-115-p-00236",
+      "endPhraseId": "zc-115-p-00263",
+      "startSec": 3587.94,
+      "endSec": 3923.04,
+      "title": "Как контракт Microsoft ограничил графику The Division",
+      "summary": "На примере The Division участники обсуждают маркетинговое соглашение, не позволявшее версии для PS4 выглядеть лучше Xbox One, и спорят о том, как слабая базовая консоль сдерживает графику мультиплатформенных игр."
+    },
+    {
+      "id": "zc-115-topic-nintendo-direct",
+      "startPhraseId": "zc-115-p-00269",
+      "endPhraseId": "zc-115-p-00338",
+      "startSec": 3947.36,
+      "endSec": 5156.4,
+      "title": "Nintendo Direct, платный онлайн и парад переизданий",
+      "summary": "Эмоциональный разбор Nintendo Switch Online, странных ограничений облачных сохранений, контроллеров для NES и Direct, где вместо ожидаемых Metroid Prime 4 и Bayonetta 3 показали множество старых игр и ремастеров."
+    },
+    {
+      "id": "zc-115-topic-battlefield-blackout",
+      "startPhraseId": "zc-115-p-00339",
+      "endPhraseId": "zc-115-p-00364",
+      "startSec": 5156.4,
+      "endSec": 5647.32,
+      "title": "Battlefield V против Blackout из Call of Duty",
+      "summary": "Бета Battlefield V разочаровывает медленным позиционным геймплеем и плохой читаемостью, тогда как Blackout неожиданно оказывается весёлой и динамичной королевской битвой, несмотря на технические и визуальные недостатки."
+    },
+    {
+      "id": "zc-115-topic-nielsen-superdata",
+      "startPhraseId": "zc-115-p-00365",
+      "endPhraseId": "zc-115-p-00370",
+      "startSec": 5647.76,
+      "endSec": 5766.82,
+      "title": "Nielsen покупает игровую аналитику SuperData",
+      "summary": "Покупка SuperData крупной исследовательской компанией Nielsen удивляет ведущих из-за сомнительных прогнозов сервиса; они предполагают, что покупателю нужен узнаваемый бренд и выход на рынок игровой аналитики."
+    },
+    {
+      "id": "zc-115-topic-loot-boxes-europe",
+      "startPhraseId": "zc-115-p-00371",
+      "endPhraseId": "zc-115-p-00387",
+      "startSec": 5766.82,
+      "endSec": 5944.26,
+      "title": "Европа запрещает лутбоксы",
+      "summary": "Ведущие обсуждают признание лутбоксов азартной механикой в европейских странах, отказ EA убрать карточные наборы и агрессивную монетизацию NBA 2K, за которую издатель просит вступиться самих игроков."
+    },
+    {
+      "id": "zc-115-topic-dark-pattern-apps",
+      "startPhraseId": "zc-115-p-00388",
+      "endPhraseId": "zc-115-p-00406",
+      "startSec": 5944.74,
+      "endSec": 6196.42,
+      "title": "Мошеннический дизайн в мобильных приложениях",
+      "summary": "История приложения Ancestry, подсовывавшего покупку за сто долларов в неделю под палец на Touch ID, переходит в разбор тёмных паттернов и способа скрывать настоящий интерфейс от ревьюеров App Store."
+    },
+    {
+      "id": "zc-115-topic-tesla-musk",
+      "startPhraseId": "zc-115-p-00407",
+      "endPhraseId": "zc-115-p-00447",
+      "startSec": 6197.02,
+      "endSec": 6788.96,
+      "title": "Tesla, конкуренты и непредсказуемый Илон Маск",
+      "summary": "На фоне Jaguar I-Pace и будущего электрокара Mercedes ведущие обсуждают кадровые проблемы Tesla, появление Маска у Джо Рогана, расследования SEC и возможные последствия его публичных импульсивных решений для Tesla и SpaceX."
+    },
+    {
+      "id": "zc-115-topic-google-battery-saver",
+      "startPhraseId": "zc-115-p-00448",
+      "endPhraseId": "zc-115-p-00461",
+      "startSec": 6816.44,
+      "endSec": 6953.38,
+      "title": "Google самовольно включил энергосбережение",
+      "summary": "Удалённое изменение настроек батареи на Android-смартфонах без согласия владельцев вызывает спор о границах контроля производителя над купленным устройством и недостаточности простого извинения после такого эксперимента."
+    },
+    {
+      "id": "zc-115-topic-henry-cavill-witcher",
+      "startPhraseId": "zc-115-p-00462",
+      "endPhraseId": "zc-115-p-00512",
+      "startSec": 6953.38,
+      "endSec": 7402.749,
+      "title": "Генри Кэвилл станет Геральтом Netflix",
+      "summary": "Назначение Генри Кэвилла на роль Геральта связывают с его уходом из образа Супермена, спорят о кастинге Цири и приходят к выводу, что актёр способен сыграть Ведьмака убедительнее старого польского сериала."
+    },
+    {
+      "id": "zc-115-topic-fake-reviews",
+      "startPhraseId": "zc-115-p-00515",
+      "endPhraseId": "zc-115-p-00523",
+      "startSec": 7462.769,
+      "endSec": 7674.869,
+      "title": "Первый тюремный срок за фальшивые отзывы",
+      "summary": "Итальянский продавец поддельных отзывов для отелей получил реальный срок после расследования TripAdvisor; ведущие разбирают, как накрутки вредят репутации и бизнес-модели площадки с пользовательскими оценками."
+    },
+    {
+      "id": "zc-115-topic-making-a-murderer",
+      "startPhraseId": "zc-115-p-00524",
+      "endPhraseId": "zc-115-p-00561",
+      "startSec": 7674.869,
+      "endSec": 8295.409,
+      "title": "Making a Murderer и сомнения в правосудии",
+      "summary": "Дима рекомендует документальный сериал о Стивене Эйвери, дважды оказавшемся в центре уголовных дел, и объясняет, как судебные записи, интервью и многолетняя хроника превращают реальное расследование в напряжённую историю."
+    },
+    {
+      "id": "zc-115-topic-hereditary",
+      "startPhraseId": "zc-115-p-00562",
+      "endPhraseId": "zc-115-p-00572",
+      "startSec": 8300.409,
+      "endSec": 8493.029,
+      "title": "«Реинкарнация»: красивый и по-настоящему страшный хоррор",
+      "summary": "Тимур советует Hereditary как редкий ужастик, который одновременно пугает и впечатляет постановкой: после смерти бабушки большая семья сталкивается с событиями, совсем не похожими на ожидаемые жанровые ходы."
+    },
+    {
+      "id": "zc-115-topic-wellington-paranormal",
+      "startPhraseId": "zc-115-p-00573",
+      "endPhraseId": "zc-115-p-00579",
+      "startSec": 8502.029,
+      "endSec": 8661.929,
+      "title": "Почему «Паранормальный Веллингтон» не смешит",
+      "summary": "Спин-офф «Реальных упырей» о незадачливых полицейских разочаровывает ведущих: герои кажутся просто глупыми, а шутки слишком старательными и прямолинейными, чтобы комедия работала."
+    },
+    {
+      "id": "zc-115-topic-oceans-eight",
+      "startPhraseId": "zc-115-p-00580",
+      "endPhraseId": "zc-115-p-00590",
+      "startSec": 8674.209,
+      "endSec": 8860.589,
+      "title": "«Восемь подруг Оушена»: хороший актёрский состав, слабый сценарий",
+      "summary": "Женский перезапуск серии об ограблениях называют необязательным и скучным: актрисы справляются со своими ролями, но истории не хватает интриги, темпа и яркой идеи за пределами короткой сцены самого ограбления."
+    },
+    {
+      "id": "zc-115-topic-workflow-tools",
+      "startPhraseId": "zc-115-p-00591",
+      "endPhraseId": "zc-115-p-00616",
+      "startSec": 8860.589,
+      "endSec": 9265.809,
+      "title": "Todoist и полезные программы для ПК-игроков",
+      "summary": "В рубрике Workflow советуют менеджер задач Todoist, единое управление RGB-подсветкой Aurora, подключение DualShock через DS4Windows, диагностику видеокарт в MSI Afterburner и виртуальный объёмный звук Razer Surround."
+    },
+    {
+      "id": "zc-115-topic-grimbergen",
+      "startPhraseId": "zc-115-p-00617",
+      "endPhraseId": "zc-115-p-00625",
+      "startSec": 9265.809,
+      "endSec": 9349.935,
+      "title": "Пиво недели: Grimbergen Double-Ambrée",
+      "summary": "Возвращение пивной рубрики посвящено доступному бельгийскому Grimbergen Double-Ambrée: ведущие описывают его как неидеальный, но достойный вариант в бельгийском стиле, который легко найти в обычных магазинах."
+    },
+    {
+      "id": "zc-115-topic-dtf-articles",
+      "startPhraseId": "zc-115-p-00631",
+      "endPhraseId": "zc-115-p-00645",
+      "startSec": 9403.235,
+      "endSec": 9650.755,
+      "title": "Статьи недели: пиксель-арт, геймдизайн и история World of Warcraft",
+      "summary": "Подборка материалов о создании правильного пиксель-арта, балансе игровых испытаний, студии, финансирующей авторские игры корпоративными заказами, и эволюции механик, графики и разработки World of Warcraft."
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "zc-115-exclusion-intro",
+      "startPhraseId": "zc-115-p-00000",
+      "endPhraseId": "zc-115-p-00007",
+      "startSec": 0,
+      "endSec": 139.3,
+      "kind": "intro",
+      "reason": "Холодное открытие с шутками про МКС, музыкальными вставками и представлением ведущих."
+    },
+    {
+      "id": "zc-115-exclusion-replay-ad",
+      "startPhraseId": "zc-115-p-00008",
+      "endPhraseId": "zc-115-p-00009",
+      "startSec": 142,
+      "endSec": 181.58,
+      "kind": "ad",
+      "reason": "Рекламная интеграция петербургского гейм-кафе Re:play."
+    },
+    {
+      "id": "zc-115-exclusion-apple-transition",
+      "startPhraseId": "zc-115-p-00121",
+      "endPhraseId": "zc-115-p-00121",
+      "startSec": 1600.36,
+      "endSec": 1602.72,
+      "kind": "technical-pause",
+      "reason": "Короткая реплика о повторном проигрывании перед следующей новостью."
+    },
+    {
+      "id": "zc-115-exclusion-destiny-transition",
+      "startPhraseId": "zc-115-p-00141",
+      "endPhraseId": "zc-115-p-00141",
+      "startSec": 1873.76,
+      "endSec": 1875.52,
+      "kind": "technical-pause",
+      "reason": "Обрывочная служебная реплика о длительности записи перед темой Destiny."
+    },
+    {
+      "id": "zc-115-exclusion-nintendo-transition",
+      "startPhraseId": "zc-115-p-00264",
+      "endPhraseId": "zc-115-p-00268",
+      "startSec": 3923.04,
+      "endSec": 3947.36,
+      "kind": "technical-pause",
+      "reason": "Перебивки, настройка разговора и несодержательная перепалка при переходе к Nintendo Direct."
+    },
+    {
+      "id": "zc-115-exclusion-witcher-song",
+      "startPhraseId": "zc-115-p-00513",
+      "endPhraseId": "zc-115-p-00514",
+      "startSec": 7402.769,
+      "endSec": 7448.249,
+      "kind": "music",
+      "reason": "Шуточная песенная вставка про Ведьмака после обсуждения кастинга."
+    },
+    {
+      "id": "zc-115-exclusion-camera-pause",
+      "startPhraseId": "zc-115-p-00626",
+      "endPhraseId": "zc-115-p-00630",
+      "startSec": 9349.935,
+      "endSec": 9376.615,
+      "kind": "technical-pause",
+      "reason": "Обсуждение зависшей камеры Тимура и переход к следующей рубрике."
+    },
+    {
+      "id": "zc-115-exclusion-outro-song",
+      "startPhraseId": "zc-115-p-00646",
+      "endPhraseId": "zc-115-p-00647",
+      "startSec": 9677.755,
+      "endSec": 9724.215,
+      "kind": "music",
+      "reason": "Песенная вставка перед завершением выпуска."
+    },
+    {
+      "id": "zc-115-exclusion-donations",
+      "startPhraseId": "zc-115-p-00648",
+      "endPhraseId": "zc-115-p-00652",
+      "startSec": 9737.755,
+      "endSec": 9821.275,
+      "kind": "donations",
+      "reason": "Финальное объявление поддержки подкаста и перечисление сентябрьских патронов."
+    },
+    {
+      "id": "zc-115-exclusion-thanks",
+      "startPhraseId": "zc-115-p-00653",
+      "endPhraseId": "zc-115-p-00654",
+      "startSec": 9822.475,
+      "endSec": 9867.315,
+      "kind": "thanks",
+      "reason": "Благодарность слушателям, извинение за пропуск недели и прощание ведущих."
+    },
+    {
+      "id": "zc-115-exclusion-final-music",
+      "startPhraseId": "zc-115-p-00655",
+      "endPhraseId": "zc-115-p-00656",
+      "startSec": 9881.275,
+      "endSec": 9944.275,
+      "kind": "music",
+      "reason": "Финальная заставка и повторяющаяся фраза «Продолжение следует»."
+    }
+  ]
+}

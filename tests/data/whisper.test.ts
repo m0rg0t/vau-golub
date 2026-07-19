@@ -75,15 +75,18 @@ describe("Whisper contract", () => {
       ).segments[0].end,
     ).toBe(10);
 
-    expect(() =>
+    expect(
       validateWhisperResponse(
         {
-          text: "bad",
-          segments: [{ start: 10, end: 12, text: "После файла." }],
+          text: "end tail",
+          segments: [
+            { start: 9.5, end: 12, text: "Конец." },
+            { start: 10, end: 12, text: "После файла." },
+          ],
         },
         10,
-      ),
-    ).toThrow("starts after its chunk");
+      ).segments,
+    ).toEqual([{ start: 9.5, end: 10, text: "Конец." }]);
   });
 
   it("merges zero-duration punctuation and drops untimed speech", () => {

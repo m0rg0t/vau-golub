@@ -73,9 +73,7 @@ export function validateWhisperResponse(
       continue;
     }
     if (segment.start >= chunkDurationSec) {
-      throw new Error(
-        `Whisper segment starts after its chunk: ${segment.start}s`,
-      );
+      continue;
     }
     if (segment.end > chunkDurationSec + 30) {
       throw new Error(

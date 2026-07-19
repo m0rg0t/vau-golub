@@ -22,7 +22,11 @@ Works for both Claude Code and Codex; commands run from the repo root.
 
 1. **Select episodes** — metadata into `data/episodes/<id>/`:
    `npm run data:select` (or `data:select:extra` for additional picks; `data:select:check` to verify).
-   Add a cover as `public/covers/<id>.jpg`.
+   Add a cover as `public/covers/<id>.jpg`. If the artwork is letterboxed in a
+   white/light square, trim the bars first (detect with
+   `ffmpeg -loop 1 -t 0.3 -i cover.jpg -vf "negate,cropdetect=limit=24:round=2:reset=0" -f null -`,
+   then apply the reported `crop=` with `-q:v 2`); the UI shows covers at their
+   natural aspect ratio. Never trim full-square art (e.g. plain logo covers).
 2. **Fetch audio** — `npm run data:fetch` (downloads into `.cache/`).
 3. **Split into chunks** — `npm run data:split`.
 4. **Transcribe** (resumable — completed chunks in `.cache/whisper/<id>/` are skipped on rerun):

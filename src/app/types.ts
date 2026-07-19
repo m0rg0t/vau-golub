@@ -23,14 +23,23 @@ export interface CatalogItem {
   endSec: number;
 }
 
+export interface CatalogItemSet {
+  path: string;
+  count: number;
+}
+
 export interface Catalog {
-  schemaVersion: 1;
+  schemaVersion: 2;
   fingerprint: string;
   episodes: CatalogEpisode[];
-  items: {
-    topics: CatalogItem[];
-    minute: CatalogItem[];
-  };
+  itemSets: Record<ListeningMode, CatalogItemSet>;
+}
+
+export interface ItemsFile {
+  schemaVersion: 1;
+  fingerprint: string;
+  mode: ListeningMode;
+  items: CatalogItem[];
 }
 
 export interface TranscriptPhrase {

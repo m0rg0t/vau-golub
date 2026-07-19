@@ -9,23 +9,29 @@ test("keeps shell and transcript data available offline without caching MP3", as
     timeout: 15_000,
   });
 
-  const cachedUrls = await page.evaluate(async () => {
-    await navigator.serviceWorker.ready;
-    await new Promise((resolve) => setTimeout(resolve, 500));
-    const names = await caches.keys();
-    const urls: string[] = [];
-    for (const name of names) {
-      const cache = await caches.open(name);
-      urls.push(...(await cache.keys()).map((request) => request.url));
-    }
-    return urls;
-  });
-  expect(cachedUrls.some((url) => url.endsWith("/data/catalog.json"))).toBe(
-    true,
-  );
-  expect(cachedUrls.some((url) => url.endsWith("/data/episodes/zc-02.json"))).toBe(
-    true,
-  );
+  const collectCachedUrls = () =>
+    page.evaluate(async () => {
+      await navigator.serviceWorker.ready;
+      const names = await caches.keys();
+      const urls: string[] = [];
+      for (const name of names) {
+        const cache = await caches.open(name);
+        urls.push(...(await cache.keys()).map((request) => request.url));
+      }
+      return urls;
+    });
+
+  // The dataset is cached in the background during browser idle time.
+  await expect
+    .poll(collectCachedUrls, { timeout: 30_000 })
+    .toEqual(
+      expect.arrayContaining([
+        expect.stringContaining("/data/catalog.json"),
+        expect.stringContaining("/data/items-topics.json"),
+        expect.stringContaining("/data/episodes/zc-02.json"),
+      ]),
+    );
+  const cachedUrls = await collectCachedUrls();
   expect(cachedUrls.some((url) => url.toLowerCase().endsWith(".mp3"))).toBe(
     false,
   );

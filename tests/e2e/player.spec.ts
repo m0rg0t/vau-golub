@@ -18,7 +18,10 @@ test("switches modes and preserves minute history", async ({ page }) => {
 
 test("opens source information and the full transcript", async ({ page }) => {
   await page.goto("/");
-  await expect(page.getByRole("button", { name: "Слушать" })).toBeEnabled();
+  // Catalog → items → episode data load in sequence on a cold cache.
+  await expect(page.getByRole("button", { name: "Слушать" })).toBeEnabled({
+    timeout: 15_000,
+  });
 
   await page.getByRole("button", { name: "Откуда этот фрагмент?" }).click();
   const source = page.getByRole("dialog");

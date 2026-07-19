@@ -67,8 +67,38 @@ async function main(): Promise<void> {
   }
 
   const fingerprint = textSha256(JSON.stringify(payloads));
+  // Playback items ship as separate per-mode files so the client only pays for
+  // the mode it is listening to; the paths below are also preloaded in
+  // app/layout.tsx — keep them in sync.
+  const itemSets = {
+    topics: payloads.flatMap((payload) =>
+      payload.editorial.topics.map((topic) => ({
+        id: topic.id,
+        episodeId: payload.metadata.id,
+        kind: "topic" as const,
+        title: topic.title,
+        description: topic.summary,
+        startSec: topic.startSec,
+        endSec: topic.endSec,
+      })),
+    ),
+    minute: payloads.flatMap((payload) =>
+      payload.minuteClips.map((clip, index) => ({
+        id: clip.id,
+        episodeId: payload.metadata.id,
+        kind: "minute" as const,
+        title: `Минута ${index + 1}`,
+        description:
+          clip.text.length > 220
+            ? `${clip.text.slice(0, 217).trimEnd()}…`
+            : clip.text,
+        startSec: clip.startSec,
+        endSec: clip.endSec,
+      })),
+    ),
+  };
   const catalog = {
-    schemaVersion: 1,
+    schemaVersion: 2,
     fingerprint,
     episodes: payloads.map((payload) => ({
       id: payload.metadata.id,
@@ -82,34 +112,23 @@ async function main(): Promise<void> {
       topicCount: payload.editorial.topics.length,
       minuteClipCount: payload.minuteClips.length,
     })),
-    items: {
-      topics: payloads.flatMap((payload) =>
-        payload.editorial.topics.map((topic) => ({
-          id: topic.id,
-          episodeId: payload.metadata.id,
-          kind: "topic" as const,
-          title: topic.title,
-          description: topic.summary,
-          startSec: topic.startSec,
-          endSec: topic.endSec,
-        })),
-      ),
-      minute: payloads.flatMap((payload) =>
-        payload.minuteClips.map((clip, index) => ({
-          id: clip.id,
-          episodeId: payload.metadata.id,
-          kind: "minute" as const,
-          title: `Минута ${index + 1}`,
-          description:
-            clip.text.length > 220
-              ? `${clip.text.slice(0, 217).trimEnd()}…`
-              : clip.text,
-          startSec: clip.startSec,
-          endSec: clip.endSec,
-        })),
-      ),
+    itemSets: {
+      topics: {
+        path: "/data/items-topics.json",
+        count: itemSets.topics.length,
+      },
+      minute: {
+        path: "/data/items-minute.json",
+        count: itemSets.minute.length,
+      },
     },
   };
+  for (const mode of ["topics", "minute"] as const) {
+    await writeJsonAtomic(
+      resolve(projectRoot, "public", "data", `items-${mode}.json`),
+      { schemaVersion: 1, fingerprint, mode, items: itemSets[mode] },
+    );
+  }
   await writeJsonAtomic(
     resolve(projectRoot, "public", "data", "catalog.json"),
     catalog,

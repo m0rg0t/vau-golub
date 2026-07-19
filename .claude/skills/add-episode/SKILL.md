@@ -53,7 +53,8 @@ Works for both Claude Code and Codex; commands run from the repo root.
 ## Finalization (after the whole batch)
 
 1. `TMPDIR=/private/tmp npm run data:validate -- --all`
-2. `TMPDIR=/private/tmp npm run data:build -- --all` — rebuilds the playback index/catalog.
+2. `TMPDIR=/private/tmp npm run data:build -- --all` — rebuilds the playback catalog
+   (`public/data/catalog.json` plus the per-mode `public/data/items-*.json` files).
 3. Update episode/topic/minute counts in `README.md` from the validator output.
 4. Verify: `npm run typecheck && npm run lint && npm test`
    (and `npm run test:e2e:production` when touching playback-critical data).

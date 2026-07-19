@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { preload } from "react-dom";
 import "./globals.css";
 
 import { BRAND } from "@/src/app/brand";
@@ -23,6 +24,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Start the data downloads while the JS bundle is still loading. The item
+  // paths mirror what scripts/build-playback-index.ts emits.
+  preload("/data/catalog.json", { as: "fetch", crossOrigin: "anonymous" });
+  preload("/data/items-topics.json", { as: "fetch", crossOrigin: "anonymous" });
   return (
     <html lang="ru">
       <body>{children}</body>

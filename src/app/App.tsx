@@ -48,6 +48,7 @@ import type {
   Catalog,
   CatalogItem,
   EpisodeData,
+  ItemsFile,
   ListeningMode,
   TranscriptPhrase,
 } from "./types";
@@ -62,6 +63,32 @@ const EMPTY_QUEUE = { topics: null, minute: null } satisfies Record<
   ListeningMode,
   QueueState<string> | null
 >;
+const EMPTY_ITEMS = { topics: null, minute: null } satisfies Record<
+  ListeningMode,
+  CatalogItem[] | null
+>;
+
+function otherMode(mode: ListeningMode): ListeningMode {
+  return mode === "topics" ? "minute" : "topics";
+}
+
+function scheduleIdle(callback: () => void, timeoutMs: number): () => void {
+  if (typeof window.requestIdleCallback === "function") {
+    const handle = window.requestIdleCallback(callback, { timeout: timeoutMs });
+    return () => window.cancelIdleCallback(handle);
+  }
+  const handle = window.setTimeout(callback, timeoutMs);
+  return () => window.clearTimeout(handle);
+}
+
+function connectionAllowsPrefetch(): boolean {
+  const connection = (
+    navigator as Navigator & {
+      connection?: { saveData?: boolean; effectiveType?: string };
+    }
+  ).connection;
+  return !connection?.saveData && !connection?.effectiveType?.includes("2g");
+}
 
 function formatTime(seconds: number): string {
   const safeSeconds = Math.max(0, Math.floor(seconds));
@@ -88,9 +115,9 @@ function readStoredJson(key: string): unknown {
 function datasetFor(
   catalog: Catalog,
   mode: ListeningMode,
+  items: CatalogItem[] | null,
 ): QueueDataset<string> | null {
-  const items = catalog.items[mode === "topics" ? "topics" : "minute"];
-  if (items.length === 0) {
+  if (!items || items.length === 0) {
     return null;
   }
   return {
@@ -264,6 +291,10 @@ export function App() {
   const [catalog, setCatalog] = useState<Catalog | null>(null);
   const [catalogError, setCatalogError] = useState<string | null>(null);
   const [catalogRequest, setCatalogRequest] = useState(0);
+  const [itemsByMode, setItemsByMode] =
+    useState<Record<ListeningMode, CatalogItem[] | null>>(EMPTY_ITEMS);
+  const [itemsError, setItemsError] = useState<string | null>(null);
+  const [itemsRequest, setItemsRequest] = useState(0);
   const [mode, setMode] = useState<ListeningMode>("topics");
   const [queues, setQueues] =
     useState<Record<ListeningMode, QueueState<string> | null>>(EMPTY_QUEUE);
@@ -349,23 +380,6 @@ export function App() {
         return (await response.json()) as Catalog;
       })
       .then((nextCatalog) => {
-        const nextQueues: Record<
-          ListeningMode,
-          QueueState<string> | null
-        > = {
-          topics: null,
-          minute: null,
-        };
-        for (const nextMode of ["topics", "minute"] as const) {
-          const dataset = datasetFor(nextCatalog, nextMode);
-          if (dataset) {
-            nextQueues[nextMode] = restoreQueueState(
-              dataset,
-              readStoredJson(`${STORAGE_PREFIX}:queue:${nextMode}`),
-            );
-          }
-        }
-        setQueues(nextQueues);
         setCatalog(nextCatalog);
       })
       .catch((error: unknown) => {
@@ -377,6 +391,78 @@ export function App() {
       });
     return () => controller.abort();
   }, [catalogRequest]);
+
+  const loadItems = useCallback(
+    (targetMode: ListeningMode, signal?: AbortSignal) => {
+      if (!catalog) {
+        return Promise.resolve();
+      }
+      return fetch(catalog.itemSets[targetMode].path, { signal })
+        .then(async (response) => {
+          if (!response.ok) {
+            throw new Error(`Список ответил кодом ${response.status}`);
+          }
+          return (await response.json()) as ItemsFile;
+        })
+        .then((itemsFile) => {
+          setItemsByMode((previous) =>
+            previous[targetMode]
+              ? previous
+              : { ...previous, [targetMode]: itemsFile.items },
+          );
+          setQueues((previous) => {
+            const dataset = datasetFor(catalog, targetMode, itemsFile.items);
+            if (previous[targetMode] || !dataset) {
+              return previous;
+            }
+            return {
+              ...previous,
+              [targetMode]: restoreQueueState(
+                dataset,
+                readStoredJson(`${STORAGE_PREFIX}:queue:${targetMode}`),
+              ),
+            };
+          });
+        });
+    },
+    [catalog],
+  );
+
+  useEffect(() => {
+    if (!catalog || itemsByMode[mode]) {
+      return;
+    }
+    const controller = new AbortController();
+    loadItems(mode, controller.signal).catch((error: unknown) => {
+      if (!(error instanceof DOMException && error.name === "AbortError")) {
+        setItemsError(
+          error instanceof Error
+            ? error.message
+            : "Не удалось загрузить фрагменты",
+        );
+      }
+    });
+    return () => controller.abort();
+  }, [catalog, itemsByMode, itemsRequest, loadItems, mode]);
+
+  // Warm the inactive mode during idle time so switching feels instant.
+  useEffect(() => {
+    const target = otherMode(mode);
+    if (!catalog || !online || itemsByMode[target]) {
+      return;
+    }
+    if (!connectionAllowsPrefetch()) {
+      return;
+    }
+    const controller = new AbortController();
+    const cancelIdle = scheduleIdle(() => {
+      void loadItems(target, controller.signal).catch(() => undefined);
+    }, 4000);
+    return () => {
+      cancelIdle();
+      controller.abort();
+    };
+  }, [catalog, itemsByMode, loadItems, mode, online]);
 
   useEffect(() => {
     if (!catalog) {
@@ -404,23 +490,23 @@ export function App() {
     );
   }, [playback.volume]);
 
+  const activeItems = itemsByMode[mode];
   const activeQueue = queues[mode];
   const currentItemId = activeQueue ? currentQueueItem(activeQueue) : null;
-  const currentItem = useMemo(
-    () =>
-      catalog && currentItemId
-        ? catalog.items[mode === "topics" ? "topics" : "minute"].find(
-            (item) => item.id === currentItemId,
-          ) ?? null
-        : null,
-    [catalog, currentItemId, mode],
+  const itemById = useMemo(
+    () => new Map((activeItems ?? []).map((item) => [item.id, item])),
+    [activeItems],
   );
-  const catalogEpisode = useMemo(
-    () =>
-      catalog?.episodes.find((item) => item.id === currentItem?.episodeId) ??
-      null,
-    [catalog, currentItem],
+  const episodeById = useMemo(
+    () => new Map((catalog?.episodes ?? []).map((item) => [item.id, item])),
+    [catalog],
   );
+  const currentItem = currentItemId
+    ? itemById.get(currentItemId) ?? null
+    : null;
+  const catalogEpisode = currentItem
+    ? episodeById.get(currentItem.episodeId) ?? null
+    : null;
 
   useEffect(() => {
     document.title = currentItem
@@ -437,21 +523,12 @@ export function App() {
     }
     return activeQueue.remaining[0] ?? null;
   }, [activeQueue]);
-  const nextCatalogItem = useMemo(
-    () =>
-      catalog && nextItemId
-        ? catalog.items[mode === "topics" ? "topics" : "minute"].find(
-            (item) => item.id === nextItemId,
-          ) ?? null
-        : null,
-    [catalog, mode, nextItemId],
-  );
-  const nextCatalogEpisode = useMemo(
-    () =>
-      catalog?.episodes.find((item) => item.id === nextCatalogItem?.episodeId) ??
-      null,
-    [catalog, nextCatalogItem],
-  );
+  const nextCatalogItem = nextItemId
+    ? itemById.get(nextItemId) ?? null
+    : null;
+  const nextCatalogEpisode = nextCatalogItem
+    ? episodeById.get(nextCatalogItem.episodeId) ?? null
+    : null;
 
   const moveQueue = useCallback(
     (direction: "back" | "next") => {
@@ -460,7 +537,7 @@ export function App() {
       }
       setQueues((previous) => {
         const state = previous[mode];
-        const dataset = datasetFor(catalog, mode);
+        const dataset = datasetFor(catalog, mode, itemsByMode[mode]);
         if (!state || !dataset || (direction === "back" && !canGoBack(state))) {
           return previous;
         }
@@ -473,7 +550,7 @@ export function App() {
         };
       });
     },
-    [catalog, mode],
+    [catalog, itemsByMode, mode],
   );
 
   useEffect(() => {
@@ -701,6 +778,110 @@ export function App() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [dispatchPlayback, playback.currentTimeSec, playback.playIntent]);
 
+  // Lock-screen and hardware-key controls for the installed PWA.
+  useEffect(() => {
+    if (!("mediaSession" in navigator)) {
+      return;
+    }
+    if (currentItem && catalogEpisode) {
+      navigator.mediaSession.metadata = new MediaMetadata({
+        title: currentItem.title,
+        artist: `Завтракаст №${catalogEpisode.number} · ${catalogEpisode.year}`,
+        album: BRAND.full,
+        artwork: [
+          {
+            src: catalogEpisode.localCoverPath,
+            sizes: "512x512",
+            type: "image/jpeg",
+          },
+        ],
+      });
+    } else {
+      navigator.mediaSession.metadata = null;
+    }
+  }, [catalogEpisode, currentItem]);
+
+  useEffect(() => {
+    if (!("mediaSession" in navigator)) {
+      return;
+    }
+    navigator.mediaSession.playbackState =
+      playback.status === "playing" ? "playing" : "paused";
+  }, [playback.status]);
+
+  useEffect(() => {
+    if (!("mediaSession" in navigator)) {
+      return;
+    }
+    const seekBy = (offsetSec: number) =>
+      dispatchPlayback({
+        type: "seek",
+        timeSec: playbackRef.current.currentTimeSec + offsetSec,
+      });
+    const handlers: Array<
+      [MediaSessionAction, MediaSessionActionHandler]
+    > = [
+      ["play", () => dispatchPlayback({ type: "play" })],
+      ["pause", () => dispatchPlayback({ type: "pause" })],
+      ["nexttrack", () => dispatchPlayback({ type: "skip" })],
+      ["previoustrack", () => moveQueue("back")],
+      ["seekbackward", (details) => seekBy(-(details.seekOffset ?? 10))],
+      ["seekforward", (details) => seekBy(details.seekOffset ?? 10)],
+    ];
+    for (const [action, handler] of handlers) {
+      try {
+        navigator.mediaSession.setActionHandler(action, handler);
+      } catch {
+        // The browser may not support every action.
+      }
+    }
+    return () => {
+      for (const [action] of handlers) {
+        try {
+          navigator.mediaSession.setActionHandler(action, null);
+        } catch {
+          // Ignore unsupported actions on cleanup too.
+        }
+      }
+    };
+  }, [dispatchPlayback, moveQueue]);
+
+  // Once the catalog is known, hand the full dataset to the service worker
+  // during idle time so the player keeps working offline.
+  useEffect(() => {
+    if (
+      !catalog ||
+      !online ||
+      !("serviceWorker" in navigator) ||
+      !connectionAllowsPrefetch()
+    ) {
+      return;
+    }
+    let cancelled = false;
+    const cancelIdle = scheduleIdle(() => {
+      const urls = [
+        "/data/catalog.json",
+        ...Object.values(catalog.itemSets).map((itemSet) => itemSet.path),
+        ...catalog.episodes.flatMap((catalogItem) => [
+          catalogItem.dataPath,
+          catalogItem.dataPath.replace(/\.json$/, ".vtt"),
+          catalogItem.localCoverPath,
+        ]),
+      ];
+      void navigator.serviceWorker.ready
+        .then((registration) => {
+          if (!cancelled) {
+            registration.active?.postMessage({ type: "CACHE_URLS", urls });
+          }
+        })
+        .catch(() => undefined);
+    }, 3000);
+    return () => {
+      cancelled = true;
+      cancelIdle();
+    };
+  }, [catalog, online]);
+
   const activePhrase = useMemo(
     () =>
       episode
@@ -723,6 +904,7 @@ export function App() {
     }
     dispatchPlayback({ type: "pause" });
     setMode(nextMode);
+    setItemsError(null);
     setSourceOpen(false);
     setTranscriptOpen(false);
   }
@@ -1033,7 +1215,7 @@ export function App() {
                 </button>
               </div>
             </>
-          ) : (
+          ) : activeItems ? (
             <div className="empty-mode" role="status">
               <Radio aria-hidden="true" />
               <h2 id="current-title">На этой частоте пока тихо</h2>
@@ -1041,6 +1223,29 @@ export function App() {
                 Для выбранного режима ещё нет подготовленных фрагментов.
                 Попробуйте другой.
               </p>
+            </div>
+          ) : itemsError ? (
+            <div className="empty-mode" role="alert">
+              <WifiOff aria-hidden="true" />
+              <h2 id="current-title">Частота не отвечает</h2>
+              <p>{itemsError}</p>
+              <button
+                className="primary-button"
+                type="button"
+                onClick={() => {
+                  setItemsError(null);
+                  setItemsRequest((value) => value + 1);
+                }}
+              >
+                <RefreshCw aria-hidden="true" />
+                Повторить
+              </button>
+            </div>
+          ) : (
+            <div className="empty-mode" role="status" aria-busy="true">
+              <LoaderCircle className="spinner" aria-hidden="true" />
+              <h2 id="current-title">Настраиваем частоту</h2>
+              <p>Загружаем фрагменты для этого режима…</p>
             </div>
           )}
         </div>

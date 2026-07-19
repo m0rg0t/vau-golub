@@ -33,6 +33,13 @@ describe("static application shell", () => {
     expect(html).toContain("Ловим волну");
     expect(html).toContain("Перебираем годы, темы и голубей…");
     expect(html).toContain('lang="ru"');
+    // Data downloads start from the HTML itself, before the JS bundle runs.
+    expect(html).toMatch(
+      /<link[^>]+rel="preload"[^>]+href="\/data\/catalog\.json"/,
+    );
+    expect(html).toMatch(
+      /<link[^>]+rel="preload"[^>]+href="\/data\/items-topics\.json"/,
+    );
     expect(html).not.toContain("codex-preview");
     expect(html).not.toContain("react-loading-skeleton");
   });

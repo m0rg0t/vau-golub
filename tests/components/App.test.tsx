@@ -12,10 +12,10 @@ import {
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
 import { App } from "../../src/app/App";
-import type { Catalog, EpisodeData } from "../../src/app/types";
+import type { Catalog, EpisodeData, ItemsFile } from "../../src/app/types";
 
 const catalog: Catalog = {
-  schemaVersion: 1,
+  schemaVersion: 2,
   fingerprint: "test-catalog",
   episodes: [
     {
@@ -30,30 +30,44 @@ const catalog: Catalog = {
       minuteClipCount: 1,
     },
   ],
-  items: {
-    topics: [
-      {
-        id: "topic-1",
-        episodeId: "zc-02",
-        kind: "topic",
-        title: "Скандал года",
-        description: "Кодзима и Конами подводят итоги.",
-        startSec: 60,
-        endSec: 180,
-      },
-    ],
-    minute: [
-      {
-        id: "minute-1",
-        episodeId: "zc-02",
-        kind: "minute",
-        title: "Минута 1",
-        description: "Одна законченная мысль.",
-        startSec: 200,
-        endSec: 260,
-      },
-    ],
+  itemSets: {
+    topics: { path: "/data/items-topics.json", count: 1 },
+    minute: { path: "/data/items-minute.json", count: 1 },
   },
+};
+
+const topicsFile: ItemsFile = {
+  schemaVersion: 1,
+  fingerprint: "test-catalog",
+  mode: "topics",
+  items: [
+    {
+      id: "topic-1",
+      episodeId: "zc-02",
+      kind: "topic",
+      title: "Скандал года",
+      description: "Кодзима и Конами подводят итоги.",
+      startSec: 60,
+      endSec: 180,
+    },
+  ],
+};
+
+const minuteFile: ItemsFile = {
+  schemaVersion: 1,
+  fingerprint: "test-catalog",
+  mode: "minute",
+  items: [
+    {
+      id: "minute-1",
+      episodeId: "zc-02",
+      kind: "minute",
+      title: "Минута 1",
+      description: "Одна законченная мысль.",
+      startSec: 200,
+      endSec: 260,
+    },
+  ],
 };
 
 const episode: EpisodeData = {
@@ -96,7 +110,13 @@ describe("radio app", () => {
       "fetch",
       vi.fn((input: RequestInfo | URL) => {
         const url = String(input);
-        const payload = url.endsWith("catalog.json") ? catalog : episode;
+        const payload = url.endsWith("catalog.json")
+          ? catalog
+          : url.endsWith("items-topics.json")
+            ? topicsFile
+            : url.endsWith("items-minute.json")
+              ? minuteFile
+              : episode;
         return Promise.resolve(
           new Response(JSON.stringify(payload), {
             status: 200,

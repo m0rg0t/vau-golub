@@ -86,7 +86,7 @@ describe("Whisper contract", () => {
     ).toThrow("starts after its chunk");
   });
 
-  it("merges zero-duration punctuation without accepting empty speech", () => {
+  it("merges zero-duration punctuation and drops untimed speech", () => {
     const response = validateWhisperResponse(
       {
         text: "Фраза!",
@@ -101,15 +101,18 @@ describe("Whisper contract", () => {
       { start: 1, end: 2, text: "Фраза!" },
     ]);
 
-    expect(() =>
+    expect(
       validateWhisperResponse(
         {
           text: "Слово",
-          segments: [{ start: 2, end: 2, text: "Слово" }],
+          segments: [
+            { start: 1, end: 2, text: "Контекст." },
+            { start: 2, end: 2, text: "Слово" },
+          ],
         },
         10,
-      ),
-    ).toThrow("zero-duration segment must be punctuation");
+      ).segments,
+    ).toEqual([{ start: 1, end: 2, text: "Контекст." }]);
   });
 
   it("drops a zero-duration duplicate found in recent context", () => {

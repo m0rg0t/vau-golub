@@ -16,12 +16,15 @@
     "data:split": "tsx scripts/split-audio.ts",
     "data:transcribe": "tsx scripts/transcribe.ts",
     "data:normalize": "tsx scripts/normalize-transcript.ts",
+    "data:validate": "tsx scripts/validate-data.ts",
+    "data:build": "tsx scripts/build-playback-index.ts",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "typecheck": "tsc --noEmit",
     "test": "npm run build && vitest run",
     "test:unit": "vitest run",
     "test:watch": "vitest",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "test:e2e:production": "npm run build && PLAYWRIGHT_PRODUCTION=1 playwright test"
   },
   "dependencies": {
     "lucide-react": "^1.25.0",

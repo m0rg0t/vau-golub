@@ -4,7 +4,7 @@
     "type": "wordpress",
     "apiUrl": "https://zavtracast.ru/wp-json/wp/v2/posts",
     "categoryId": 2,
-    "snapshotAt": "2026-07-20T02:11:15.848Z"
+    "snapshotAt": "2026-07-20T05:54:18.537Z"
   },
   "selectionAlgorithm": "curated-extra-v1",
   "episodes": [
@@ -187,6 +187,26 @@
       "number": 362,
       "publishedAt": "2025-11-07T16:58:09+03:00",
       "pageUrl": "https://zavtracast.ru/362.html"
+    },
+    {
+      "year": 2016,
+      "id": "zc-20",
+      "sourceId": 190,
+      "sourceGuid": "http://zavtracast.ru/?p=190",
+      "slug": "20",
+      "number": 20,
+      "publishedAt": "2016-05-09T23:32:25+03:00",
+      "pageUrl": "https://zavtracast.ru/20.html"
+    },
+    {
+      "year": 2022,
+      "id": "zc-250",
+      "sourceId": 3372,
+      "sourceGuid": "https://zavtracast.ru/?p=3372",
+      "slug": "250",
+      "number": 250,
+      "publishedAt": "2022-03-18T17:46:32+03:00",
+      "pageUrl": "https://zavtracast.ru/250.html"
     }
   ]
 }

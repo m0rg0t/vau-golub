@@ -1,0 +1,802 @@
+[
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-02",
+    "url": "https://zavtracast.ru/02.html",
+    "name": "Итоговый",
+    "episodeNumber": 2,
+    "datePublished": "2015-12-25T17:46:31+03:00",
+    "description": "Мы решили не ждать января, потому что — к нашему удивлению — первый эпизод Завтракаста оказался популярным, а десятки людей начали спрашивать нас: “Когда же следующий выпуск?” Как это делают многие интернет-проекты, мы тоже решили подвести итоги 2015 года. Но мы не ищем легких путей, а потому у нас среди пресловутых “итогов” можно найти самые разные номинации, начиная от банальных, вроде игры года, заканчивая такими, как “день недели года”. Кроме того, формат подкаста все больше движется том направлении, которое мы задумали изначально — перескакивание с темы на тему в быстром zap-порядке, чтобы вы не засыпали под наши разговоры и слушали внимательно. И куда же без сюрпризов, все-таки новый год на носу! Так что, да, в этом выпуске много приятных неожиданностей. С Новым Годом, и да прибудет с вами сила! Дима, Тимур и еще всякие люди.",
+    "image": "https://vau-golub.ru/covers/zc-02.jpg",
+    "timeRequired": "PT1H49M50S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast-002_mixdown.mp3",
+      "duration": "PT1H49M50S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-08",
+    "url": "https://zavtracast.ru/08.html",
+    "name": "Эксклюзивный",
+    "episodeNumber": 8,
+    "datePublished": "2016-02-13T18:19:28+03:00",
+    "description": "Завтра уже наступило, а значит, время для нового Завтракаста! С иронией тонкой, как утюг, мы назвали его “Эксклюзивный”. Как только послушаете, сразу поймете. Ну и не обошлось без эксклюзивного гостя — опытного аналитика, маркетолога, создателя одного из самых популярных статистических сервисов про игры и просто крутого мужика — Сергея Галенкина. Он выделил в своем безумном расписании полчаса для лучшего в мире подкаста (нашего, конечно же), за что ему огромное спасибо.",
+    "image": "https://vau-golub.ru/covers/zc-08.jpg",
+    "timeRequired": "PT2H10M00S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast08_mixdown.mp3",
+      "duration": "PT2H10M00S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-48",
+    "url": "https://zavtracast.ru/48.html",
+    "name": "Плотное ядро аудитории без случайных людей",
+    "episodeNumber": 48,
+    "datePublished": "2017-01-16T00:41:44+03:00",
+    "description": "Ну как вы там? Пришли в себя после новогодних праздников? Мы — еще не до конца, но решили, что уже пора выпускать новый Завтракаст. Новый год — новый выпуск вашего любимого подкаста с ничего не понимающими ведущими и накрученными лайками в iTunes (не забывайте и дальше нам их ставить, мы тут теперь хотим добить до 1000 оценок, потому что можем). Мы решили немного поэкспериментировать с форматом, пока несерьезно (другие изменения будут позже, сейчас пока по мелочи). Надеемся, этот выпуск Завтракаста у вас будет слушаться на одном дыхании.",
+    "image": "https://vau-golub.ru/covers/zc-48.jpg",
+    "timeRequired": "PT2H51M37S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast48_mixdown.mp3",
+      "duration": "PT2H51M37S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-115",
+    "url": "https://zavtracast.ru/115.html",
+    "name": "Английский язык (эксперимент)",
+    "episodeNumber": 115,
+    "datePublished": "2018-09-17T23:01:11+03:00",
+    "description": "Партнером этого выпуска стало гейм-кафе Re:play, расположенное в центре Питера. В нем вы можете весело провести время с друзьями за консольными новинками, известными сетевыми играми  или же хардкорными настолками. Устройте себе с друзьями консольную LAN-пати в центре Питера! https://goo.gl/McWJru Спустя две недели к вам опять возвращаются легендарный певец Дима и его внук Тима! На самом деле это всего лишь очередной выпуск Завтракаста, уже 115-ый по счету. В этом выпуске мы много обсуждаем прошедшую презентацию Apple с показанными там Apple Watch Series 4, iPhone XS и iPhone XR. Кроме того, мы поиграли в Marvel’s Spider-Man, Destiny 2: Forsaken, посмотрели Nintendo Direct и спешим поделиться своими впечатлениями. Ну и, как обычно, делимся полезными советами и новостями про игры, кино, медиа и технологии.",
+    "image": "https://vau-golub.ru/covers/zc-115.jpg",
+    "timeRequired": "PT2H45M44S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast115_mixdown_f.mp3",
+      "duration": "PT2H45M44S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-167",
+    "url": "https://zavtracast.ru/167.html",
+    "name": "Я слышал, ты пишешь подкасты",
+    "episodeNumber": 167,
+    "datePublished": "2019-12-04T07:30:15+03:00",
+    "description": "СТО ШЕСТЬДЕСЯТ СЕДЬМОЙ по счету выпуск Завтракаста. Нас не задолбало, а вас? Надеемся, вас тоже. Рассказываем про всю нашу стандартную дичь: нужен ли монитор с частотой 144 Hz, как Apple признала Крым российским, победивший в дебатах с человеками ИИ, “Ирландец”, “Достать Ножи” и многое другое.",
+    "image": "https://vau-golub.ru/covers/zc-167.jpg",
+    "timeRequired": "PT1H55M35S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast167_mixdown.mp3",
+      "duration": "PT1H55M35S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-193",
+    "url": "https://zavtracast.ru/193.html",
+    "name": "Поездатый подкаст",
+    "episodeNumber": 193,
+    "datePublished": "2020-07-23T11:21:39+03:00",
+    "description": "Подкаст в котором обсуждают аж два шоу, связанных с поездами. А еще ждут поезд надвигающегося на нас некстгена. А также обсуждают новости, игры, сериалы и многое другое. И напоминаем вам про нашего генерального спонсора – сервис онлайн-обучения профессиям будущего GeekBrains https://clck.ru/Po7wQ Шоуноты В Ubisoft харрасмент и вообще неспокойно. История недели: как взломали Twitter. Рассказываем о секретной лаборатории Google ATAP и чем она занимается. С сайта Microsoft пропала годовая подписка на Xbox Gold. Windows 10X, облегченную операционную систему от Microsoft, отложат. Опять. Снова обсуждаем Ghost of Tsushima. В сети нашли ролик отмененной игры Prophecy от Sucker Punch в мрачном стимпанк-сеттинге. В сети появилась безумная теория, что PS5 сделана на устаревшей архитектуре RDNA1, а заверения всех причастных лиц в том, что это не так, не действуют на фанатов. РЕКЛАМНЫЙ БЛОК: Сервис онлайн-обучения новым профессиям Geekbrains https://clck.ru/Po7wQ Тимур обстоятельно рассказывает о сериале “Проклятая” (Cursed) от Netflix. Максим про фильм “Пятеро одной крови” (Da 5 Bloods) от Спайка Ли. Дима хвалит мюзикл “Гамильтон” (Hamilton) и объясняет почему он важен для американского истеблишмента. Тимур досмотрел первый сезон сериала “Сквозь снег” (Snowpiercer) и остался доволен. Дима про мультфильм “Бесконечный поезд” (Infinity Train). Самые интересные статьи за прошлую неделю Статья про Александра Гамильтона https://dtf.ru/cinema/170684 Кто на самом […]",
+    "image": "https://vau-golub.ru/covers/zc-193.jpg",
+    "timeRequired": "PT2H58M04S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast193_mixdown.mp3",
+      "duration": "PT2H58M04S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-211",
+    "url": "https://zavtracast.ru/211.html",
+    "name": "Диверсифицированная женщина",
+    "episodeNumber": 211,
+    "datePublished": "2021-02-05T19:09:35+03:00",
+    "description": "Набираем темп после праздников и радуем вас интересными новостями из мира технологий, игр, медиа, интернета и многим другим. Что это за загадочный стартап Humane? Кто купил разработчиков Borderlands? Сколько было продано Nintendo Switch? Какое аниме посмотреть? Отвечает подкаст Завтракаст! Кстати, вышел уже четвертый выпуск нашего подкаста “Мама, я в стартапе”, где мы обсуждаем мрачное голодное будущее, кризис продовольствия и как нас может спасти создание еды из природного газа. Скорее подписывайтесь! https://podcasts.apple.com/ru/podcast/id1532430735",
+    "image": "https://vau-golub.ru/covers/zc-211.jpg",
+    "timeRequired": "PT2H30M54S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast211_mixdown.mp3",
+      "duration": "PT2H30M54S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-267",
+    "url": "https://zavtracast.ru/267.html",
+    "name": "Тридцать кадров в секунду",
+    "episodeNumber": 267,
+    "datePublished": "2022-10-23T16:04:07+03:00",
+    "description": "Спустя почти месяц перерыва номерный выпуск Завтракаста возвращается в ваши подкастоприемники и на YouTube. С тяжелым сердцем, но с чувством долга перед вашей и нашей кукухой мы стараемся обсудить новости из мира игр, технологий, медиа, интернета, а также делимся впечатлениями и советами. Не забудьте послушать наш спешал про переезд Тимура в Казахстан!",
+    "image": "https://vau-golub.ru/covers/zc-267.jpg",
+    "timeRequired": "PT3H18M14S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast267.mp3",
+      "duration": "PT3H18M14S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-292",
+    "url": "https://zavtracast.ru/292.html",
+    "name": "The Lies of P(hil)",
+    "episodeNumber": 292,
+    "datePublished": "2023-09-25T17:48:41+03:00",
+    "description": "Родной подкастик Завтракаст возвращается в ваши подкастоприемники, чтобы вы могли провести с нами незабываемые много часов и расслабиться под натужные шутки о сливах Microsoft про будущее Xbox, слухи о Division 3 и Titanfall 3, впечатления от DLC для RE4, MK1, ну и вместе покекать от проблем первых iPhone 15 Pro, попавших в руки к покупателям. Не переключайтесь, дальше будет еще натужнее! Подписывайтесь и ставьте лайк, а также не забудьте нажать на колокольчик на нашем ютубе – https://youtube.com/zavtracast Если вы хотите нас поддержать из России, то подписывайтесь на нас на Boosty – https://boosty.to/zavtracast. Если вы находитесь за границей, то можно подписаться на нас еще и на сервисе Patreon – https://patreon.com/zavtracast.",
+    "image": "https://vau-golub.ru/covers/zc-292.jpg",
+    "timeRequired": "PT3H39M49S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast292.mp3",
+      "duration": "PT3H39M49S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-330",
+    "url": "https://zavtracast.ru/330.html",
+    "name": "Чилловый подкаст",
+    "episodeNumber": 330,
+    "datePublished": "2024-12-01T00:38:02+03:00",
+    "description": "Новый выпуск одного из лучших подкастов про игры, медиа,технологии и интернет с тремя почти бессменными ведущими – Димой, Тимуром и Максимом. В этот раз мы обсуждаем продажу Nissan, проблемы игры Awoved, почему ЕС опять наезжает на Apple, сериал “Пингвин” и многое другое. Подписывайтесь и ставьте лайк, не забудьте нажать на колокольчик тут – https://youtube.com/zavtracast    Если вы хотите нас поддержать из России, подписывайтесь на нас на Boosty – https://boosty.to/zavtracast Если находитесь за границей, можно подписаться на нас еще и на Patreon – https://patreon.com/zavtracast А еще мы кураторы в Steam – https://store.steampowered.com/curator/45140423/",
+    "image": "https://vau-golub.ru/covers/zc-330.jpg",
+    "timeRequired": "PT3H14M51S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast330-chill.mp3",
+      "duration": "PT3H14M51S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-360",
+    "url": "https://zavtracast.ru/360.html",
+    "name": "Квик Скоуп Ноу Скоуп",
+    "episodeNumber": 360,
+    "datePublished": "2025-10-19T16:43:45+03:00",
+    "description": "С вами новый выпуск Завтракаста – лучшего подкаста про игры, технологии, фильмы, сериалы, ИИ, а также прочие гиковские штуки для мужиков возрастом 20+. Ну и для девчонок тоже! Мы любим наших слушательниц! В этом выпуске обсуждаем Battlefield 6, “Битва за Битвой”, Ghost of Yotei, новинки Apple на процессоре M5, книгу “Перекресток Воронов”, технологии PlayStation 6 и многое другое.",
+    "image": "https://vau-golub.ru/covers/zc-360.jpg",
+    "timeRequired": "PT4H36M26S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast360-noscope.mp3",
+      "duration": "PT4H36M26S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-374",
+    "url": "https://zavtracast.ru/374.html",
+    "name": "DLSSlop",
+    "episodeNumber": 374,
+    "datePublished": "2026-03-20T00:05:22+03:00",
+    "description": "В ваши подкастоприемники врывается на полном ходу новый выпуск лучшего подкаста про технологии, игры, интернет, ИИ, медиа, фотоаппараты, вино, сериалы, кино и гаджеты – Завтракаст. В этот раз мы опять вдвоем, так что кратенько всего на пару часов Тимур и Максим обсудят слухи про новый God of War, что такое Palantir, провальную презентацию DLSS 5, сериал DTF St. Louis и многое другое!",
+    "image": "https://vau-golub.ru/covers/zc-374.jpg",
+    "timeRequired": "PT1H55M29S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast374-dlssslop.mp3",
+      "duration": "PT1H55M29S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-01",
+    "url": "https://zavtracast.ru/01.html",
+    "name": "Пилотный",
+    "episodeNumber": 1,
+    "datePublished": "2015-12-16T17:15:44+03:00",
+    "description": "Всем привет. Представляем пилотный выпуск нашего нового подкаста “Завтракаст” (ну или ZavtraCast если угодно). Почему такое название? Мы и сами не знаем и пожалуй, подумаем об этом завтра.",
+    "image": "https://vau-golub.ru/covers/zc-01.jpg",
+    "timeRequired": "PT2H01M09S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast-001_mixdown.mp3",
+      "duration": "PT2H01M09S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-127",
+    "url": "https://zavtracast.ru/127.html",
+    "name": "Год Третий",
+    "episodeNumber": 127,
+    "datePublished": "2018-12-25T16:12:54+03:00",
+    "description": "Последний выпуск Завтракаста в 2018 году! Мы пригласили нескольких друзей поговорить про итоги года, а также поделились собственными впечатлениями – что у нас получилось, что нет, что бесило, во что играли, что смотрели. Ну и, как обычно, новости, диванная аналитика и глупые шутки. В следующем году постараемся получше.",
+    "image": "https://vau-golub.ru/covers/zc-127.jpg",
+    "timeRequired": "PT2H42M04S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast127_mixdown.mp3",
+      "duration": "PT2H42M04S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-224",
+    "url": "https://zavtracast.ru/224.html",
+    "name": "Выстраиваем нарратив",
+    "episodeNumber": 224,
+    "datePublished": "2021-06-30T23:20:05+03:00",
+    "description": "Из-за глобального потепления и безумной жары по всему миру мы не выходили целую неделю. Но мы наконец-то справились с напастью (тупо дождались похолодания), собрали задницу в кулак и смогли выйти! Самый интересный подкаст на свете Завтракаст наконец-то возвращается к вам с новейшей порцией слухов про игры, обсуждением перелома трендов в “культуре отмены”, анонсом Windows 11, смертью фистинг-маэстро, а также покупкой уже второго Xbox Series X за свои деньги самым сонибойским подкастом в России. А еще обсуждаем дезодоранты и пульты для телеприставок!",
+    "image": "https://vau-golub.ru/covers/zc-224.jpg",
+    "timeRequired": "PT3H52M04S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast224_mixdown.mp3",
+      "duration": "PT3H52M04S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-308",
+    "url": "https://zavtracast.ru/308.html",
+    "name": "Причина дефрагментации",
+    "episodeNumber": 308,
+    "datePublished": "2024-04-10T02:23:43+03:00",
+    "description": "В этот прекрасный погожий весенний день к вам врывается аж триста восьмой выпуска вашего любимого подкаста, в котором ваши бессменные ведущие Дима, Тимур и Максим обсуждают свежие новости, слухи, а также делятся впечатлениями о фильмах, играх, аниме, сериалах, гаджетах и прочих важных для них штуках. Подписывайтесь и ставьте лайк, а также не забудьте нажать на колокольчик на нашем ютубе – https://youtube.com/zavtracast    Если вы хотите нас поддержать из России, то подписывайтесь на нас на Boosty – https://boosty.to/zavtracast Если вы находитесь за границей, то можно подписаться на нас еще и на сервисе Patreon – https://patreon.com/zavtracast",
+    "image": "https://vau-golub.ru/covers/zc-308.jpg",
+    "timeRequired": "PT4H15M55S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast308-new.mp3",
+      "duration": "PT4H15M55S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-384",
+    "url": "https://zavtracast.ru/384.html",
+    "name": "Вибрирующая ванночка",
+    "episodeNumber": 384,
+    "datePublished": "2026-07-08T15:47:10+03:00",
+    "description": "Новый выпуск лучшего подкаста про технологии, игры, ИИ, кино, сериалы, гаджеты и многое другое, милое сердцу настоящего пацана (и девчонки) – Завтракаст снова с вами в полном составе в лице Димы, Тимура и Максима! Обсуждаем фейлы Sony, Microsoft, Valve, а также рассказываем про “Дискложу”, Овечек-детективов, Хаос в Супермаркете и многое другое.",
+    "image": "https://vau-golub.ru/covers/zc-384.jpg",
+    "timeRequired": "PT3H28M05S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast384-vanna.mp3",
+      "duration": "PT3H28M05S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-206",
+    "url": "https://zavtracast.ru/206.html",
+    "name": "Анонсирован ПК2",
+    "episodeNumber": 206,
+    "datePublished": "2020-11-26T14:23:44+03:00",
+    "description": "Наш подкаст идет на полном ходу в ад в новый 2021 год, а также к юбилею подкаста в середине декабря. Ну а пока мы в дежурном настроении обсуждаем все интересные новости из мира технологий, игр, медиа и интернета. Ну и делимся впечатлениями. Все, как обычно, короче! Подписывайтесь на наш новый подкаст “Мама, я в стартапе”, который мы делаем совместно с Фондом “Сколково”! Скоро третий выпуск. https://podcasts.apple.com/ru/podcast/id1532430735",
+    "image": "https://vau-golub.ru/covers/zc-206.jpg",
+    "timeRequired": "PT2H49M04S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast206_mixdown.mp3",
+      "duration": "PT2H49M04S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-294",
+    "url": "https://zavtracast.ru/294.html",
+    "name": "Бежит, орёт",
+    "episodeNumber": 294,
+    "datePublished": "2023-10-18T07:41:27+03:00",
+    "description": "Новый выпуск Завтракаста врывается к вам с очередной пачкой новостей, слухов и впечатлений. Обсуждаем, как Microsoft всё-таки смогла купить ABK, когда выйдет новый Elden Ring, что не так с Зельдой, какой получилась новая Forza Motorsport и фильм Gran Turismo и многое многое другое! Подписывайтесь и ставьте лайк, а также не забудьте нажать на колокольчик на нашем ютубе – https://youtube.com/zavtracast Если вы хотите нас поддержать из России, то подписывайтесь на нас на Boosty – https://boosty.to/zavtracast.Если вы находитесь за границей, то можно подписаться на нас еще и на сервисе Patreon – https://patreon.com/zavtracast.",
+    "image": "https://vau-golub.ru/covers/zc-294.jpg",
+    "timeRequired": "PT4H48M41S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast294.mp3",
+      "duration": "PT4H48M41S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-304",
+    "url": "https://zavtracast.ru/304.html",
+    "name": "Всё, везде и сразу выйдет",
+    "episodeNumber": 304,
+    "datePublished": "2024-02-23T22:36:35+03:00",
+    "description": "Ваш любимый подкаст возвращается с новой пачкой смешных шуток, веселых обсуждений, серьезной аналитики, обсасыванием новостей и любимой рубрикой про аниме. В этот раз обсуждаем тонны слухов про новые iPhone, игру по “Мандалорцу”, новый Twisted Metal, а также выход игр от Microsoft на PlayStation и Switch. Еще мы рассказываем про Like a Dragon: Infinite Wealth, мультфильм “Миграция”, а также про слона в комнате – Helldivers 2. Подписывайтесь и ставьте лайк, а также не забудьте нажать на колокольчик на нашем ютубе – https://youtube.com/zavtracast    Если вы хотите нас поддержать из России, то подписывайтесь на нас на Boosty – https://boosty.to/zavtracast Если вы находитесь за границей, то можно подписаться на нас еще и на сервисе Patreon – https://patreon.com/zavtracast  Подписывайтесь на каналы ведущих в Телеграме: – Радио Тимур – https://t.me/radiotimur – Фотодушнила – https://t.me/dushovato – Сказки Дядюшки Зомбака – https://t.me/zombaktales Шоуноты Новости Завтракаста: вышел новый кабинет Лора, а еще у нас скоро классный выпуск с интервью, но мы вам не расскажем с кем! Слухи недели: камеры нового айфона, игра про Мандалорца от Respawn, студия ZA/UM похоже окончательно расформирована, новые Twisted Metal и Astro Bot, отменённый проект по Halo ODST, стриминговые сервисы Peacock и Paramount+ могут объединиться в один. Microsoft рассказала о своих играх, которые выйдут […]",
+    "image": "https://vau-golub.ru/covers/zc-304.jpg",
+    "timeRequired": "PT5H11M54S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast304-2.mp3",
+      "duration": "PT5H11M54S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-343",
+    "url": "https://zavtracast.ru/343.html",
+    "name": "Марафон(чик)",
+    "episodeNumber": 343,
+    "datePublished": "2025-04-17T16:29:26+03:00",
+    "description": "erid: 2SDnjbzAuoK С вами новый выпуск легендарного подкаста Завтракаст – одного из самых популярных подкастов про игры, медиа, технологии, интернет и всякое разное. На связи все так же технический директор Дима, директор по маркетингу Тимур и фотограф-видеограф Максим, ваши старые виртуальные друзья. Подписывайтесь и ставьте лайк, не забудьте нажать на колокольчик тут – https://youtube.com/zavtracast  Если вы хотите нас поддержать из России, подписывайтесь на нас на Boosty – https://boosty.to/zavtracast  Если находитесь за границей, можно подписаться на нас еще и на Patreon – https://patreon.com/zavtracast  Подписывайтесь на каналы ведущих: Радио Тимур – https://t.me/radiotimur  Фотодушнила – https://t.me/dushovato  Сказки Дядюшки Зомбака – https://t.me/zombaktales  Шоуноты Вопрос от Завтракаста: стоит ли чередовать короткие и длинные выпуски? Нормально ли, если мы будем большие выпуски в аудио разбивать на две части? Вы можете прислать ваш ответ нам на почту или оставить в комментах на ютубе: https://zavtracast.ru/about Тимур сходил в гости в подкаст “Попы и Культура” https://podcast.ru/e/72e3gHKLNzn Слухи недели: ремастер Oblivion выйдет вот-вот, Ubisoft делает тактическую пошаговую игру во вселенной Rainbow Six, экранизации Death Stranding и Magic the Gathering получили режиссёров, создатель Dragon Age чуть не сделал продолжение Planescape совместно с Крисом Авеллоном. РЕКЛАМНЫЙ БЛОК: Читайте подробнее про технологии для каждого от Яндекса: https://inclusion.yandex.ru/ Реклама. ООО “Яндекс”. […]",
+    "image": "https://vau-golub.ru/covers/zc-343.jpg",
+    "timeRequired": "PT4H27M01S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast343-marathon.mp3",
+      "duration": "PT4H27M01S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-379",
+    "url": "https://zavtracast.ru/379.html",
+    "name": "Ретрит у Безоса",
+    "episodeNumber": 379,
+    "datePublished": "2026-05-07T01:46:04+03:00",
+    "description": "В ваши подкастоприемники возвращается Завтракаст с новым выпуском про игры, технологии, искусственный интеллект, природу сознания, сериалы, кино и многое другое. В этот раз Максим болеет, так что отдуваются вдвоем Дима и Тимур! Тем не менее получилось насыщенно и интересно!",
+    "image": "https://vau-golub.ru/covers/zc-379.jpg",
+    "timeRequired": "PT3H50M57S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast379-retreat.mp3",
+      "duration": "PT3H50M57S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-36",
+    "url": "https://zavtracast.ru/36.html",
+    "name": "Классика. Подкаст. Апартаменты.",
+    "episodeNumber": 36,
+    "datePublished": "2016-09-20T22:03:51+03:00",
+    "description": "Мы немного задержались. Несмотря на ваши постоянные похвалы о стахановских темпах и периодичности выхода, выпускать Завтракаст каждое воскресенье непросто. А потому иногда это сделать и вовсе не получается. Тут уж ничего не поделать. В этом выпуске Завтракаста все как обычно: старые натужные шутки, опять про Apple на пять минут (на самом деле 40), немного про игры (на самом деле много), очень обстоятельно про сериалы и фильмы (на самом деле не очень), а также про пиво, естественно. Короче, все, как вы любите. А еще в конце этого выпуска мы позволили себе высказаться на актуальную тему, которую давно не затрагивали. Да, монетизация подкаста. В ближайшее время мы все-таки перелопатим нашу страницу на Patreon, чтобы вы могли с легким сердцем заносить нам деньги за сотни потраченных человеко-часов, получать за это всякие крутые штуки, а нам было бы не так обидно отказываться каждую неделю от личной жизни ради любимого всеми нами проекта Завтракаст.",
+    "image": "https://vau-golub.ru/covers/zc-36.jpg",
+    "timeRequired": "PT3H01M16S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast36_mixdown.mp3",
+      "duration": "PT3H01M16S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-71",
+    "url": "https://zavtracast.ru/71.html",
+    "name": "Невермор",
+    "episodeNumber": 71,
+    "datePublished": "2017-08-22T23:59:18+03:00",
+    "description": "Всем так понравился наш спешал с Григорием Bobuk Бакуновым, что мы решили, а почему бы не позвать его еще одним ведущим на полставки в Завтракаст? Сказано, сделано. Летний ленивый Завтракаст поведает вам о новостях игр, медиа, технологий за прошлую неделю (вдруг вы что-то упустили), а также расскажет вам о том, во что поиграть и что посмотреть в затишье перед осенним потопом релизов. Ну и ураганная аналитика на тему будущего – чем вы будете пользоваться через десять лет и как.",
+    "image": "https://vau-golub.ru/covers/zc-71.jpg",
+    "timeRequired": "PT2H44M32S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/71_mixdown.mp3",
+      "duration": "PT2H44M32S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-140",
+    "url": "https://zavtracast.ru/140.html",
+    "name": "180.000 лье над водой",
+    "episodeNumber": 140,
+    "datePublished": "2019-04-17T16:29:54+03:00",
+    "description": "Эта неделя стала неожиданностью для нас всех – куча сюрпризов, интересных анонсов и необычных впечатлений. Новый выпуск Завтракаста под круглым номером 140 расскажет вам про PlayStation 5 (как ни странно, не на основе слухов, а официального анонса от Sony), новую игру Star Wars от Respawn, последний сезон “Игры Престолов”, грустный Xbox One и прекрасное будущее рунета. Особая благодарность объявляется нашим слушателям и зрителям magic_vs, а также Slava Ukraine, которые щедро занесли Завтракасту в ходе записи этого выпуска. Спасибо, товарищи!",
+    "image": "https://vau-golub.ru/covers/zc-140.jpg",
+    "timeRequired": "PT1H47M25S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast140_mixdown.mp3",
+      "duration": "PT1H47M25S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-207",
+    "url": "https://zavtracast.ru/207.html",
+    "name": "В ожидании Киберпанка",
+    "episodeNumber": 207,
+    "datePublished": "2020-12-04T18:50:44+03:00",
+    "description": "Итак, наступила зима. ПК-боярин, торжествуя, винду обновляет и дрова. Консольный игрок, Киберпанк почуя, плетется в ритейл-магазин как-нибудь. Топы айтюнса пушистые, взрывая, летит кибитка удалая (с нашим Завтракастиком внутри, ваши телефоны разрывая). PS: Вышел третий выпуск нашего нового подкаста “Мама, я в стартапе”, который мы делаем совместно с Фондом “Сколково”! В третьем выпуске мы говорим про киборгов, кибатлетику и протезирование людей будущего https://podcasts.apple.com/ru/podcast/id1532430735 Шоуноты РЕКЛАМА: Отличная биржа для фриланса Kwork https://u.to/thw2Gg СЛУХИ НЕДЕЛИ: рассказываем о том, что PS5 Lite и PS5 с двумя видеокартами существуют лишь в воображении китайских блогеров, Bluepoint якобы делают римейк первого MGS, а новый Silent Hill покажут на Game Awards 2020. Ещё Forza Horizon 5 выйдет в следующем году, и сеттингом будет Япония, а Девид Линч якобы снимет сериал “Вистерия” специально для Netflix. Компания Salesforce купила мессенджер Slack за $27 миллиардов. FIFA и футболисты никак не могут договориться о правах на внешность игроков в видеоиграх. У Canon угнали 10 Терабайт персональных данных сотрудников и клиентов компании, а в Бразилии выложили на GitHub данные 16 миллионов пациентов с COVID. В топах русского Spotify воцарились странные жанры, а Тимур обнаружил, что на него в сервисе зачем-то там подписано много людей. Подписывайтесь и вы, у него там куча крутых плейлистов! […]",
+    "image": "https://vau-golub.ru/covers/zc-207.jpg",
+    "timeRequired": "PT3H03M04S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast207_mixdown.mp3",
+      "duration": "PT3H03M04S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-270",
+    "url": "https://zavtracast.ru/270.html",
+    "name": "Doom NOMONEYNAL",
+    "episodeNumber": 270,
+    "datePublished": "2022-11-11T19:29:02+03:00",
+    "description": "У нас получились довольно сумбурный выпуск, где мы, как обычно, обсудили все интересные новости, слухи, впечатления, события, но венцом его стала все-таки история о том, как Мик Гордон делал саундтрек для Doom Eternal. Поверьте, эта история достойна книги Джейсона Шраера. Ну а мы продолжаем пытаться с веселыми лицами выходить и радовать вас, чтобы в это невероятно тяжелое время хоть что-то вас удерживало в лупе. И никакова суецыда! Если вы хотите нас поддержать из России, то подписывайтесь на нас на Boosty – https://boosty.to/zavtracast. Если вы находитесь за границей, то можно подписаться на нас еще и на сервисе Patreon – https://patreon.com/zavtracast.",
+    "image": "https://vau-golub.ru/covers/zc-270.jpg",
+    "timeRequired": "PT3H00M03S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast270.mp3",
+      "duration": "PT3H00M03S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-293",
+    "url": "https://zavtracast.ru/293.html",
+    "name": "Миша Мышь",
+    "episodeNumber": 293,
+    "datePublished": "2023-10-02T20:16:57+03:00",
+    "description": "Это самый чилловый и расслабленный выпуск Завтракаста за последние месяцы. Наливайте чайку, заваривайте шиповник, садитесь у камина и слушайте Диму и Тимура про Far Cry 7, закрытие Google Podcasts, сокращения в Epic Games, уход Хидеки Камии, уход Джима Райяна, проблемы iPhone 15 Pro, сказки от Ubisoft и прочие радости. Подкастик с вареньем никакова нигатива.",
+    "image": "https://vau-golub.ru/covers/zc-293.jpg",
+    "timeRequired": "PT3H56M45S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast293.mp3",
+      "duration": "PT3H56M45S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-316",
+    "url": "https://zavtracast.ru/316.html",
+    "name": "Время раздуплений",
+    "episodeNumber": 316,
+    "datePublished": "2024-07-08T20:08:02+03:00",
+    "description": "Наш подкаст возвращается после небольшого вынужденного отпуска с новыми силами и пытается максимально интересно рассказать про последние слухи, новости и события из мира технологий, игр, медиа, интернета, ИИ и вот этого всего! Ну и не обошлось без впечатлений, ведь мы посмотрели, поиграли и попробовали много нового – ДЛЦ Shadow of the Erdtree для Elden Ring, The Final Shape для Destiny 2, новый “Полицейский из Беверли Хиллз”, Keychron K2, эмулятор Xbox 360 Xenia, а также PS3 – RPCS3.",
+    "image": "https://vau-golub.ru/covers/zc-316.jpg",
+    "timeRequired": "PT4H10M02S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast316_w9v5cb2.mp3",
+      "duration": "PT4H10M02S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-362",
+    "url": "https://zavtracast.ru/362.html",
+    "name": "Любитель бокса",
+    "episodeNumber": 362,
+    "datePublished": "2025-11-07T16:58:09+03:00",
+    "description": "Любите игры, технологии, интернет, фильмы, сериалы, машины и прочие другие гиковские штучки? Тогда новый выпуск Завтракаста – для вас. Трое бессменных ведущих Дима, Тимур и Максим уже почти 10 лет рассказывают новости, слухи, а также делятся впечатлениями на все эти темы. Присоединяйтесь!",
+    "image": "https://vau-golub.ru/covers/zc-362.jpg",
+    "timeRequired": "PT3H37M10S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast362-books.mp3",
+      "duration": "PT3H37M10S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-20",
+    "url": "https://zavtracast.ru/20.html",
+    "name": "Без прилагательных",
+    "episodeNumber": 20,
+    "datePublished": "2016-05-09T23:32:25+03:00",
+    "description": "Приветствуем вас, уважаемые слушатели! Уже двадцать выпусков Завтракаста оказалось в ваших плеерах. Они скрасили вашу учебу, уборку, дорогу, прогулку с собакой, катку в дотан, одинокий вечер наедине с бутылкой — it’s your choice. Мы же, в свою очередь, рады и удивлены, что вам нравится наш проект (а то мы хотели сделать всего пять выпусков и забить). Вот, например, мы умудрились целый день продержаться в топе подкастов России на втором месте, что, как нам кажется, неплохо. Значит, не зря стараемся. Дима обещал вам новый формат в прошлом выпуске, но у нас в итоге не было времени, поэтому все примерно как обычно. Правда, мы решили ради эксперимента попробовать записать самый длинный выпуск в истории Завтракаста. Просто потому что можем (больше так не будем, очень тяжело было монтировать). DISCLAIMER: Мы в подкасте там немножко унижаем российский PlayStation, так как они нам обещали, но так и не дали нам пресс-копию Uncharted 4. Ну так вот буквально сегодня днем они все-таки нам выслали код, так что не все так плохо, как мы в подкасте расписываем!",
+    "image": "https://vau-golub.ru/covers/zc-20.jpg",
+    "timeRequired": "PT3H18M14S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast20_mixdown.mp3",
+      "duration": "PT3H18M14S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-250",
+    "url": "https://zavtracast.ru/250.html",
+    "name": "И ещё один",
+    "episodeNumber": 250,
+    "datePublished": "2022-03-18T17:46:32+03:00",
+    "description": "В это невероятно тяжелое время для многих наших слушателей и зрителей мы пытаемся делать то, что умеем – выпускать подкаст, который может хотя бы ненамного вас отвлечь от безумия окружающей реальности. Обсуждаем новости, которые все меньше имеют к нам отношения, советуем сериалы и игры для эскапизма, пытаемся поддержать вас добрым словом. Пожалуйста держитесь и оставайтесь в живых! Сейчас нам тоже очень не помешает ваша поддержка, если вам это не в наклад. Если вы хотите нас поддержать из России, то подписывайтесь на нас на Boosty – https://boosty.to/zavtracast. Если вы находитесь за границей, то можно подписаться на нас еще и на сервисе Patreon https://patreon.com/zavtracast.",
+    "image": "https://vau-golub.ru/covers/zc-250.jpg",
+    "timeRequired": "PT3H10M05S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast250_mixdown.mp3",
+      "duration": "PT3H10M05S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-61",
+    "url": "https://zavtracast.ru/61.html",
+    "name": "Слово на букву D",
+    "episodeNumber": 61,
+    "datePublished": "2017-05-25T00:34:43+03:00",
+    "description": "На прошедшей неделе произошло не очень много интересных событий, которые стоило бы обсудить. Тем более, что все они все равно меркнут на фоне полноценной демонстрации Destiny 2, в ходе которой журналистам, блогерам и стримерам дали поиграть во вторую часть долгожданного шутера. Нас там, естественно, не было, но мы собрали всё самое интересное из доступных источников и сквозь призму тысяч отыгранных часов в Destiny обсудили все анонсы Bungie. Ну а в остальном это всё тот же Завтракаст с советами, новостями, прохладными историями, глупыми шутками и хорошей музыкой.",
+    "image": "https://vau-golub.ru/covers/zc-61.jpg",
+    "timeRequired": "PT1H48M58S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/61_mixdown.mp3",
+      "duration": "PT1H48M58S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-100",
+    "url": "https://zavtracast.ru/100.html",
+    "name": "Знаковый рубеж",
+    "episodeNumber": 100,
+    "datePublished": "2018-04-18T00:01:42+03:00",
+    "description": "Несмотря на то, что мы выпустили за два с половиной года уже 120 выпусков, именно этот Завтракаст у нас особенный – под номером 100. Мы хотели сделать его хотя бы чуть-чуть особенным, в итоге перестарались и не рассчитали силы – из-за этого подкаст даже задержался на два дня. В юбилейном выпуске Завтракаста к нам вернулся наш ведущий на полставки Валентин Wylsacom Петухов из солнечной Доминиканы. С ним мы поговорили на наиболее животрепещущие темы прошедшей недели. Кроме того, к нам в гости заглянул Илья Lale4ka Овчаренко, который рассказал про свой новый проект Парфенон с Леонидом Парфеновым, а также про текущее состояние дел в цифровых медиа. Ну и last but not least, с нами поговорил Юра Turbojedi Крупенин о консолях следующего поколения, технологиях графики и искусственного интеллекта в будущем. Ах да, чтобы не делать наш подкаст совсем уж толстым и длинным, одного из гостей мы решили отложить на специальный выпуск, который выйдет через несколько дней. Там много интересного для любителей рунета образца 2000-х.",
+    "image": "https://vau-golub.ru/covers/zc-100.jpg",
+    "timeRequired": "PT2H54M48S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/100_mixdown.mp3",
+      "duration": "PT2H54M48S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-160",
+    "url": "https://zavtracast.ru/160.html",
+    "name": "Два литра шаурмы (feat. Wylsacom)",
+    "episodeNumber": 160,
+    "datePublished": "2019-10-16T06:00:37+03:00",
+    "description": "Новый почти юбилейный выпуск подкаста Завтракаст опять проходит в теплой ламповой атмосфере при участии нашего ведущего на полставки Валентина Wylsacom Петухова. Валя давно не заходил к нам в гости, соскучился по пацанам, а потому выпуск получился очень длинным, но чрезвычайно душевным и уютным. Поговорили про Кодзиму, тюремный смартфон Энди Рубина, прогибание корпораций под китайский рынок, скачивание машин из интернета, текущее состояние YouTube, космическую шаурму, “Джокера”, “Эль Камино”, “Гемини” и многое другое.",
+    "image": "https://vau-golub.ru/covers/zc-160.jpg",
+    "timeRequired": "PT3H24M19S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast160_mixdown.mp3",
+      "duration": "PT3H24M19S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-220",
+    "url": "https://zavtracast.ru/220.html",
+    "name": "Димкин барановирус",
+    "episodeNumber": 220,
+    "datePublished": "2021-05-08T04:55:16+03:00",
+    "description": "Мы не выходили на связь несколько недель, потому что Дима болел короновирусом, Тимур вышел на новую работу, а Максим – Максим. Но мы более менее пришли в норму, а потому возвращаемся к вам живые и почти бодрые, чтобы рассказать про “барановирус” и как он на самом деле тяжело переносится, про революцию на рынке мобильной рекламы, про слухи недели, хроники суда Apple и Epic, а также про крутые фильмы, мультфильмы, игры и многое другое. Спасибо, что все это время вы нас ждали, поддерживали и не забывали 🙂",
+    "image": "https://vau-golub.ru/covers/zc-220.jpg",
+    "timeRequired": "PT3H30M16S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast220_mixdown.mp3",
+      "duration": "PT3H30M16S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-39",
+    "url": "https://zavtracast.ru/39.html",
+    "name": "Осенняя депрессия",
+    "episodeNumber": 39,
+    "datePublished": "2016-10-13T23:16:41+03:00",
+    "description": "Осень и холода берут свое, пробираясь в самые темные уголки нашей души и вызывая чувство томного беспокойства внутри нас. На самом деле все не так плохо, но мы на этой неделе сразу по огромному ряду технических причин и человеческих факторов очень сильно задержали выпуск. Постараемся больше так не делать. Это все она, осенняя депрессия. В новом Завтракасте у нас опять классический состав с Максимом и бухим Тимуром. Обсуждаем почти все любимые темы, но впервые мы постарались сделать это очень коротко и сжато, попробовали сделать это, как наши коллеги из других подкастов. Кроме того, мы записали новый специальный выпуск с вопросами и ответами (прошлый раз был два месяца назад), он пока доступен только участникам проекта Zavtravault, но уже на выходных его смогут послушать все остальные наши слушатели. Не хандрите, как это делаем мы. Сохраняйте бодрость духа, поддерживайте друг друга, радуйтесь жизни 🙂",
+    "image": "https://vau-golub.ru/covers/zc-39.jpg",
+    "timeRequired": "PT1H25M09S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast39_mixdown.mp3",
+      "duration": "PT1H25M09S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-179",
+    "url": "https://zavtracast.ru/179.html",
+    "name": "Ура, короникулы!",
+    "episodeNumber": 179,
+    "datePublished": "2020-03-29T16:12:50+03:00",
+    "description": "Сидим все дома, не бухтим. Не рыпаемся. Лодку не раскачиваем. Пишем завтракастик, обсуждаем игрулечки, телефончики, виарчик, всё ровно.",
+    "image": "https://vau-golub.ru/covers/zc-179.jpg",
+    "timeRequired": "PT2H07M12S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast179_mixdown.mp3",
+      "duration": "PT2H07M12S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-286",
+    "url": "https://zavtracast.ru/286.html",
+    "name": "Тонкий сомелье уникальных фантазий",
+    "episodeNumber": 286,
+    "datePublished": "2023-07-07T00:52:44+03:00",
+    "description": "В этом выпуске мы снова обсуждаем новые фильмы, сериалы, игры и многое другое, но, к сожалению, снова без Тимура. Верим и надеемся, что он всё же устроится на новом месте, и мы ворвемся в ваши плееры и подкастоприемники в полном составе уже совсем скоро. Но и без третьего ведущего, нам есть что обсудить: как Microsoft с FTC в суде бодалась, как Twitter разваливается потихонечку, как один там сериал про Ведьмака оказался совсем не тем, чего мы от него ожидали, ну и многое многое другое! Подписывайтесь и ставьте лайк, а также не забудьте нажать на колокольчик на нашем ютубе – https://youtube.com/zavtracast Если вы хотите нас поддержать из России, то подписывайтесь на нас на Boosty – https://boosty.to/zavtracast. Если вы находитесь за границей, то можно подписаться на нас еще и на сервисе Patreon – https://patreon.com/zavtracast.",
+    "image": "https://vau-golub.ru/covers/zc-286.jpg",
+    "timeRequired": "PT2H20M14S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast286.mp3",
+      "duration": "PT2H20M14S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-378",
+    "url": "https://zavtracast.ru/378.html",
+    "name": "Прагматичные парни",
+    "episodeNumber": 378,
+    "datePublished": "2026-04-25T18:49:02+03:00",
+    "description": "К вам возвращается подкаст Завтракаст, который уже десять лет рассказывает про технологии, интернет, игры, кино, сериалы, аниме, машины, фотоаппараты и многое другое. На сей раз Дима и Максим вдвоём обсуждают игру Pragmata, демо-версию The Expanse Osiris Reborn, как поменяется Xbox GamePass и многое-многое другое!",
+    "image": "https://vau-golub.ru/covers/zc-378.jpg",
+    "timeRequired": "PT1H32M04S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast378-pragmata.mp3",
+      "duration": "PT1H32M04S",
+      "encodingFormat": "audio/mpeg"
+    }
+  }
+]

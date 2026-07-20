@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vau-golub.ru/sitemap.xml

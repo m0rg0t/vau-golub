@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "episodeId": "zc-363",
+  "topics": [
+    {
+      "id": "zc-363-topic-podcast-news",
+      "startPhraseId": "zc-363-p-00003",
+      "endPhraseId": "zc-363-p-00055",
+      "startSec": 48.86,
+      "endSec": 186.42,
+      "title": "Куда делся Тимур и что будет с бонусными подкастами",
+      "summary": "Дима и Максим объясняют отсутствие Тимура из-за Web Summit, сверяют планы по «Кабинету Лора» и СДЗ и рассказывают, почему выпуск в этот раз ведут вдвоём."
+    },
+    {
+      "id": "zc-363-topic-rumors",
+      "startPhraseId": "zc-363-p-00056",
+      "endPhraseId": "zc-363-p-00302",
+      "startSec": 187.5,
+      "endSec": 1374.36,
+      "title": "Слухи: дефицит памяти, Half-Life 3 и проблемы Ubisoft",
+      "summary": "Ведущие обсуждают рост цен на SSD и оперативную память из-за ИИ, возможные анонсы Valve, далёкий Elder Scrolls VI, ремейк Fallout 3, перенос отчётности Ubisoft и отмену iPhone Air 2."
+    },
+    {
+      "id": "zc-363-topic-ai-news",
+      "startPhraseId": "zc-363-p-00303",
+      "endPhraseId": "zc-363-p-00471",
+      "startSec": 1375.04,
+      "endSec": 2316,
+      "title": "Нейрослоп: групповой ChatGPT, Sima 2 и ИИ-взломы",
+      "summary": "Большой блок об ИИ объединяет групповые чаты ChatGPT, обучение Google Sima 2 в играх, скандал вокруг Agentic OS, спор Disney с художниками и отчёт Anthropic о китайских кибератаках с агентами."
+    },
+    {
+      "id": "zc-363-topic-gta-delay",
+      "startPhraseId": "zc-363-p-00472",
+      "endPhraseId": "zc-363-p-00712",
+      "startSec": 2317.5,
+      "endSec": 3046.82,
+      "title": "Перенос GTA VI и его цена для индустрии",
+      "summary": "Перенос GTA VI на ноябрь 2026 года приводит к разговору о готовности контента, увольнениях в Rockstar, профсоюзе, стоимости дополнительной разработки, кранче и сдвиге Marvel 1943: Rise of Hydra."
+    },
+    {
+      "id": "zc-363-topic-sony",
+      "startPhraseId": "zc-363-p-00713",
+      "endPhraseId": "zc-363-p-00930",
+      "startSec": 3047.5,
+      "endSec": 3889.6,
+      "title": "Sony: японский State of Play и мобильные франшизы",
+      "summary": "Финансовые результаты PlayStation и азиатский State of Play переходят в обсуждение игр для японского рынка, Ratchet & Clank: Ranger Rumble, мобильной MMO Horizon Steel Frontiers и стратегии лицензирования брендов Sony."
+    },
+    {
+      "id": "zc-363-topic-hollywood-remakes",
+      "startPhraseId": "zc-363-p-00931",
+      "endPhraseId": "zc-363-p-01125",
+      "startSec": 3890.04,
+      "endSec": 4604.78,
+      "title": "Голливуд снова переснимает V for Vendetta, Rambo и Gremlins",
+      "summary": "Ведущие спорят о дефиците новых идей, сравнивают ремейки кино и игр, обсуждают сериал V for Vendetta, приквел Rambo, третьих Gremlins и мультфильм Super Mario Galaxy."
+    },
+    {
+      "id": "zc-363-topic-valve-hardware",
+      "startPhraseId": "zc-363-p-01126",
+      "endPhraseId": "zc-363-p-01763",
+      "startSec": 4604.78,
+      "endSec": 7212.08,
+      "title": "Steam Controller, Steam Frame и новая Steam Machine",
+      "summary": "Подробный разбор трёх устройств Valve: эргономики и магнитных стиков контроллера, автономного VR-шлема с беспроводным стримингом и нишевой игровой Steam Machine на SteamOS, включая цену, совместимость и перспективы апгрейда."
+    },
+    {
+      "id": "zc-363-topic-tormented-dispatch",
+      "startPhraseId": "zc-363-p-01764",
+      "endPhraseId": "zc-363-p-01874",
+      "startSec": 7212.2,
+      "endSec": 7683.139,
+      "title": "Tormented Souls 2 и финал Dispatch",
+      "summary": "Дима критикует Tormented Souls 2 за механическое подражание старым Resident Evil и Silent Hill, а затем оценивает завершение сезона Dispatch и рекомендует игру несмотря на спорную концовку."
+    },
+    {
+      "id": "zc-363-topic-pluribus",
+      "startPhraseId": "zc-363-p-01875",
+      "endPhraseId": "zc-363-p-01990",
+      "startSec": 7683.719,
+      "endSec": 8109.259,
+      "title": "Pluribus: позитивный постапокалипсис Винса Гиллигана",
+      "summary": "Первые серии «Из многих» вызывают восторг необычной сай-фай завязкой, героиней вне коллективного счастья и умением автора Breaking Bad обманывать знакомые ожидания."
+    },
+    {
+      "id": "zc-363-topic-syberia-remastered",
+      "startPhraseId": "zc-363-p-01991",
+      "endPhraseId": "zc-363-p-02064",
+      "startSec": 8110.739,
+      "endSec": 8405.819,
+      "title": "Почему Syberia Remastered разочаровывает",
+      "summary": "Максим сравнивает ремастер первой Syberia с оригиналом и находит недоделанные трёхмерные локации, старые ролики, новые ошибки и слишком мало причин предпочесть его доступному HD-переизданию."
+    },
+    {
+      "id": "zc-363-topic-frankenstein",
+      "startPhraseId": "zc-363-p-02065",
+      "endPhraseId": "zc-363-p-02166",
+      "startSec": 8406.079,
+      "endSec": 8777.931,
+      "title": "«Франкенштейн» Гильермо дель Торо",
+      "summary": "Ведущие обсуждают Оскара Айзека и Джейкоба Элорди, близость фильма к роману Мэри Шелли, тему современного Прометея и красивую, но неожиданно прямолинейную режиссуру дель Торо."
+    },
+    {
+      "id": "zc-363-topic-oblivion-psp",
+      "startPhraseId": "zc-363-p-02167",
+      "endPhraseId": "zc-363-p-02179",
+      "startSec": 8778.391,
+      "endSec": 8856.991,
+      "title": "Каким мог быть Oblivion на PSP",
+      "summary": "Найденный рабочий прототип отменённого порта Oblivion для PSP становится любопытным артефактом эпохи: грубым на большом экране, но впечатляющим с учётом возможностей портативной консоли."
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "zc-363-exclusion-intro",
+      "startPhraseId": "zc-363-p-00000",
+      "endPhraseId": "zc-363-p-00002",
+      "startSec": 0,
+      "endSec": 48.5,
+      "kind": "intro",
+      "reason": "Заставка, приветствие и представление выпуска перед содержательным разговором."
+    },
+    {
+      "id": "zc-363-exclusion-outro",
+      "startPhraseId": "zc-363-p-02180",
+      "endPhraseId": "zc-363-p-02208",
+      "startSec": 8857.751,
+      "endSec": 9120.411,
+      "kind": "thanks",
+      "reason": "Финальные благодарности подписчикам, перечисление патронов, анонсы и прощание."
+    }
+  ]
+}

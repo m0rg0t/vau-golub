@@ -1,0 +1,386 @@
+{
+  "schemaVersion": 1,
+  "episodeId": "zc-379",
+  "topics": [
+    {
+      "id": "zc-379-topic-music-govnarstvo",
+      "startPhraseId": "zc-379-p-00007",
+      "endPhraseId": "zc-379-p-00039",
+      "startSec": 109.2,
+      "endSec": 496.28,
+      "title": "Спектр говнарства и музыкальные тусовки",
+      "summary": "Дима и Тимур спорят о музыкальных группах и аудиториях, вспоминают «Арию», «Короля и Шута» и хардкорные вечеринки."
+    },
+    {
+      "id": "zc-379-topic-podcast-news",
+      "startPhraseId": "zc-379-p-00047",
+      "endPhraseId": "zc-379-p-00068",
+      "startSec": 597.82,
+      "endSec": 809.98,
+      "title": "Мерч, новые выпуски и сломавшиеся RSS-ленты",
+      "summary": "Ведущие рассказывают о рассылке мерча, планах на новый сезон «СДЗ» и советуют поменять RSS-ленту, если выпуск не скачивается."
+    },
+    {
+      "id": "zc-379-topic-injustice-hogwarts",
+      "startPhraseId": "zc-379-p-00069",
+      "endPhraseId": "zc-379-p-00093",
+      "startSec": 810,
+      "endSec": 1145.3,
+      "title": "Injustice 3 и Hogwarts Legacy 2",
+      "summary": "Подтверждения разработки двух игр превращаются в разговор о сроках релиза, связке Hogwarts с сериалом и синергии медиавселенных."
+    },
+    {
+      "id": "zc-379-topic-metal-gear-source",
+      "startPhraseId": "zc-379-p-00094",
+      "endPhraseId": "zc-379-p-00112",
+      "startSec": 1147.3,
+      "endSec": 1390.84,
+      "title": "Утечка исходного кода Metal Gear Solid 2",
+      "summary": "Утекшие исходники и ассеты Metal Gear Solid 2 позволяют обсудить работу Bluepoint и будущие нативные порты игры."
+    },
+    {
+      "id": "zc-379-topic-assassins-creed-invictus",
+      "startPhraseId": "zc-379-p-00113",
+      "endPhraseId": "zc-379-p-00145",
+      "startSec": 1390.84,
+      "endSec": 1734.68,
+      "title": "Assassin’s Creed Invictus и игры по трендам",
+      "summary": "Плохие плейтесты Invictus, похожего на Fall Guys, становятся примером неповоротливости Ubisoft и погони больших издателей за трендами."
+    },
+    {
+      "id": "zc-379-topic-playstation-6-tomb-raider",
+      "startPhraseId": "zc-379-p-00146",
+      "endPhraseId": "zc-379-p-00177",
+      "startSec": 1734.68,
+      "endSec": 2129.16,
+      "title": "PlayStation 6 и тяжёлое управление старых Tomb Raider",
+      "summary": "Слухи об AMD-апскейлере и новом SSD для PS6 соседствуют с разговором о ремастерах Tomb Raider, старом управлении и тридцатилетнем возрасте игры."
+    },
+    {
+      "id": "zc-379-topic-psn-drm",
+      "startPhraseId": "zc-379-p-00184",
+      "endPhraseId": "zc-379-p-00205",
+      "startSec": 2209.06,
+      "endSec": 2616.36,
+      "title": "Тридцатидневная DRM-проверка PlayStation",
+      "summary": "Новая схема PlayStation требует подтверждать лицензию онлайн; ведущие обсуждают возвраты денег, пиратские консоли и будущее цифровых покупок."
+    },
+    {
+      "id": "zc-379-topic-steamdeck-pc-xbox",
+      "startPhraseId": "zc-379-p-00206",
+      "endPhraseId": "zc-379-p-00250",
+      "startSec": 2616.36,
+      "endSec": 3380.24,
+      "title": "Steam Deck 2, PC gaming и перетряска Xbox",
+      "summary": "Слухи о Steam Deck 2, проект Microsoft для Windows и смена руководства Xbox становятся разговором о цене железа, удобстве SteamOS и надежде на эксклюзивы."
+    },
+    {
+      "id": "zc-379-topic-halo-remakes",
+      "startPhraseId": "zc-379-p-00255",
+      "endPhraseId": "zc-379-p-00259",
+      "startSec": 3431.41,
+      "endSec": 3543.82,
+      "title": "Слухи о ремейках Halo 2 и Halo 3",
+      "summary": "Ведущие оценивают сомнительный слух о ремейках Halo и вспоминают, почему аккуратное обновление классики могло бы быть интересным."
+    },
+    {
+      "id": "zc-379-topic-ai-automation",
+      "startPhraseId": "zc-379-p-00261",
+      "endPhraseId": "zc-379-p-00310",
+      "startSec": 3547.6,
+      "endSec": 4481.62,
+      "title": "Когда ИИ станет интеллектом и что автоматизация изменит",
+      "summary": "Донатный вопрос о тесте Тьюринга переходит в разговор о роботах, энергии для машин, генерации изображений и несбывшихся технологических прогнозах."
+    },
+    {
+      "id": "zc-379-topic-ai-consciousness",
+      "startPhraseId": "zc-379-p-00311",
+      "endPhraseId": "zc-379-p-00350",
+      "startSec": 4481.62,
+      "endSec": 5279.442,
+      "title": "Сознание машин и мораль искусственного разума",
+      "summary": "Ведущие обсуждают самосознание ИИ, сознание животных и растений, эмоции как часть интеллекта и этику цифровой копии личности."
+    },
+    {
+      "id": "zc-379-topic-mind-quantum-reality",
+      "startPhraseId": "zc-379-p-00351",
+      "endPhraseId": "zc-379-p-00399",
+      "startSec": 5279.962,
+      "endSec": 5970.429,
+      "title": "Мозг как интерфейс и нелокальная реальность",
+      "summary": "Теория «рабочего стола» сознания ведёт к разговору об ограниченном восприятии, квантовых полях, нелокальной реальности и симуляции."
+    },
+    {
+      "id": "zc-379-topic-xbox-future",
+      "startPhraseId": "zc-379-p-00406",
+      "endPhraseId": "zc-379-p-00422",
+      "startSec": 6018.089,
+      "endSec": 6331.929,
+      "title": "Финансовые проблемы Xbox и цена конкуренции",
+      "summary": "Падение игровой выручки Microsoft становится поводом защитить Xbox и объяснить, зачем рынку сильные конкуренты и эксклюзивы."
+    },
+    {
+      "id": "zc-379-topic-ev-europe",
+      "startPhraseId": "zc-379-p-00423",
+      "endPhraseId": "zc-379-p-00456",
+      "startSec": 6332.329,
+      "endSec": 6901.569,
+      "title": "Европу ждёт ворох сломанных электромобилей",
+      "summary": "Рынок EV растёт, но дешёвые машины сталкиваются с плохим качеством, зашифрованной электроникой и дорогим ремонтом."
+    },
+    {
+      "id": "zc-379-topic-ps5-linux",
+      "startPhraseId": "zc-379-p-00457",
+      "endPhraseId": "zc-379-p-00504",
+      "startSec": 6903.149,
+      "endSec": 7519.089,
+      "title": "Linux, эмуляторы и взлом PlayStation 5",
+      "summary": "Взлом старых прошивок PS5 позволяет запускать Linux и эмуляторы; ведущие обсуждают качество портов, пиратство и мечту об открытой консоли."
+    },
+    {
+      "id": "zc-379-topic-apple-news",
+      "startPhraseId": "zc-379-p-00505",
+      "endPhraseId": "zc-379-p-00528",
+      "startSec": 7519.209,
+      "endSec": 8019.489,
+      "title": "Новые iPhone, Mac mini, очки Apple и Globalstar",
+      "summary": "Слухи о камере iPhone 18 Pro, исчезнувшем дешёвом Mac mini, очках без дисплея и покупке Globalstar показывают разные направления будущей Apple."
+    },
+    {
+      "id": "zc-379-topic-ai-economy-openai",
+      "startPhraseId": "zc-379-p-00531",
+      "endPhraseId": "zc-379-p-00560",
+      "startSec": 8042.169,
+      "endSec": 8742.209,
+      "title": "ИИ, экономический коллапс и гонка OpenAI",
+      "summary": "Исследование об увольнениях ради ИИ, проблемы OpenAI и попытка Сергея Брина догнать Claude Code складываются в тревожный портрет AI-экономики."
+    },
+    {
+      "id": "zc-379-topic-ai-music",
+      "startPhraseId": "zc-379-p-00561",
+      "endPhraseId": "zc-379-p-00578",
+      "startSec": 8743.289,
+      "endSec": 8932.569,
+      "title": "ИИ-слоп захватывает музыкальные сервисы",
+      "summary": "Deezer получает десятки тысяч новых треков в день, половина создана ИИ; ведущие обсуждают выплаты, ботов-слушателей и фильтрацию музыки."
+    },
+    {
+      "id": "zc-379-topic-bezos-retreat",
+      "startPhraseId": "zc-379-p-00580",
+      "endPhraseId": "zc-379-p-00604",
+      "startSec": 8962.569,
+      "endSec": 9403.269,
+      "title": "Как Ноа Хоули ездил на ретрит к Джеффу Безосу",
+      "summary": "Статья The Atlantic становится портретом закрытой тусовки миллиардеров, их свиты и технофеодального мира."
+    },
+    {
+      "id": "zc-379-topic-timeless-ruby",
+      "startPhraseId": "zc-379-p-00606",
+      "endPhraseId": "zc-379-p-00618",
+      "startSec": 9422.409,
+      "endSec": 9678.589,
+      "title": "«Таймлесс. Рубиновая книга»",
+      "summary": "Тимур рекомендует немецкий подростковый фильм о семьях, умеющих путешествовать во времени, и объясняет его неожиданное обаяние."
+    },
+    {
+      "id": "zc-379-topic-atomic-heart-dlc",
+      "startPhraseId": "zc-379-p-00619",
+      "endPhraseId": "zc-379-p-00655",
+      "startSec": 9678.589,
+      "endSec": 10354.769,
+      "title": "Четвёртое DLC Atomic Heart не дотянуло до оригинала",
+      "summary": "Дима разбирает «Кровь на хрустале»: копипасту, баги, неудачную систему способностей и сюжетные мостики Atomic Heart."
+    },
+    {
+      "id": "zc-379-topic-hoppers-review",
+      "startPhraseId": "zc-379-p-00656",
+      "endPhraseId": "zc-379-p-00682",
+      "startSec": 10354.769,
+      "endSec": 10873.269,
+      "title": "«Прыгуны» — красивый, но слабый мультфильм Pixar",
+      "summary": "Hoppers о переносе сознания в тело бобра получает критику за посредственный сценарий при хорошей анимации и экологической идее."
+    },
+    {
+      "id": "zc-379-topic-elden-ring-coop",
+      "startPhraseId": "zc-379-p-00683",
+      "endPhraseId": "zc-379-p-00701",
+      "startSec": 10873.289,
+      "endSec": 11275.649,
+      "title": "Возвращение в Elden Ring с Seamless Co-op",
+      "summary": "Дима и Тимур снова проходят Elden Ring в кооперативном моде, рассказывают о баге с NPC и совместных стримах."
+    },
+    {
+      "id": "zc-379-topic-hoppers-boxoffice",
+      "startPhraseId": "zc-379-p-00702",
+      "endPhraseId": "zc-379-p-00705",
+      "startSec": 11275.649,
+      "endSec": 11321.729,
+      "title": "Почему «Прыгуны» недобирают в прокате",
+      "summary": "Обсуждение рекламы и кассовых ожиданий Hoppers показывает, почему дорогая кампания Disney не гарантирует миллиардные сборы."
+    },
+    {
+      "id": "zc-379-topic-yomi-no-tsugai",
+      "startPhraseId": "zc-379-p-00706",
+      "endPhraseId": "zc-379-p-00723",
+      "startSec": 11322.209,
+      "endSec": 11770.689,
+      "title": "«Цугаи загробного мира»",
+      "summary": "Дима советует необычное аниме о близнецах, духах и деревне в средневековой Японии, отмечая сильную завязку и рисовку."
+    },
+    {
+      "id": "zc-379-topic-dorohedoro",
+      "startPhraseId": "zc-379-p-00724",
+      "endPhraseId": "zc-379-p-00760",
+      "startSec": 11771.809,
+      "endSec": 12206.749,
+      "title": "«Дорохедоро» — кровавый киберпанк в мире магии",
+      "summary": "Разбор Dorohedoro охватывает Каймана с головой ящерицы, магический киберпанк, второй сезон и спор о манге с филлерами."
+    },
+    {
+      "id": "zc-379-topic-super-mario-galaxy",
+      "startPhraseId": "zc-379-p-00761",
+      "endPhraseId": "zc-379-p-00781",
+      "startSec": 12207.489,
+      "endSec": 12509.469,
+      "title": "«Супер Марио: Галактическое кино»",
+      "summary": "Продолжение мультфильма получает критику за детскость и монтаж ярких сцен, хотя ностальгия помогает ему собирать большую кассу."
+    },
+    {
+      "id": "zc-379-topic-widows-bay",
+      "startPhraseId": "zc-379-p-00782",
+      "endPhraseId": "zc-379-p-00803",
+      "startSec": 12509.469,
+      "endSec": 13007.005,
+      "title": "«Бухта вдов» и мода на девяностые",
+      "summary": "Тимур хвалит Widow’s Bay за атмосферу, операторскую работу и мистическую историю острова в духе «Твин Пикса»."
+    },
+    {
+      "id": "zc-379-topic-call-of-duty-ps4",
+      "startPhraseId": "zc-379-p-00804",
+      "endPhraseId": "zc-379-p-00807",
+      "startSec": 13007.245,
+      "endSec": 13060.745,
+      "title": "Call of Duty уходит с PlayStation 4",
+      "summary": "Ведущие обсуждают решение не выпускать новый Call of Duty на PS4 и границы поддержки старого поколения."
+    },
+    {
+      "id": "zc-379-topic-ff7-return",
+      "startPhraseId": "zc-379-p-00808",
+      "endPhraseId": "zc-379-p-00830",
+      "startSec": 13062.025,
+      "endSec": 13383.425,
+      "title": "Final Fantasy VII Return и возвращение к классическим боям",
+      "summary": "Слухи о третьей части ремейка обещают большую Утай, активную пошаговую систему и новую трактовку судьбы Айрис."
+    },
+    {
+      "id": "zc-379-topic-ai-children",
+      "startPhraseId": "zc-379-p-00833",
+      "endPhraseId": "zc-379-p-00837",
+      "startSec": 13391.355,
+      "endSec": 13478.815,
+      "title": "Как корпорации подсаживают детей на ИИ",
+      "summary": "Статья о школьных Chromebook показывает, как компании заранее формируют у детей привычку пользоваться ИИ-сервисами."
+    },
+    {
+      "id": "zc-379-topic-bezos-article",
+      "startPhraseId": "zc-379-p-00838",
+      "endPhraseId": "zc-379-p-00838",
+      "startSec": 13478.815,
+      "endSec": 13504.455,
+      "title": "Ноа Хоули и ретрит Безоса: статья недели",
+      "summary": "Короткая рекомендация статьи возвращает к теме закрытого мира технологических миллиардеров."
+    },
+    {
+      "id": "zc-379-topic-algebraic-simplification",
+      "startPhraseId": "zc-379-p-00839",
+      "endPhraseId": "zc-379-p-00841",
+      "startSec": 13505.255,
+      "endSec": 13581.295,
+      "title": "Новый способ упростить алгебраические вычисления",
+      "summary": "Ведущие рекомендуют научную статью о методе, который упрощает вычисления сильнее рядов Тейлора."
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "zc-379-exclusion-intro",
+      "startPhraseId": "zc-379-p-00000",
+      "endPhraseId": "zc-379-p-00006",
+      "startSec": 0,
+      "endSec": 109.2,
+      "kind": "intro",
+      "reason": "Приветствие и импровизационная вступительная болтовня."
+    },
+    {
+      "id": "zc-379-exclusion-setup-pause",
+      "startPhraseId": "zc-379-p-00040",
+      "endPhraseId": "zc-379-p-00046",
+      "startSec": 497.28,
+      "endSec": 597.82,
+      "kind": "technical-pause",
+      "reason": "Проверка времени и переход к новостям выпуска."
+    },
+    {
+      "id": "zc-379-exclusion-quiz-pause",
+      "startPhraseId": "zc-379-p-00178",
+      "endPhraseId": "zc-379-p-00183",
+      "startSec": 2129.16,
+      "endSec": 2198.62,
+      "kind": "technical-pause",
+      "reason": "Переходная импровизация и короткий фанатский квиз перед DRM."
+    },
+    {
+      "id": "zc-379-exclusion-xbox-art-banter",
+      "startPhraseId": "zc-379-p-00251",
+      "endPhraseId": "zc-379-p-00254",
+      "startSec": 3381.24,
+      "endSec": 3431.41,
+      "kind": "technical-pause",
+      "reason": "Шуточный разговор об обложке выпуска."
+    },
+    {
+      "id": "zc-379-exclusion-donation-transition",
+      "startPhraseId": "zc-379-p-00260",
+      "endPhraseId": "zc-379-p-00260",
+      "startSec": 3543.88,
+      "endSec": 3547.06,
+      "kind": "donations",
+      "reason": "Короткое упоминание доната и ожидания новостей."
+    },
+    {
+      "id": "zc-379-exclusion-consciousness-donation",
+      "startPhraseId": "zc-379-p-00400",
+      "endPhraseId": "zc-379-p-00405",
+      "startSec": 5970.429,
+      "endSec": 6018.089,
+      "kind": "donations",
+      "reason": "Донатный вопрос и возврат к новостям Microsoft."
+    },
+    {
+      "id": "zc-379-exclusion-impressions-transition",
+      "startPhraseId": "zc-379-p-00605",
+      "endPhraseId": "zc-379-p-00605",
+      "startSec": 9403.289,
+      "endSec": 9422.409,
+      "kind": "technical-pause",
+      "reason": "Переход от статьи к разделу впечатлений."
+    },
+    {
+      "id": "zc-379-exclusion-articles-transition",
+      "startPhraseId": "zc-379-p-00831",
+      "endPhraseId": "zc-379-p-00832",
+      "startSec": 13383.425,
+      "endSec": 13391.355,
+      "kind": "technical-pause",
+      "reason": "Объявление финального блока со статьями."
+    },
+    {
+      "id": "zc-379-exclusion-outro",
+      "startPhraseId": "zc-379-p-00842",
+      "endPhraseId": "zc-379-p-00859",
+      "startSec": 13581.295,
+      "endSec": 13857.465,
+      "kind": "thanks",
+      "reason": "Благодарности, планы на следующие выпуски и финальная болтовня."
+    }
+  ]
+}

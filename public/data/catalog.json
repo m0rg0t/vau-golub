@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "fingerprint": "f2b19342066dd357b39037dae9980ef5cc1b7768d8e24e65db467e130c4b9600",
+  "fingerprint": "f8e391392fd4c2b6e374186ca19f89cff3142482da29d9984a34883275f90841",
   "episodes": [
     {
       "id": "zc-02",
@@ -385,16 +385,64 @@
       "durationSec": 11405,
       "topicCount": 35,
       "minuteClipCount": 172
+    },
+    {
+      "id": "zc-61",
+      "number": 61,
+      "title": "Слово на букву D",
+      "year": 2017,
+      "publishedAt": "2017-05-25T00:34:43+03:00",
+      "localCoverPath": "/covers/zc-61.jpg",
+      "dataPath": "/data/episodes/zc-61.json",
+      "durationSec": 6538,
+      "topicCount": 14,
+      "minuteClipCount": 95
+    },
+    {
+      "id": "zc-100",
+      "number": 100,
+      "title": "Знаковый рубеж",
+      "year": 2018,
+      "publishedAt": "2018-04-18T00:01:42+03:00",
+      "localCoverPath": "/covers/zc-100.jpg",
+      "dataPath": "/data/episodes/zc-100.json",
+      "durationSec": 10488,
+      "topicCount": 14,
+      "minuteClipCount": 149
+    },
+    {
+      "id": "zc-160",
+      "number": 160,
+      "title": "Два литра шаурмы (feat. Wylsacom)",
+      "year": 2019,
+      "publishedAt": "2019-10-16T06:00:37+03:00",
+      "localCoverPath": "/covers/zc-160.jpg",
+      "dataPath": "/data/episodes/zc-160.json",
+      "durationSec": 12259,
+      "topicCount": 23,
+      "minuteClipCount": 191
+    },
+    {
+      "id": "zc-220",
+      "number": 220,
+      "title": "Димкин барановирус",
+      "year": 2021,
+      "publishedAt": "2021-05-08T04:55:16+03:00",
+      "localCoverPath": "/covers/zc-220.jpg",
+      "dataPath": "/data/episodes/zc-220.json",
+      "durationSec": 12616,
+      "topicCount": 19,
+      "minuteClipCount": 192
     }
   ],
   "itemSets": {
     "topics": {
       "path": "/data/items-topics.json",
-      "count": 908
+      "count": 978
     },
     "minute": {
       "path": "/data/items-minute.json",
-      "count": 5637
+      "count": 6264
     }
   }
 }

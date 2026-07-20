@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "fingerprint": "93ed14cdcdee3edb63b04ee4997b3f17b3de0f872ba7b1eced92d2a795f641f2",
+  "fingerprint": "e3996c81de69fa0cffc5643e95158971537ce22a960ba77d7fa8c51f2f99def5",
   "mode": "topics",
   "items": [
     {
@@ -9560,6 +9560,339 @@
       "description": "Максим рекомендует подробное видео Патрика Бойла о рынках прогнозов: кто продвигает ставки на любые события, почему сервисы стали популярны, кому они выгодны и какие подводные камни скрываются за их якобы объективными вероятностями.",
       "startSec": 5224.231,
       "endSec": 5312.071
+    },
+    {
+      "id": "zc-87-topic-nintendo-direct-mini",
+      "episodeId": "zc-87",
+      "kind": "topic",
+      "title": "Nintendo Direct Mini: ремастеры, Switch и старые игры",
+      "description": "Ведущие спорят о январском Nintendo Direct Mini, ценах на Bayonetta, потоке портов со старых консолей и о том, какие из Dark Souls, Donkey Kong и других анонсов действительно подходят Switch.",
+      "startSec": 721.98,
+      "endSec": 951.14
+    },
+    {
+      "id": "zc-87-topic-ces-2018",
+      "episodeId": "zc-87",
+      "kind": "topic",
+      "title": "CES 2018: технологии, которые легко забыть",
+      "description": "Большой разбор CES 2018: процессоры Intel с графикой AMD, телевизоры и проекторы Sony, игровые мониторы NVIDIA, автомобильные концепты, смартфон-ноутбук Razer и отключение света на главной выставке электроники.",
+      "startSec": 966.52,
+      "endSec": 1906.4
+    },
+    {
+      "id": "zc-87-topic-skype-encryption",
+      "episodeId": "zc-87",
+      "kind": "topic",
+      "title": "Шифрование в Skype и вопрос о бэкдорах",
+      "description": "Ведущие объясняют появление сквозного шифрования Signal в Skype и сомневаются, означает ли оно настоящую приватность сервиса, давно сотрудничающего с государственными системами наблюдения.",
+      "startSec": 1913.62,
+      "endSec": 2025.02
+    },
+    {
+      "id": "zc-87-topic-yandex-video",
+      "episodeId": "zc-87",
+      "kind": "topic",
+      "title": "Бесплатные фильмы на главной «Яндекса»",
+      "description": "Обсуждение превращения «Кинопоиска» и главной страницы «Яндекса» в видеоплатформу: бесплатные фильмы, вопросы к лицензиям и возможная модель платного доступа к свежим релизам.",
+      "startSec": 2035,
+      "endSec": 2264.58
+    },
+    {
+      "id": "zc-87-topic-remasters",
+      "episodeId": "zc-87",
+      "kind": "topic",
+      "title": "Зачем индустрия снова продаёт ремастеры",
+      "description": "На примерах Dark Souls, Crash Bandicoot, Halo, Shadow of the Colossus и Skyrim ведущие отделяют полезное переиздание от ленивого порта и объясняют экономику ностальгии.",
+      "startSec": 2272.28,
+      "endSec": 2907.8
+    },
+    {
+      "id": "zc-87-topic-god-of-war",
+      "episodeId": "zc-87",
+      "kind": "topic",
+      "title": "Новый God of War меняет жанр",
+      "description": "Подробности Game Informer становятся поводом обсудить новую боевую систему, отказ Кратоса от плавания и переход серии от слэшера к более тактическому приключенческому экшену.",
+      "startSec": 2907.98,
+      "endSec": 3104.06
+    },
+    {
+      "id": "zc-87-topic-destiny-2",
+      "episodeId": "zc-87",
+      "kind": "topic",
+      "title": "Как Bungie пытается спасти Destiny 2",
+      "description": "Ведущие разбирают обещанные Bungie исправления, возвращение механик первой Destiny, нехватку эндгейма и сравнивают платный сиквел с насыщенным контентом Warframe.",
+      "startSec": 3104.12,
+      "endSec": 3467.34
+    },
+    {
+      "id": "zc-87-topic-crypto",
+      "episodeId": "zc-87",
+      "kind": "topic",
+      "title": "Dogecoin, Ripple и хрупкая цена криптовалют",
+      "description": "Пародийный Dogecoin с капитализацией в два миллиарда долларов ведёт к разговору о Ripple, невозможности быстро превратить виртуальное состояние в деньги, спекулятивном пузыре и регулировании криптобирж.",
+      "startSec": 3467.98,
+      "endSec": 4127.16
+    },
+    {
+      "id": "zc-87-topic-neural-networks",
+      "episodeId": "zc-87",
+      "kind": "topic",
+      "title": "Нейросети читают образы и создают дипфейки",
+      "description": "Эксперименты по восстановлению увиденных человеком образов и ранние дипфейки вызывают спор о поддельных видео, травле обычных людей и этических рисках доступных генеративных инструментов.",
+      "startSec": 4127.64,
+      "endSec": 4442.06
+    },
+    {
+      "id": "zc-87-topic-grand-tour",
+      "episodeId": "zc-87",
+      "kind": "topic",
+      "title": "Почему второй сезон The Grand Tour стал лучше",
+      "description": "Максим хвалит второй сезон The Grand Tour за отказ от неудачных рубрик, больший упор на автомобили и самоиронию ведущих по поводу постановочных путешествий.",
+      "startSec": 4446.72,
+      "endSec": 4579.88
+    },
+    {
+      "id": "zc-87-topic-console-monitor",
+      "episodeId": "zc-87",
+      "kind": "topic",
+      "title": "Консоль на телевизоре или игровом мониторе",
+      "description": "Ведущие сравнивают расслабленную игру на телевизоре с концентрацией за монитором, обсуждают input lag, 4K, 144 Гц, FreeSync и выбор экрана для соревновательных шутеров.",
+      "startSec": 4584.6,
+      "endSec": 5049.36
+    },
+    {
+      "id": "zc-87-topic-xbox-one-x",
+      "episodeId": "zc-87",
+      "kind": "topic",
+      "title": "Xbox One X глазами владельцев PlayStation",
+      "description": "По мотивам статьи DTF ведущие оценивают компактность и тишину Xbox One X, улучшения старых игр, смысл второй консоли для мультиплатформы и неудобство цифровых магазинов.",
+      "startSec": 5054.24,
+      "endSec": 5264.86
+    },
+    {
+      "id": "zc-87-topic-evil-within",
+      "episodeId": "zc-87",
+      "kind": "topic",
+      "title": "Как разобраться во вселенной The Evil Within",
+      "description": "Ведущие рекомендуют подробный разбор DTF, который связывает сюжет, факты и домыслы двух частей The Evil Within и объясняет возможное направление триквела.",
+      "startSec": 5265.04,
+      "endSec": 5350.46
+    },
+    {
+      "id": "zc-87-topic-feedback-loops",
+      "episodeId": "zc-87",
+      "kind": "topic",
+      "title": "Кнут, пряник и обратная связь в играх",
+      "description": "Разговор о геймдизайнерских циклах обратной связи: как действия, награды и реакция системы поддерживают интерес игрока на примерах Civilization, Pyre, XCOM и Mario Kart.",
+      "startSec": 5528.88,
+      "endSec": 5613.304
+    },
+    {
+      "id": "zc-249-topic-rumors",
+      "episodeId": "zc-249",
+      "kind": "topic",
+      "title": "Слухи: проекты Valve, новый Xbox и Roblox на консолях",
+      "description": "Ведущие разбирают слухи о четырёх играх Valve, переносе Counter-Strike на Source 2, продолжении Half-Life: Alyx, устройстве Xbox Keystone и сложностях выхода экономики Roblox на консолях.",
+      "startSec": 373.26,
+      "endSec": 1372.24
+    },
+    {
+      "id": "zc-249-topic-companies-leave-russia",
+      "episodeId": "zc-249",
+      "kind": "topic",
+      "title": "Игровые и цифровые сервисы уходят из России",
+      "description": "Sony, Microsoft, Nintendo, App Store, Google Play и Steam приостанавливают работу: ведущие обсуждают судьбу купленных игр, зарубежные аккаунты, оплату подписок и доступные обходные варианты.",
+      "startSec": 1372.78,
+      "endSec": 1822.42
+    },
+    {
+      "id": "zc-249-topic-magic-leap-2",
+      "episodeId": "zc-249",
+      "kind": "topic",
+      "title": "Magic Leap 2 ищет место в корпоративном мире",
+      "description": "Второе поколение очков дополненной реальности стало легче и технологичнее, но высокая цена, внешний вычислительный модуль и сокращение числа enterprise-клиентов оставляют будущее Magic Leap неясным.",
+      "startSec": 1822.92,
+      "endSec": 2823.1
+    },
+    {
+      "id": "zc-249-topic-state-of-play",
+      "episodeId": "zc-249",
+      "kind": "topic",
+      "title": "State of Play: кооператив, кайдзю и странные анонсы",
+      "description": "Обсуждение мартовской презентации Sony: кооператив в Returnal, Forspoken, Exoprimal, Gigabash, Gundam Evolution и Stranger of Paradise — с попыткой понять, во что из показанного действительно хочется играть.",
+      "startSec": 2823.98,
+      "endSec": 3380.812
+    },
+    {
+      "id": "zc-249-topic-apple-event",
+      "episodeId": "zc-249",
+      "kind": "topic",
+      "title": "Mac Studio и возвращение Apple к профессионалам",
+      "description": "Ведущие разбирают iPhone SE, iPad Air, Mac Studio с M1 Ultra и Studio Display, сравнивают цены и производительность и обсуждают, почему Apple снова добавляет порты и прислушивается к профессиональным пользователям.",
+      "startSec": 3381.352,
+      "endSec": 4393.332
+    },
+    {
+      "id": "zc-249-topic-obi-wan-skull-bones-disenchantment",
+      "episodeId": "zc-249",
+      "kind": "topic",
+      "title": "Оби-Ван, Skull & Bones и разочарование в Disenchantment",
+      "description": "Медиаблок объединяет ожидания от сериала про Оби-Вана Кеноби и возвращения Хейдена Кристенсена, признаки жизни пиратской Skull & Bones и критику слабого четвёртого сезона Disenchantment.",
+      "startSec": 4393.332,
+      "endSec": 5109.152
+    },
+    {
+      "id": "zc-249-topic-local-hero",
+      "episodeId": "zc-249",
+      "kind": "topic",
+      "title": "«Местный герой»: доброе кино из 1983 года",
+      "description": "Тимур рекомендует британский фильм «Местный герой» и рассказывает, как неторопливая история о покупке шотландской деревни, необычные детали и человеческое тепло помогают отвлечься от тяжёлой реальности.",
+      "startSec": 5130.632,
+      "endSec": 5504.572
+    },
+    {
+      "id": "zc-249-topic-diabolical",
+      "episodeId": "zc-249",
+      "kind": "topic",
+      "title": "«Осатанелые»: неровная анимационная антология The Boys",
+      "description": "Дима оценивает первые эпизоды Diabolical, разные стили приглашённых авторов, жестокий юмор и связь с The Boys, но пока не находит достаточно причин рекомендовать весь сериал.",
+      "startSec": 5505.872,
+      "endSec": 5726.832
+    },
+    {
+      "id": "zc-249-topic-marry-me",
+      "episodeId": "zc-249",
+      "kind": "topic",
+      "title": "«Первый встречный» с Дженнифер Лопес",
+      "description": "Романтическая комедия Marry Me оказывается добрее ожиданий: ведущие обсуждают самоироничную роль Дженнифер Лопес, героя Оуэна Уилсона и предсказуемую, но уютную историю отношений.",
+      "startSec": 5734.932,
+      "endSec": 6083.112
+    },
+    {
+      "id": "zc-249-topic-from",
+      "episodeId": "zc-249",
+      "kind": "topic",
+      "title": "«Извне»: город, из которого нельзя уехать",
+      "description": "Дима рекомендует мистический сериал From о застрявших в странном городе людях и ночных существах, отмечая атмосферу, героя Гарольда Перрино и участие бывших продюсеров Lost.",
+      "startSec": 6083.652,
+      "endSec": 6330.952
+    },
+    {
+      "id": "zc-249-topic-dress-up-darling",
+      "episodeId": "zc-249",
+      "kind": "topic",
+      "title": "Dress Up Darling: тёплое аниме о косплее",
+      "description": "Тимур советует Sono Bisque Doll wa Koi wo Suru — красивый slice of life о косплеерах с человечными героями, здоровыми отношениями и минимумом раздражающих жанровых клише.",
+      "startSec": 6330.952,
+      "endSec": 6612.152
+    },
+    {
+      "id": "zc-363-topic-podcast-news",
+      "episodeId": "zc-363",
+      "kind": "topic",
+      "title": "Куда делся Тимур и что будет с бонусными подкастами",
+      "description": "Дима и Максим объясняют отсутствие Тимура из-за Web Summit, сверяют планы по «Кабинету Лора» и СДЗ и рассказывают, почему выпуск в этот раз ведут вдвоём.",
+      "startSec": 48.86,
+      "endSec": 186.42
+    },
+    {
+      "id": "zc-363-topic-rumors",
+      "episodeId": "zc-363",
+      "kind": "topic",
+      "title": "Слухи: дефицит памяти, Half-Life 3 и проблемы Ubisoft",
+      "description": "Ведущие обсуждают рост цен на SSD и оперативную память из-за ИИ, возможные анонсы Valve, далёкий Elder Scrolls VI, ремейк Fallout 3, перенос отчётности Ubisoft и отмену iPhone Air 2.",
+      "startSec": 187.5,
+      "endSec": 1374.36
+    },
+    {
+      "id": "zc-363-topic-ai-news",
+      "episodeId": "zc-363",
+      "kind": "topic",
+      "title": "Нейрослоп: групповой ChatGPT, Sima 2 и ИИ-взломы",
+      "description": "Большой блок об ИИ объединяет групповые чаты ChatGPT, обучение Google Sima 2 в играх, скандал вокруг Agentic OS, спор Disney с художниками и отчёт Anthropic о китайских кибератаках с агентами.",
+      "startSec": 1375.04,
+      "endSec": 2316
+    },
+    {
+      "id": "zc-363-topic-gta-delay",
+      "episodeId": "zc-363",
+      "kind": "topic",
+      "title": "Перенос GTA VI и его цена для индустрии",
+      "description": "Перенос GTA VI на ноябрь 2026 года приводит к разговору о готовности контента, увольнениях в Rockstar, профсоюзе, стоимости дополнительной разработки, кранче и сдвиге Marvel 1943: Rise of Hydra.",
+      "startSec": 2317.5,
+      "endSec": 3046.82
+    },
+    {
+      "id": "zc-363-topic-sony",
+      "episodeId": "zc-363",
+      "kind": "topic",
+      "title": "Sony: японский State of Play и мобильные франшизы",
+      "description": "Финансовые результаты PlayStation и азиатский State of Play переходят в обсуждение игр для японского рынка, Ratchet & Clank: Ranger Rumble, мобильной MMO Horizon Steel Frontiers и стратегии лицензирования брендов Sony.",
+      "startSec": 3047.5,
+      "endSec": 3889.6
+    },
+    {
+      "id": "zc-363-topic-hollywood-remakes",
+      "episodeId": "zc-363",
+      "kind": "topic",
+      "title": "Голливуд снова переснимает V for Vendetta, Rambo и Gremlins",
+      "description": "Ведущие спорят о дефиците новых идей, сравнивают ремейки кино и игр, обсуждают сериал V for Vendetta, приквел Rambo, третьих Gremlins и мультфильм Super Mario Galaxy.",
+      "startSec": 3890.04,
+      "endSec": 4604.78
+    },
+    {
+      "id": "zc-363-topic-valve-hardware",
+      "episodeId": "zc-363",
+      "kind": "topic",
+      "title": "Steam Controller, Steam Frame и новая Steam Machine",
+      "description": "Подробный разбор трёх устройств Valve: эргономики и магнитных стиков контроллера, автономного VR-шлема с беспроводным стримингом и нишевой игровой Steam Machine на SteamOS, включая цену, совместимость и перспективы апгрейда.",
+      "startSec": 4604.78,
+      "endSec": 7212.08
+    },
+    {
+      "id": "zc-363-topic-tormented-dispatch",
+      "episodeId": "zc-363",
+      "kind": "topic",
+      "title": "Tormented Souls 2 и финал Dispatch",
+      "description": "Дима критикует Tormented Souls 2 за механическое подражание старым Resident Evil и Silent Hill, а затем оценивает завершение сезона Dispatch и рекомендует игру несмотря на спорную концовку.",
+      "startSec": 7212.2,
+      "endSec": 7683.139
+    },
+    {
+      "id": "zc-363-topic-pluribus",
+      "episodeId": "zc-363",
+      "kind": "topic",
+      "title": "Pluribus: позитивный постапокалипсис Винса Гиллигана",
+      "description": "Первые серии «Из многих» вызывают восторг необычной сай-фай завязкой, героиней вне коллективного счастья и умением автора Breaking Bad обманывать знакомые ожидания.",
+      "startSec": 7683.719,
+      "endSec": 8109.259
+    },
+    {
+      "id": "zc-363-topic-syberia-remastered",
+      "episodeId": "zc-363",
+      "kind": "topic",
+      "title": "Почему Syberia Remastered разочаровывает",
+      "description": "Максим сравнивает ремастер первой Syberia с оригиналом и находит недоделанные трёхмерные локации, старые ролики, новые ошибки и слишком мало причин предпочесть его доступному HD-переизданию.",
+      "startSec": 8110.739,
+      "endSec": 8405.819
+    },
+    {
+      "id": "zc-363-topic-frankenstein",
+      "episodeId": "zc-363",
+      "kind": "topic",
+      "title": "«Франкенштейн» Гильермо дель Торо",
+      "description": "Ведущие обсуждают Оскара Айзека и Джейкоба Элорди, близость фильма к роману Мэри Шелли, тему современного Прометея и красивую, но неожиданно прямолинейную режиссуру дель Торо.",
+      "startSec": 8406.079,
+      "endSec": 8777.931
+    },
+    {
+      "id": "zc-363-topic-oblivion-psp",
+      "episodeId": "zc-363",
+      "kind": "topic",
+      "title": "Каким мог быть Oblivion на PSP",
+      "description": "Найденный рабочий прототип отменённого порта Oblivion для PSP становится любопытным артефактом эпохи: грубым на большом экране, но впечатляющим с учётом возможностей портативной консоли.",
+      "startSec": 8778.391,
+      "endSec": 8856.991
     }
   ]
 }

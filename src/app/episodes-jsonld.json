@@ -798,5 +798,65 @@
       "duration": "PT1H32M04S",
       "encodingFormat": "audio/mpeg"
     }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-87",
+    "url": "https://zavtracast.ru/87.html",
+    "name": "Директ Мини EX Альфа Турбо",
+    "episodeNumber": 87,
+    "datePublished": "2018-01-16T00:42:23+03:00",
+    "description": "На самом деле мы хотели назвать новый выпуск Завтракаста «Директ Мини EX Альфа Турбо Чампионшип Эдишен (Фанки Мод Инклюдед)», но столько места для заголовка у нас нет. Такое название мы выбрали неспроста, так как на этой неделе Завтракаст впервые за свою двухлетнюю историю дотошно разбирает содержание презентации Nintendo Direct. Новые игры, DLC, ремастеры и прочие радости для Nintendo Switch. Кроме того, мы немного рассказали про выставку CES, на которой, как это заведено, крупные технологические, автомобильные и телеком-компании показывают свое видение будущего, о котором через месяц все забывают. В новом выпуске – по расписанию трое ведущих – рассказывают в ироничной манере свои мнения по поводу новостей игр, медиа и технологий, а также советуют во что поиграть и что посмотреть темной зимней ночью.",
+    "image": "https://vau-golub.ru/covers/zc-87.jpeg",
+    "timeRequired": "PT1H41M44S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/87_mixdown.mp3",
+      "duration": "PT1H41M44S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-249",
+    "url": "https://zavtracast.ru/249.html",
+    "name": "Тоже черный день",
+    "episodeNumber": 249,
+    "datePublished": "2022-03-11T11:41:17+03:00",
+    "description": "В это крайне тяжелое время для нас всех и особенно тяжелое для многих из наших слушателей, мы продолжаем делать то, что умеем – контент, который может помочь вам немного отвлечься. Пожалуйста, берегите себя и близких. Максим в этот раз заболел, так что у микрофона только Дима и Тимур. Обсудили презентации Sony и Apple, интересные слухи недели, а также посоветовали добрые и милые фильмы с аниме. Сейчас нам, как никогда, нужна ваша поддержка. Если вы хотите нас поддержать из России, то подписывайтесь на нас на Boosty – https://boosty.to/zavtracast. Если вы находитесь за границей, то можно подписаться на нас еще и на сервисе Patreon или через подписку в Apple Podcasts.",
+    "image": "https://vau-golub.ru/covers/zc-249.jpg",
+    "timeRequired": "PT1H59M11S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast249_mixdown.mp3",
+      "duration": "PT1H59M11S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-363",
+    "url": "https://zavtracast.ru/363.html",
+    "name": "Сила пара",
+    "episodeNumber": 363,
+    "datePublished": "2025-11-17T11:10:07+03:00",
+    "description": "Уже десять лет мы в подкасте рассказываем про разные технологии, интернет-культуру и медиа, фильмы, сериалы, обсуждаем автомобили, видеоигры и всякие другие гиковские штуки. На сей раз в эфире Дима и Максим, рассказывающие много всего интересного – и про паровые машины от Valve и про нейросети и про перенос GTA VI и про фильм “Франкенштейн” и про многое многое другое!",
+    "image": "https://vau-golub.ru/covers/zc-363.jpg",
+    "timeRequired": "PT2H32M00S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast363-steampowered.mp3",
+      "duration": "PT2H32M00S",
+      "encodingFormat": "audio/mpeg"
+    }
   }
 ]

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "fingerprint": "93ed14cdcdee3edb63b04ee4997b3f17b3de0f872ba7b1eced92d2a795f641f2",
+  "fingerprint": "e3996c81de69fa0cffc5643e95158971537ce22a960ba77d7fa8c51f2f99def5",
   "episodes": [
     {
       "id": "zc-02",
@@ -481,16 +481,52 @@
       "durationSec": 5524,
       "topicCount": 20,
       "minuteClipCount": 85
+    },
+    {
+      "id": "zc-87",
+      "number": 87,
+      "title": "Директ Мини EX Альфа Турбо",
+      "year": 2018,
+      "publishedAt": "2018-01-16T00:42:23+03:00",
+      "localCoverPath": "/covers/zc-87.jpeg",
+      "dataPath": "/data/episodes/zc-87.json",
+      "durationSec": 6104,
+      "topicCount": 14,
+      "minuteClipCount": 69
+    },
+    {
+      "id": "zc-249",
+      "number": 249,
+      "title": "Тоже черный день",
+      "year": 2022,
+      "publishedAt": "2022-03-11T11:41:17+03:00",
+      "localCoverPath": "/covers/zc-249.jpg",
+      "dataPath": "/data/episodes/zc-249.json",
+      "durationSec": 7151,
+      "topicCount": 11,
+      "minuteClipCount": 81
+    },
+    {
+      "id": "zc-363",
+      "number": 363,
+      "title": "Сила пара",
+      "year": 2025,
+      "publishedAt": "2025-11-17T11:10:07+03:00",
+      "localCoverPath": "/covers/zc-363.jpg",
+      "dataPath": "/data/episodes/zc-363.json",
+      "durationSec": 9120,
+      "topicCount": 12,
+      "minuteClipCount": 145
     }
   ],
   "itemSets": {
     "topics": {
       "path": "/data/items-topics.json",
-      "count": 1062
+      "count": 1099
     },
     "minute": {
       "path": "/data/items-minute.json",
-      "count": 6649
+      "count": 6944
     }
   }
 }

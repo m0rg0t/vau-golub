@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "episodeId": "zc-71",
+  "topics": [
+    {
+      "id": "zc-71-topic-game-of-thrones-spoilers",
+      "startPhraseId": "zc-71-p-00009",
+      "endPhraseId": "zc-71-p-00059",
+      "startSec": 142.2,
+      "endSec": 987.36,
+      "title": "Утечка «Игры престолов»: когда спойлеры становятся хайпом",
+      "summary": "Ведущие обсуждают утечку эпизода «Игры престолов», медиа, которые публикуют спойлерные разборы до официального релиза, и ответственность изданий перед читателями."
+    },
+    {
+      "id": "zc-71-topic-game-of-thrones-writing",
+      "startPhraseId": "zc-71-p-00060",
+      "endPhraseId": "zc-71-p-00073",
+      "startSec": 987.36,
+      "endSec": 1374,
+      "title": "«Игра престолов» без книг: скомканный финал и сейф Мартина",
+      "summary": "Разговор о воскресшем Джоне Сноу и ускорившемся повествовании приводит к критике последних сезонов «Игры престолов», ожиданию новых книг Мартина и легенде о сейфе с финалом для HBO."
+    },
+    {
+      "id": "zc-71-topic-observer",
+      "startPhraseId": "zc-71-p-00075",
+      "endPhraseId": "zc-71-p-00087",
+      "startSec": 1405.12,
+      "endSec": 1732.16,
+      "title": "Observer: киберпанк-детектив с атмосферой Blade Runner",
+      "summary": "Ведущие разбирают Observer с Рутгером Хауэром: нуарную атмосферу, цифровую чуму и расследование в чужих сознаниях, но предупреждают о коридорном дизайне, слабой оптимизации и многочисленных глюках."
+    },
+    {
+      "id": "zc-71-topic-cyberpunk-games",
+      "startPhraseId": "zc-71-p-00088",
+      "endPhraseId": "zc-71-p-00109",
+      "startSec": 1732.16,
+      "endSec": 1959.24,
+      "title": "Где настоящий киберпанк в играх?",
+      "summary": "Участники спорят, какие игры можно считать киберпанком, вспоминают Alien: Isolation, Shadowrun, Deus Ex и старый квест Beneath a Steel Sky и сетуют на отсутствие большого современного хита жанра."
+    },
+    {
+      "id": "zc-71-topic-oxenfree",
+      "startPhraseId": "zc-71-p-00110",
+      "endPhraseId": "zc-71-p-00124",
+      "startSec": 1970.16,
+      "endSec": 2158.2,
+      "title": "Oxenfree: живые диалоги и четыре концовки",
+      "summary": "Дима рекомендует Oxenfree за естественные диалоги, музыку и сюжетные повороты, а ведущие обсуждают четыре концовки и честно признаются, что некоторым приятнее смотреть прохождение, чем играть самим."
+    },
+    {
+      "id": "zc-71-topic-youtube-playthroughs",
+      "startPhraseId": "zc-71-p-00125",
+      "endPhraseId": "zc-71-p-00144",
+      "startSec": 2158.2,
+      "endSec": 2462.28,
+      "title": "Ютуб как игровая приставка для зрителей",
+      "summary": "Разговор о бессловесных прохождениях мобильных игр на YouTube переходит к необычным каналам: игроку с тяжёлой болезнью, человеку без рук и ног и авторам, которые рисуют или играют нестандартными способами."
+    },
+    {
+      "id": "zc-71-topic-xbox-one-x",
+      "startPhraseId": "zc-71-p-00145",
+      "endPhraseId": "zc-71-p-00162",
+      "startSec": 2473.02,
+      "endSec": 2835.1,
+      "title": "Xbox One X и кризис эксклюзивов Microsoft",
+      "summary": "Ведущие разбирают маркетинг Xbox One X, отсутствие настоящих эксклюзивов на старте и перенос Crackdown 3, сравнивая стратегию Microsoft с запуском PlayStation 4 Pro."
+    },
+    {
+      "id": "zc-71-topic-crossplay",
+      "startPhraseId": "zc-71-p-00163",
+      "endPhraseId": "zc-71-p-00200",
+      "startSec": 2835.1,
+      "endSec": 3418.7,
+      "title": "Sony против кроссплея: кому принадлежит игрок?",
+      "summary": "Обсуждение отказа Sony разрешать кросс-платформенную игру в ARK, Rocket League и Minecraft превращается в спор о конкуренции экосистем и о том, должна ли компания выбирать интересы игроков вместо продаж своей консоли."
+    },
+    {
+      "id": "zc-71-topic-china-online-courts",
+      "startPhraseId": "zc-71-p-00203",
+      "endPhraseId": "zc-71-p-00241",
+      "startSec": 3458.42,
+      "endSec": 4041.68,
+      "title": "Китайский онлайн-суд и WeChat как универсальная платформа",
+      "summary": "В Китае запускают видеосуд для интернет-споров, а WeChat связывает в одном приложении чаты, платежи, такси и штрафы. Ведущие объясняют, почему такая цифровая экосистема появилась именно там."
+    },
+    {
+      "id": "zc-71-topic-switch-sales",
+      "startPhraseId": "zc-71-p-00243",
+      "endPhraseId": "zc-71-p-00273",
+      "startSec": 4078.92,
+      "endSec": 4504.16,
+      "title": "Nintendo Switch и Splatoon 2 возглавили продажи в США",
+      "summary": "Switch становится самой продаваемой консолью США в июле, а Splatoon 2 — самой продаваемой игрой. Ведущие обсуждают феномен Nintendo, неудобный голосовой чат и причины успеха платформы."
+    },
+    {
+      "id": "zc-71-topic-rapid-packed-math",
+      "startPhraseId": "zc-71-p-00274",
+      "endPhraseId": "zc-71-p-00300",
+      "startSec": 4531.66,
+      "endSec": 4978.92,
+      "title": "Rapid Packed Math: сможет ли AMD удвоить производительность?",
+      "summary": "Объясняется технология Rapid Packed Math с вычислениями FP16, её потенциальный прирост для видеокарт AMD и PS4 Pro, реальные результаты тестов и зависимость эффекта от поддержки разработчиков."
+    },
+    {
+      "id": "zc-71-topic-overwatch-pubg",
+      "startPhraseId": "zc-71-p-00305",
+      "endPhraseId": "zc-71-p-00354",
+      "startSec": 5041.519,
+      "endSec": 5573.719,
+      "title": "Overwatch теряет игроков, а PUBG покоряет Twitch",
+      "summary": "Ведущие проверяют громкий заголовок о переходе игроков из Overwatch в PlayerUnknown’s Battlegrounds, разбирают методику трекера и обсуждают стремительный рост баттл-рояля и его популярность у стримеров."
+    },
+    {
+      "id": "zc-71-topic-essential-phone",
+      "startPhraseId": "zc-71-p-00356",
+      "endPhraseId": "zc-71-p-00380",
+      "startSec": 5631.039,
+      "endSec": 6002.909,
+      "title": "Essential Phone: модульный разъём и телефон от создателя Android",
+      "summary": "Обсуждается запуск Essential Phone Энди Рубина: чистый Android, экран и дизайн в духе будущего iPhone, магнитный разъём для аксессуаров, отсутствие мини-джека и беспроводная зарядка."
+    },
+    {
+      "id": "zc-71-topic-tape-storage",
+      "startPhraseId": "zc-71-p-00383",
+      "endPhraseId": "zc-71-p-00409",
+      "startSec": 6044.069,
+      "endSec": 6412.889,
+      "title": "Sony и IBM записали 330 терабайт на магнитную ленту",
+      "summary": "Ведущие объясняют, зачем банкам и государственным архивам нужны кассеты с огромной ёмкостью, почему лента надёжнее дисков для долгого хранения и как WeChat, облака и СОРМ создают спрос на архивы."
+    },
+    {
+      "id": "zc-71-topic-planet-apes-game",
+      "startPhraseId": "zc-71-p-00410",
+      "endPhraseId": "zc-71-p-00433",
+      "startSec": 6439.79,
+      "endSec": 6927.05,
+      "title": "Игра по «Планете обезьян» и магия motion capture",
+      "summary": "Анонс интерактивной игры по «Планете обезьян» приводит к разговору об участии Энди Серкиса, его ролях в motion capture и о том, как актёры работают на настоящих локациях до появления цифровых персонажей."
+    },
+    {
+      "id": "zc-71-topic-iphone-security",
+      "startPhraseId": "zc-71-p-00436",
+      "endPhraseId": "zc-71-p-00471",
+      "startSec": 6987.23,
+      "endSec": 7594.49,
+      "title": "Взлом пароля iPhone и ключи Secure Enclave",
+      "summary": "Ведущие оценивают брутфорс четырёхзначного кода iPhone через режим восстановления и обсуждают публикацию ключей Secure Enclave, возможные атаки на Touch ID и аппаратные ограничения исправления уязвимости."
+    },
+    {
+      "id": "zc-71-topic-beer-week",
+      "startPhraseId": "zc-71-p-00475",
+      "endPhraseId": "zc-71-p-00494",
+      "startSec": 7628.29,
+      "endSec": 7891.63,
+      "title": "Пиво недели: шоколадный стаут Samuel Smith",
+      "summary": "Возвращается любимая рубрика: ведущие хвалят шоколадный стаут Samuel Smith за насыщенный вкус, сравнивают его с Double Chocolate Stout и обсуждают, где найти бутылку в российских магазинах."
+    },
+    {
+      "id": "zc-71-topic-wine-recommendations",
+      "startPhraseId": "zc-71-p-00495",
+      "endPhraseId": "zc-71-p-00520",
+      "startSec": 7891.63,
+      "endSec": 8259.69,
+      "title": "Вино без снобизма: как выбрать хорошую бутылку до тысячи рублей",
+      "summary": "Григорий Бобук делится советами по недорогому калифорнийскому вину и розе, рекомендует Vivino и предлагает проверять дорогие и дешёвые бутылки в слепом тесте."
+    },
+    {
+      "id": "zc-71-topic-unreliable-narrators",
+      "startPhraseId": "zc-71-p-00522",
+      "endPhraseId": "zc-71-p-00527",
+      "startSec": 8283.63,
+      "endSec": 8435.35,
+      "title": "Ненадёжные рассказчики в играх и кино",
+      "summary": "По статье на DTF ведущие вспоминают приём ненадёжного рассказчика и его примеры в Bastion, The Stanley Parable и Spec Ops: The Line, где привычный шутер превращается в философскую притчу."
+    },
+    {
+      "id": "zc-71-topic-indie-prices",
+      "startPhraseId": "zc-71-p-00528",
+      "endPhraseId": "zc-71-p-00538",
+      "startSec": 8435.35,
+      "endSec": 8725.474,
+      "title": "Почему инди-игры в Steam стоят слишком дёшево",
+      "summary": "Обсуждается спор о средней цене инди-игры в Steam: низкая стоимость расширяет аудиторию и поддерживает ренессанс жанра, но разработчикам трудно окупать работу."
+    },
+    {
+      "id": "zc-71-topic-russian-remakes",
+      "startPhraseId": "zc-71-p-00539",
+      "endPhraseId": "zc-71-p-00571",
+      "startSec": 8729.614,
+      "endSec": 9361.986,
+      "title": "Российские ремейки зарубежных сериалов",
+      "summary": "Ведущие разбирают российские версии «Бесстыдников», «Доктора Хауса», «Моста» и других сериалов, спорят о культурном коде и вспоминают удачные исключения вроде «Метода»."
+    },
+    {
+      "id": "zc-71-topic-netflix-russian-series",
+      "startPhraseId": "zc-71-p-00572",
+      "endPhraseId": "zc-71-p-00577",
+      "startSec": 9362.006,
+      "endSec": 9494.366,
+      "title": "Netflix покупает российские сериалы",
+      "summary": "Netflix планирует потратить миллиарды на собственный контент и закупает российские сериалы, включая «Метод» и «Мажор». Ведущие отмечают неожиданный международный успех продюсера Александра Цекало."
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "zc-71-exclusion-intro",
+      "startPhraseId": "zc-71-p-00000",
+      "endPhraseId": "zc-71-p-00008",
+      "startSec": 0,
+      "endSec": 134.2,
+      "kind": "intro",
+      "reason": "Поэтическая заставка, рекламная интеграция, приветствие и представление гостя перед началом новостей."
+    },
+    {
+      "id": "zc-71-exclusion-transition-observer",
+      "startPhraseId": "zc-71-p-00074",
+      "endPhraseId": "zc-71-p-00074",
+      "startSec": 1375.12,
+      "endSec": 1403.62,
+      "kind": "technical-pause",
+      "reason": "Отдельная юмористическая аудиоперебивка между новостным блоком и обсуждением игры Observer."
+    },
+    {
+      "id": "zc-71-exclusion-diy-sketch",
+      "startPhraseId": "zc-71-p-00201",
+      "endPhraseId": "zc-71-p-00202",
+      "startSec": 3418.7,
+      "endSec": 3458.42,
+      "kind": "technical-pause",
+      "reason": "Случайная бытовая перебивка с инструкцией по самодельной кормушке, не относящаяся к теме выпуска."
+    },
+    {
+      "id": "zc-71-exclusion-virtual-store-ad",
+      "startPhraseId": "zc-71-p-00242",
+      "endPhraseId": "zc-71-p-00242",
+      "startSec": 4048.92,
+      "endSec": 4070.42,
+      "kind": "ad",
+      "reason": "Рекламная история о виртуальной прогулке по магазину и списании денег за разбитую виртуальную посуду."
+    },
+    {
+      "id": "zc-71-exclusion-build-sketch",
+      "startPhraseId": "zc-71-p-00301",
+      "endPhraseId": "zc-71-p-00304",
+      "startSec": 4978.92,
+      "endSec": 5041.519,
+      "kind": "technical-pause",
+      "reason": "Шуточная перебивка со сборкой компьютера перед возвращением к новостям об играх."
+    },
+    {
+      "id": "zc-71-exclusion-overwatch-transition",
+      "startPhraseId": "zc-71-p-00355",
+      "endPhraseId": "zc-71-p-00355",
+      "startSec": 5601.039,
+      "endSec": 5613.039,
+      "kind": "technical-pause",
+      "reason": "Короткий повреждённый или неразборчивый фрагмент перед обсуждением Essential Phone."
+    },
+    {
+      "id": "zc-71-exclusion-essential-transition",
+      "startPhraseId": "zc-71-p-00381",
+      "endPhraseId": "zc-71-p-00382",
+      "startSec": 6002.909,
+      "endSec": 6040.029,
+      "kind": "technical-pause",
+      "reason": "Разговор о мухе и шумная бытовая пауза внутри перехода к технологической новости."
+    },
+    {
+      "id": "zc-71-exclusion-serkis-sketch",
+      "startPhraseId": "zc-71-p-00434",
+      "endPhraseId": "zc-71-p-00435",
+      "startSec": 6927.23,
+      "endSec": 6976.75,
+      "kind": "technical-pause",
+      "reason": "Посторонняя импровизационная перебивка о Франции, не связанная с обсуждением «Планеты обезьян»."
+    },
+    {
+      "id": "zc-71-exclusion-iphone-joke",
+      "startPhraseId": "zc-71-p-00472",
+      "endPhraseId": "zc-71-p-00474",
+      "startSec": 7594.49,
+      "endSec": 7625.45,
+      "kind": "technical-pause",
+      "reason": "Короткая непрофильная шутка о европейской политике перед возвращением рубрики о напитках."
+    },
+    {
+      "id": "zc-71-exclusion-dtf-transition",
+      "startPhraseId": "zc-71-p-00521",
+      "endPhraseId": "zc-71-p-00521",
+      "startSec": 8279.69,
+      "endSec": 8283.63,
+      "kind": "technical-pause",
+      "reason": "Неразборчивый короткий фрагмент-переход перед рубрикой со статьями DTF."
+    },
+    {
+      "id": "zc-71-exclusion-outro",
+      "startPhraseId": "zc-71-p-00578",
+      "endPhraseId": "zc-71-p-00584",
+      "startSec": 9512.006,
+      "endSec": 9613.886,
+      "kind": "thanks",
+      "reason": "Объявление летнего отпуска, благодарности слушателям и финальное прощание с гостем."
+    },
+    {
+      "id": "zc-71-exclusion-caption-artifact",
+      "startPhraseId": "zc-71-p-00585",
+      "endPhraseId": "zc-71-p-00593",
+      "startSec": 9627.386,
+      "endSec": 9872.006,
+      "kind": "technical-pause",
+      "reason": "Повторяющийся артефакт «Продолжение следует...» после окончания выпуска."
+    }
+  ]
+}

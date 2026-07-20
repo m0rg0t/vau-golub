@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "fingerprint": "e3996c81de69fa0cffc5643e95158971537ce22a960ba77d7fa8c51f2f99def5",
+  "fingerprint": "d3d4518c2c30bc2a57c4a991ab01eba178d8b7cb0f385476f7a3a21f157067ad",
   "episodes": [
     {
       "id": "zc-02",
@@ -517,16 +517,52 @@
       "durationSec": 9120,
       "topicCount": 12,
       "minuteClipCount": 145
+    },
+    {
+      "id": "zc-55",
+      "number": 55,
+      "title": "Обкашляли вопросики",
+      "year": 2017,
+      "publishedAt": "2017-03-28T00:31:57+03:00",
+      "localCoverPath": "/covers/zc-55.jpg",
+      "dataPath": "/data/episodes/zc-55.json",
+      "durationSec": 6998,
+      "topicCount": 17,
+      "minuteClipCount": 98
+    },
+    {
+      "id": "zc-276",
+      "number": 276,
+      "title": "Товарищ Поттер",
+      "year": 2023,
+      "publishedAt": "2023-02-23T01:21:37+03:00",
+      "localCoverPath": "/covers/zc-276.jpg",
+      "dataPath": "/data/episodes/zc-276.json",
+      "durationSec": 11308,
+      "topicCount": 19,
+      "minuteClipCount": 168
+    },
+    {
+      "id": "zc-313",
+      "number": 313,
+      "title": "Микропластик в яичках",
+      "year": 2024,
+      "publishedAt": "2024-05-24T00:20:30+03:00",
+      "localCoverPath": "/covers/zc-313.jpg",
+      "dataPath": "/data/episodes/zc-313.json",
+      "durationSec": 11576,
+      "topicCount": 14,
+      "minuteClipCount": 156
     }
   ],
   "itemSets": {
     "topics": {
       "path": "/data/items-topics.json",
-      "count": 1099
+      "count": 1149
     },
     "minute": {
       "path": "/data/items-minute.json",
-      "count": 6944
+      "count": 7366
     }
   }
 }

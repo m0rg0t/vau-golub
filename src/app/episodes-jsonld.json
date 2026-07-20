@@ -858,5 +858,65 @@
       "duration": "PT2H32M00S",
       "encodingFormat": "audio/mpeg"
     }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-55",
+    "url": "https://zavtracast.ru/55.html",
+    "name": "Обкашляли вопросики",
+    "episodeNumber": 55,
+    "datePublished": "2017-03-28T00:31:57+03:00",
+    "description": "Привет, уважаемые слушатели, от команды Завтракаста — лучшего подкаста про игры, медиа и технологии в Бурятии! В новом выпуске вы узнаете много интересного. Например, зачем нужны эксклюзивы на консолях, какими будут Макбуки будущего, про что будет следующая Call of Duty, чего ждать от следующей версии Android O, стоит ли играть в старые “Зельды” и зачем актер японского порно хотел убить своего сенпая, врезавшись в его дом на самолете. Завтракаст обучающий!",
+    "image": "https://vau-golub.ru/covers/zc-55.jpg",
+    "timeRequired": "PT1H56M38S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/55_mixdown.mp3",
+      "duration": "PT1H56M38S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-276",
+    "url": "https://zavtracast.ru/276.html",
+    "name": "Товарищ Поттер",
+    "episodeNumber": 276,
+    "datePublished": "2023-02-23T01:21:37+03:00",
+    "description": "Наш подкаст про игры, технологии, интернет и медиа возвращается с новой порцией ударных слухов, интересных рекомендаций, разбором новостей, советами по играм, сериалам, кино. Обсуждаем финансовые модели подписки в социальных сетях, нашумевшие Hogwarts Legacy, Atomic Heart, а также советуем много аниме.",
+    "image": "https://vau-golub.ru/covers/zc-276.jpg",
+    "timeRequired": "PT3H08M28S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast276.mp3",
+      "duration": "PT3H08M28S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-313",
+    "url": "https://zavtracast.ru/313.html",
+    "name": "Микропластик в яичках",
+    "episodeNumber": 313,
+    "datePublished": "2024-05-24T00:20:30+03:00",
+    "description": "В этом выпуске подкаста Завтракаст мы обсуждаем долгожданную Hellblade 2, смотрим на аниме Sand Land и фильм “Каскадёры”, а также обсуждаем многое другое!",
+    "image": "https://vau-golub.ru/covers/zc-313.jpg",
+    "timeRequired": "PT3H12M56S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast313_fxqc8.mp3",
+      "duration": "PT3H12M56S",
+      "encodingFormat": "audio/mpeg"
+    }
   }
 ]

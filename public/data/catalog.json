@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "fingerprint": "99a5007729d0b20ef3d908f24d10bd2f3259472c4a3a9027e05211dad0fdec56",
+  "fingerprint": "dfa01c73fec480f93f1ec6c1957186aca29ef88a7a378ae681db6147e4cd647c",
   "episodes": [
     {
       "id": "zc-02",
@@ -265,16 +265,112 @@
       "durationSec": 13857,
       "topicCount": 33,
       "minuteClipCount": 213
+    },
+    {
+      "id": "zc-36",
+      "number": 36,
+      "title": "Классика. Подкаст. Апартаменты.",
+      "year": 2016,
+      "publishedAt": "2016-09-20T22:03:51+03:00",
+      "localCoverPath": "/covers/zc-36.jpg",
+      "dataPath": "/data/episodes/zc-36.json",
+      "durationSec": 10876,
+      "topicCount": 30,
+      "minuteClipCount": 166
+    },
+    {
+      "id": "zc-71",
+      "number": 71,
+      "title": "Невермор",
+      "year": 2017,
+      "publishedAt": "2017-08-22T23:59:18+03:00",
+      "localCoverPath": "/covers/zc-71.jpg",
+      "dataPath": "/data/episodes/zc-71.json",
+      "durationSec": 9872,
+      "topicCount": 22,
+      "minuteClipCount": 142
+    },
+    {
+      "id": "zc-140",
+      "number": 140,
+      "title": "180.000 лье над водой",
+      "year": 2019,
+      "publishedAt": "2019-04-17T16:29:54+03:00",
+      "localCoverPath": "/covers/zc-140.jpg",
+      "dataPath": "/data/episodes/zc-140.json",
+      "durationSec": 6445,
+      "topicCount": 26,
+      "minuteClipCount": 98
+    },
+    {
+      "id": "zc-207",
+      "number": 207,
+      "title": "В ожидании Киберпанка",
+      "year": 2020,
+      "publishedAt": "2020-12-04T18:50:44+03:00",
+      "localCoverPath": "/covers/zc-207.jpg",
+      "dataPath": "/data/episodes/zc-207.json",
+      "durationSec": 10984,
+      "topicCount": 24,
+      "minuteClipCount": 163
+    },
+    {
+      "id": "zc-270",
+      "number": 270,
+      "title": "Doom NOMONEYNAL",
+      "year": 2022,
+      "publishedAt": "2022-11-11T19:29:02+03:00",
+      "localCoverPath": "/covers/zc-270.jpg",
+      "dataPath": "/data/episodes/zc-270.json",
+      "durationSec": 10803,
+      "topicCount": 21,
+      "minuteClipCount": 164
+    },
+    {
+      "id": "zc-293",
+      "number": 293,
+      "title": "Миша Мышь",
+      "year": 2023,
+      "publishedAt": "2023-10-02T20:16:57+03:00",
+      "localCoverPath": "/covers/zc-293.jpg",
+      "dataPath": "/data/episodes/zc-293.json",
+      "durationSec": 14205,
+      "topicCount": 34,
+      "minuteClipCount": 216
+    },
+    {
+      "id": "zc-316",
+      "number": 316,
+      "title": "Время раздуплений",
+      "year": 2024,
+      "publishedAt": "2024-07-08T20:08:02+03:00",
+      "localCoverPath": "/covers/zc-316.jpg",
+      "dataPath": "/data/episodes/zc-316.json",
+      "durationSec": 15002,
+      "topicCount": 39,
+      "minuteClipCount": 237
+    },
+    {
+      "id": "zc-362",
+      "number": 362,
+      "title": "Любитель бокса",
+      "year": 2025,
+      "publishedAt": "2025-11-07T16:58:09+03:00",
+      "localCoverPath": "/covers/zc-362.jpg",
+      "dataPath": "/data/episodes/zc-362.json",
+      "durationSec": 13030,
+      "topicCount": 30,
+      "minuteClipCount": 200
     }
   ],
   "itemSets": {
     "topics": {
       "path": "/data/items-topics.json",
-      "count": 603
+      "count": 829
     },
     "minute": {
       "path": "/data/items-minute.json",
-      "count": 3903
+      "count": 5289
     }
   }
 }

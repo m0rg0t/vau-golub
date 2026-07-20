@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "fingerprint": "dfa01c73fec480f93f1ec6c1957186aca29ef88a7a378ae681db6147e4cd647c",
+  "fingerprint": "f2b19342066dd357b39037dae9980ef5cc1b7768d8e24e65db467e130c4b9600",
   "episodes": [
     {
       "id": "zc-02",
@@ -361,16 +361,40 @@
       "durationSec": 13030,
       "topicCount": 30,
       "minuteClipCount": 200
+    },
+    {
+      "id": "zc-20",
+      "number": 20,
+      "title": "Без прилагательных",
+      "year": 2016,
+      "publishedAt": "2016-05-09T23:32:25+03:00",
+      "localCoverPath": "/covers/zc-20.jpg",
+      "dataPath": "/data/episodes/zc-20.json",
+      "durationSec": 11894,
+      "topicCount": 44,
+      "minuteClipCount": 176
+    },
+    {
+      "id": "zc-250",
+      "number": 250,
+      "title": "И ещё один",
+      "year": 2022,
+      "publishedAt": "2022-03-18T17:46:32+03:00",
+      "localCoverPath": "/covers/zc-250.jpg",
+      "dataPath": "/data/episodes/zc-250.json",
+      "durationSec": 11405,
+      "topicCount": 35,
+      "minuteClipCount": 172
     }
   ],
   "itemSets": {
     "topics": {
       "path": "/data/items-topics.json",
-      "count": 829
+      "count": 908
     },
     "minute": {
       "path": "/data/items-minute.json",
-      "count": 5289
+      "count": 5637
     }
   }
 }

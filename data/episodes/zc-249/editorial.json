@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "episodeId": "zc-249",
+  "topics": [
+    {
+      "id": "zc-249-topic-rumors",
+      "startPhraseId": "zc-249-p-00049",
+      "endPhraseId": "zc-249-p-00279",
+      "startSec": 373.26,
+      "endSec": 1372.24,
+      "title": "Слухи: проекты Valve, новый Xbox и Roblox на консолях",
+      "summary": "Ведущие разбирают слухи о четырёх играх Valve, переносе Counter-Strike на Source 2, продолжении Half-Life: Alyx, устройстве Xbox Keystone и сложностях выхода экономики Roblox на консолях."
+    },
+    {
+      "id": "zc-249-topic-companies-leave-russia",
+      "startPhraseId": "zc-249-p-00280",
+      "endPhraseId": "zc-249-p-00390",
+      "startSec": 1372.78,
+      "endSec": 1822.42,
+      "title": "Игровые и цифровые сервисы уходят из России",
+      "summary": "Sony, Microsoft, Nintendo, App Store, Google Play и Steam приостанавливают работу: ведущие обсуждают судьбу купленных игр, зарубежные аккаунты, оплату подписок и доступные обходные варианты."
+    },
+    {
+      "id": "zc-249-topic-magic-leap-2",
+      "startPhraseId": "zc-249-p-00391",
+      "endPhraseId": "zc-249-p-00463",
+      "startSec": 1822.92,
+      "endSec": 2823.1,
+      "title": "Magic Leap 2 ищет место в корпоративном мире",
+      "summary": "Второе поколение очков дополненной реальности стало легче и технологичнее, но высокая цена, внешний вычислительный модуль и сокращение числа enterprise-клиентов оставляют будущее Magic Leap неясным."
+    },
+    {
+      "id": "zc-249-topic-state-of-play",
+      "startPhraseId": "zc-249-p-00464",
+      "endPhraseId": "zc-249-p-00583",
+      "startSec": 2823.98,
+      "endSec": 3380.812,
+      "title": "State of Play: кооператив, кайдзю и странные анонсы",
+      "summary": "Обсуждение мартовской презентации Sony: кооператив в Returnal, Forspoken, Exoprimal, Gigabash, Gundam Evolution и Stranger of Paradise — с попыткой понять, во что из показанного действительно хочется играть."
+    },
+    {
+      "id": "zc-249-topic-apple-event",
+      "startPhraseId": "zc-249-p-00584",
+      "endPhraseId": "zc-249-p-00778",
+      "startSec": 3381.352,
+      "endSec": 4393.332,
+      "title": "Mac Studio и возвращение Apple к профессионалам",
+      "summary": "Ведущие разбирают iPhone SE, iPad Air, Mac Studio с M1 Ultra и Studio Display, сравнивают цены и производительность и обсуждают, почему Apple снова добавляет порты и прислушивается к профессиональным пользователям."
+    },
+    {
+      "id": "zc-249-topic-obi-wan-skull-bones-disenchantment",
+      "startPhraseId": "zc-249-p-00779",
+      "endPhraseId": "zc-249-p-00792",
+      "startSec": 4393.332,
+      "endSec": 5109.152,
+      "title": "Оби-Ван, Skull & Bones и разочарование в Disenchantment",
+      "summary": "Медиаблок объединяет ожидания от сериала про Оби-Вана Кеноби и возвращения Хейдена Кристенсена, признаки жизни пиратской Skull & Bones и критику слабого четвёртого сезона Disenchantment."
+    },
+    {
+      "id": "zc-249-topic-local-hero",
+      "startPhraseId": "zc-249-p-00802",
+      "endPhraseId": "zc-249-p-00897",
+      "startSec": 5130.632,
+      "endSec": 5504.572,
+      "title": "«Местный герой»: доброе кино из 1983 года",
+      "summary": "Тимур рекомендует британский фильм «Местный герой» и рассказывает, как неторопливая история о покупке шотландской деревни, необычные детали и человеческое тепло помогают отвлечься от тяжёлой реальности."
+    },
+    {
+      "id": "zc-249-topic-diabolical",
+      "startPhraseId": "zc-249-p-00898",
+      "endPhraseId": "zc-249-p-00949",
+      "startSec": 5505.872,
+      "endSec": 5726.832,
+      "title": "«Осатанелые»: неровная анимационная антология The Boys",
+      "summary": "Дима оценивает первые эпизоды Diabolical, разные стили приглашённых авторов, жестокий юмор и связь с The Boys, но пока не находит достаточно причин рекомендовать весь сериал."
+    },
+    {
+      "id": "zc-249-topic-marry-me",
+      "startPhraseId": "zc-249-p-00954",
+      "endPhraseId": "zc-249-p-01079",
+      "startSec": 5734.932,
+      "endSec": 6083.112,
+      "title": "«Первый встречный» с Дженнифер Лопес",
+      "summary": "Романтическая комедия Marry Me оказывается добрее ожиданий: ведущие обсуждают самоироничную роль Дженнифер Лопес, героя Оуэна Уилсона и предсказуемую, но уютную историю отношений."
+    },
+    {
+      "id": "zc-249-topic-from",
+      "startPhraseId": "zc-249-p-01080",
+      "endPhraseId": "zc-249-p-01137",
+      "startSec": 6083.652,
+      "endSec": 6330.952,
+      "title": "«Извне»: город, из которого нельзя уехать",
+      "summary": "Дима рекомендует мистический сериал From о застрявших в странном городе людях и ночных существах, отмечая атмосферу, героя Гарольда Перрино и участие бывших продюсеров Lost."
+    },
+    {
+      "id": "zc-249-topic-dress-up-darling",
+      "startPhraseId": "zc-249-p-01138",
+      "endPhraseId": "zc-249-p-01196",
+      "startSec": 6330.952,
+      "endSec": 6612.152,
+      "title": "Dress Up Darling: тёплое аниме о косплее",
+      "summary": "Тимур советует Sono Bisque Doll wa Koi wo Suru — красивый slice of life о косплеерах с человечными героями, здоровыми отношениями и минимумом раздражающих жанровых клише."
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "zc-249-exclusion-intro",
+      "startPhraseId": "zc-249-p-00000",
+      "endPhraseId": "zc-249-p-00019",
+      "startSec": 0,
+      "endSec": 208.72,
+      "kind": "intro",
+      "reason": "Приветствие, объяснение формата выпуска и вступительные слова поддержки слушателям."
+    },
+    {
+      "id": "zc-249-exclusion-support",
+      "startPhraseId": "zc-249-p-00020",
+      "endPhraseId": "zc-249-p-00048",
+      "startSec": 209.42,
+      "endSec": 372.92,
+      "kind": "donations",
+      "reason": "Подробное объяснение способов финансовой поддержки подкаста через Boosty и Patreon."
+    },
+    {
+      "id": "zc-249-exclusion-outro",
+      "startPhraseId": "zc-249-p-01197",
+      "endPhraseId": "zc-249-p-01220",
+      "startSec": 6612.632,
+      "endSec": 7128.092,
+      "kind": "thanks",
+      "reason": "Повтор информации о поддержке, благодарности патронам, прощание и служебный повторяющийся текст."
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "episodeId": "zc-39",
+  "topics": [
+    {
+      "id": "zc-39-topic-weekly-watchlist",
+      "startPhraseId": "zc-39-p-00015",
+      "endPhraseId": "zc-39-p-00016",
+      "startSec": 330,
+      "endSec": 389.04,
+      "title": "Во что играли и что смотрели на неделе",
+      "summary": "Ведущие рассказывают о Destiny, ожидании Battlefield, Westworld и лёгком супергеройском кино для отдыха после тяжёлой недели."
+    },
+    {
+      "id": "zc-39-topic-ant-man-review",
+      "startPhraseId": "zc-39-p-00017",
+      "endPhraseId": "zc-39-p-00021",
+      "startSec": 390,
+      "endSec": 468.2,
+      "title": "«Человек-муравей» и спор о фильмах Marvel",
+      "summary": "Максим ругает «Человека-муравья» как один из худших фильмов Marvel, а остальные сравнивают отзывы критиков и зрителей, вспоминают Warcraft и ждут расширенную версию Suicide Squad."
+    },
+    {
+      "id": "zc-39-topic-ghostbusters-gender-swap",
+      "startPhraseId": "zc-39-p-00022",
+      "endPhraseId": "zc-39-p-00040",
+      "startSec": 468.2,
+      "endSec": 808.96,
+      "title": "«Охотники за привидениями»: гендерная замена не сработала",
+      "summary": "Разговор о ремейке Ghostbusters 2016 превращается в спор о гендерном свопе, стереотипах и сценарии, который, по мнению ведущих, просто заменил пол персонажей, не изменив остальной контекст."
+    },
+    {
+      "id": "zc-39-topic-ghostbusters-fanservice",
+      "startPhraseId": "zc-39-p-00042",
+      "endPhraseId": "zc-39-p-00064",
+      "startSec": 814.66,
+      "endSec": 1068.86,
+      "title": "Ghostbusters и ностальгический фан-сервис",
+      "summary": "Ведущие критикуют дешёвый вид призраков и отсутствие химии между актрисами, а также разбирают многочисленные камео и отсылки к оригиналу, которые не спасают фильм от ощущения насилия над детством."
+    },
+    {
+      "id": "zc-39-topic-mafia-3-gameplay",
+      "startPhraseId": "zc-39-p-00065",
+      "endPhraseId": "zc-39-p-00088",
+      "startSec": 1068.86,
+      "endSec": 1381.62,
+      "title": "Mafia III: графика, открытый мир и лишние детали",
+      "summary": "Максим делится первыми впечатлениями от Mafia III: визуальные ошибки и технические проблемы соседствуют с удачными персонажами, диалогами и спором о том, важнее ли сюжету реакция прохожих и работающие зеркала."
+    },
+    {
+      "id": "zc-39-topic-mafia-3-revenge",
+      "startPhraseId": "zc-39-p-00089",
+      "endPhraseId": "zc-39-p-00104",
+      "startSec": 1381.62,
+      "endSec": 1660.72,
+      "title": "Mafia III как история мести",
+      "summary": "Главным достоинством Mafia III называют лазерно сфокусированную историю мести, убедительную мотивацию героя и логичные варианты финала, а не сравнение с масштабом GTA или культовым статусом первой Mafia."
+    },
+    {
+      "id": "zc-39-topic-forza-horizon-3",
+      "startPhraseId": "zc-39-p-00105",
+      "endPhraseId": "zc-39-p-00113",
+      "startSec": 1660.72,
+      "endSec": 1856.08,
+      "title": "Forza Horizon 3: отличная аркада и плохой ПК-порт",
+      "summary": "Forza Horizon 3 хвалят за красивые просторы и аркадную физику, но ПК-версию ругают за микрофризы, вылеты и почти эмуляторный запуск Xbox-игры. При этом серия уже начинает утомлять ежегодными выпусками."
+    },
+    {
+      "id": "zc-39-topic-modern-warfare-remastered",
+      "startPhraseId": "zc-39-p-00114",
+      "endPhraseId": "zc-39-p-00143",
+      "startSec": 1856.1,
+      "endSec": 2278.135,
+      "title": "Modern Warfare Remastered и устаревшая ностальгия",
+      "summary": "Обсуждение ремастера Call of Duty 4 сводится к конфликту ностальгии и реальности: графику переделали почти с нуля, но коридорный геймплей, респаун врагов и скрипты остались из 2007 года."
+    },
+    {
+      "id": "zc-39-topic-fallout-skyrim-mods",
+      "startPhraseId": "zc-39-p-00146",
+      "endPhraseId": "zc-39-p-00156",
+      "startSec": 2365.495,
+      "endSec": 2539.615,
+      "title": "Моды Fallout 4 и Skyrim на консолях",
+      "summary": "Bethesda и Sony всё-таки разрешают моды для Fallout 4 и Skyrim на PS4. Ведущие объясняют ограничения: использовать можно только встроенные ассеты, а размер модов на PlayStation заметно меньше, чем на Xbox."
+    },
+    {
+      "id": "zc-39-topic-star-citizen-scale",
+      "startPhraseId": "zc-39-p-00159",
+      "endPhraseId": "zc-39-p-00168",
+      "startSec": 2570.695,
+      "endSec": 2729.855,
+      "title": "Star Citizen: масштаб вместо готовой игры",
+      "summary": "Новая демонстрация Star Citizen показывает огромные планеты, транспорт и впечатляющие локации, но одиночная кампания снова откладывается, а зрелищные ролики остаются обещанием будущей игры."
+    },
+    {
+      "id": "zc-39-topic-star-citizen-funding",
+      "startPhraseId": "zc-39-p-00169",
+      "endPhraseId": "zc-39-p-00206",
+      "startSec": 2729.855,
+      "endSec": 3106.235,
+      "title": "Star Citizen: краудфандинг эмоций и бесконечная альфа",
+      "summary": "Ведущие обсуждают маркетинг Star Citizen, корабли за сотни долларов и модель, в которой игроки покупают эмоции и надежду на космос. Прозрачная разработка снижает риск внезапного обмана, но не приближает финальный релиз."
+    },
+    {
+      "id": "zc-39-topic-galaxy-note-7",
+      "startPhraseId": "zc-39-p-00207",
+      "endPhraseId": "zc-39-p-00233",
+      "startSec": 3130.755,
+      "endSec": 3619.515,
+      "title": "Смерть Galaxy Note 7",
+      "summary": "Samsung прекращает производство Galaxy Note 7 после многочисленных возгораний, просит владельцев выключить телефоны и отправлять их специальным способом. Ведущие обсуждают репутационный ущерб и потерю 17 миллиардов долларов капитализации."
+    },
+    {
+      "id": "zc-39-topic-google-pixel",
+      "startPhraseId": "zc-39-p-00236",
+      "endPhraseId": "zc-39-p-00246",
+      "startSec": 3649.415,
+      "endSec": 3790.075,
+      "title": "Google Pixel: цена как главный недостаток",
+      "summary": "Google Pixel получает хорошую камеру, но цена в 650–800 долларов ставит его рядом с iPhone, которому он уступает по дизайну и отдельным функциям. Ведущие сомневаются, сможет ли он вернуть покупателей на Android."
+    },
+    {
+      "id": "zc-39-topic-playstation-vr-reviews",
+      "startPhraseId": "zc-39-p-00249",
+      "endPhraseId": "zc-39-p-00268",
+      "startSec": 3850.075,
+      "endSec": 4113.595,
+      "title": "Первые обзоры PlayStation VR",
+      "summary": "PlayStation VR уступает Rift и Vive по качеству картинки, но выигрывает количеством игр и удобством. Ведущие разбирают ошибки Giant Bomb с камерами и освещением, вызывающие дрожание изображения и тошноту."
+    },
+    {
+      "id": "zc-39-topic-playstation-vr-value",
+      "startPhraseId": "zc-39-p-00269",
+      "endPhraseId": "zc-39-p-00300",
+      "startSec": 4114.215,
+      "endSec": 4486.315,
+      "title": "PS VR и проблема коротких вау-моментов",
+      "summary": "PS VR выглядит доступным шагом после мобильного VR и уже имеет заметную библиотеку, но большинство игр дают лишь десятиминутные впечатления. Неэнтузиастам стоит подождать проект, который удержит эффект новизны на несколько часов."
+    },
+    {
+      "id": "zc-39-topic-beer-sunday-drive",
+      "startPhraseId": "zc-39-p-00310",
+      "endPhraseId": "zc-39-p-00327",
+      "startSec": 4546.235,
+      "endSec": 4781.555,
+      "title": "Пиво недели: Brewlok Sunday Drive IPA",
+      "summary": "Ведущие рекомендуют российскую IPA Brewlok Sunday Drive, объясняют шкалу IBU и предупреждают, что 50 единиц горечи подойдут не каждому любителю мягкого лагера."
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "zc-39-exclusion-intro",
+      "startPhraseId": "zc-39-p-00000",
+      "endPhraseId": "zc-39-p-00014",
+      "startSec": 0,
+      "endSec": 329.98,
+      "kind": "intro",
+      "reason": "Джингл, представление ведущих, вводная шутливая болтовня и просьбы поддержать проект перед основной рубрикой."
+    },
+    {
+      "id": "zc-39-exclusion-party-interlude",
+      "startPhraseId": "zc-39-p-00301",
+      "endPhraseId": "zc-39-p-00309",
+      "startSec": 4509.235,
+      "endSec": 4546.235,
+      "kind": "technical-pause",
+      "reason": "Короткий пьяный межэфирный диалог перед рубрикой с пивом, не содержательная тема выпуска."
+    },
+    {
+      "id": "zc-39-exclusion-outro-thanks",
+      "startPhraseId": "zc-39-p-00328",
+      "endPhraseId": "zc-39-p-00339",
+      "startSec": 4781.555,
+      "endSec": 4915.915,
+      "kind": "thanks",
+      "reason": "Финальное прощание, благодарности, просьбы о поддержке и анонсы будущих выпусков."
+    },
+    {
+      "id": "zc-39-exclusion-outro-music",
+      "startPhraseId": "zc-39-p-00340",
+      "endPhraseId": "zc-39-p-00351",
+      "startSec": 4929.955,
+      "endSec": 5105.835,
+      "kind": "music",
+      "reason": "Финальная музыкальная композиция и субтитры после завершения разговора."
+    },
+    {
+      "id": "zc-39-exclusion-music-interlude",
+      "startPhraseId": "zc-39-p-00247",
+      "endPhraseId": "zc-39-p-00248",
+      "startSec": 3790.075,
+      "endSec": 3821.655,
+      "kind": "music",
+      "reason": "Короткий музыкальный фрагмент и реплика, не относящиеся к обсуждению Google Pixel."
+    },
+    {
+      "id": "zc-39-exclusion-technical-mic",
+      "startPhraseId": "zc-39-p-00157",
+      "endPhraseId": "zc-39-p-00158",
+      "startSec": 2540.695,
+      "endSec": 2569.015,
+      "kind": "technical-pause",
+      "reason": "Падение микрофона и разговор о еде перед переходом к Star Citizen."
+    },
+    {
+      "id": "zc-39-exclusion-digression",
+      "startPhraseId": "zc-39-p-00144",
+      "endPhraseId": "zc-39-p-00145",
+      "startSec": 2305.495,
+      "endSec": 2355.495,
+      "kind": "technical-pause",
+      "reason": "Отдельный анекдот о посетительнице аттракциона, не связанный с игровыми впечатлениями."
+    }
+  ]
+}

@@ -170,13 +170,21 @@ a {
 
 .hero-art {
   position: relative;
+  display: block;
   width: min(100%, 42rem);
   aspect-ratio: 1;
   justify-self: center;
+  padding: 0;
+  border: 0;
   border-radius: 2.2rem;
   overflow: hidden;
   background: #111;
   box-shadow: var(--shadow);
+  transition: transform 0.25s ease;
+}
+
+.hero-art:active {
+  transform: scale(0.99);
 }
 
 .hero-art::after {

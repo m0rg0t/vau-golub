@@ -284,6 +284,7 @@ export function App() {
   const audioRef = useRef<HTMLAudioElement>(null);
   const preloadAudioRef = useRef<HTMLAudioElement | null>(null);
   const sourceDialogRef = useRef<HTMLDialogElement>(null);
+  const consoleRef = useRef<HTMLDivElement>(null);
   const episodeCacheRef = useRef(new Map<string, EpisodeData>());
   const runEffectsRef = useRef<(effects: PlaybackEffect[]) => void>(() => {});
   const advanceRef = useRef<() => void>(() => {});
@@ -1028,17 +1029,33 @@ export function App() {
       </header>
 
       <section className="radio-stage" aria-labelledby="current-title">
-        <div className="hero-art" aria-hidden="true">
+        <button
+          type="button"
+          className="hero-art"
+          aria-label="Включить эфир"
+          onClick={() => {
+            if (episode && playback.status !== "loading" && !playback.playIntent) {
+              dispatchPlayback({ type: "play" });
+            }
+            const reduceMotion = window.matchMedia(
+              "(prefers-reduced-motion: reduce)",
+            ).matches;
+            consoleRef.current?.scrollIntoView({
+              behavior: reduceMotion ? "auto" : "smooth",
+              block: "start",
+            });
+          }}
+        >
           {/* Vinext's Next image optimizer is unavailable in the static worker. */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/art/pigeon-radio.png"
             alt=""
           />
-          <span className="hero-frequency">87.5—108 FM</span>
-        </div>
+          <span className="hero-frequency" aria-hidden="true">87.5—108 FM</span>
+        </button>
 
-        <div className="console">
+        <div className="console" ref={consoleRef}>
           <div className="mode-switcher" aria-label="Режим проигрывания">
             <button
               type="button"

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "fingerprint": "df184c5745107a5ef8605acb0cf65da81edb4fece268f71e515f6520a7686274",
+  "fingerprint": "99a5007729d0b20ef3d908f24d10bd2f3259472c4a3a9027e05211dad0fdec56",
   "episodes": [
     {
       "id": "zc-02",
@@ -205,16 +205,76 @@
       "durationSec": 12485,
       "topicCount": 29,
       "minuteClipCount": 195
+    },
+    {
+      "id": "zc-206",
+      "number": 206,
+      "title": "Анонсирован ПК2",
+      "year": 2020,
+      "publishedAt": "2020-11-26T14:23:44+03:00",
+      "localCoverPath": "/covers/zc-206.jpg",
+      "dataPath": "/data/episodes/zc-206.json",
+      "durationSec": 10144,
+      "topicCount": 29,
+      "minuteClipCount": 147
+    },
+    {
+      "id": "zc-294",
+      "number": 294,
+      "title": "Бежит, орёт",
+      "year": 2023,
+      "publishedAt": "2023-10-18T07:41:27+03:00",
+      "localCoverPath": "/covers/zc-294.jpg",
+      "dataPath": "/data/episodes/zc-294.json",
+      "durationSec": 17321,
+      "topicCount": 38,
+      "minuteClipCount": 273
+    },
+    {
+      "id": "zc-304",
+      "number": 304,
+      "title": "Всё, везде и сразу выйдет",
+      "year": 2024,
+      "publishedAt": "2024-02-23T22:36:35+03:00",
+      "localCoverPath": "/covers/zc-304.jpg",
+      "dataPath": "/data/episodes/zc-304.json",
+      "durationSec": 18714,
+      "topicCount": 34,
+      "minuteClipCount": 295
+    },
+    {
+      "id": "zc-343",
+      "number": 343,
+      "title": "Марафон(чик)",
+      "year": 2025,
+      "publishedAt": "2025-04-17T16:29:26+03:00",
+      "localCoverPath": "/covers/zc-343.jpg",
+      "dataPath": "/data/episodes/zc-343.json",
+      "durationSec": 16021,
+      "topicCount": 46,
+      "minuteClipCount": 241
+    },
+    {
+      "id": "zc-379",
+      "number": 379,
+      "title": "Ретрит у Безоса",
+      "year": 2026,
+      "publishedAt": "2026-05-07T01:46:04+03:00",
+      "localCoverPath": "/covers/zc-379.jpg",
+      "dataPath": "/data/episodes/zc-379.json",
+      "durationSec": 13857,
+      "topicCount": 33,
+      "minuteClipCount": 213
     }
   ],
   "itemSets": {
     "topics": {
       "path": "/data/items-topics.json",
-      "count": 423
+      "count": 603
     },
     "minute": {
       "path": "/data/items-minute.json",
-      "count": 2734
+      "count": 3903
     }
   }
 }

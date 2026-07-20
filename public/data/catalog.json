@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "fingerprint": "f8e391392fd4c2b6e374186ca19f89cff3142482da29d9984a34883275f90841",
+  "fingerprint": "93ed14cdcdee3edb63b04ee4997b3f17b3de0f872ba7b1eced92d2a795f641f2",
   "episodes": [
     {
       "id": "zc-02",
@@ -433,16 +433,64 @@
       "durationSec": 12616,
       "topicCount": 19,
       "minuteClipCount": 192
+    },
+    {
+      "id": "zc-39",
+      "number": 39,
+      "title": "Осенняя депрессия",
+      "year": 2016,
+      "publishedAt": "2016-10-13T23:16:41+03:00",
+      "localCoverPath": "/covers/zc-39.jpg",
+      "dataPath": "/data/episodes/zc-39.json",
+      "durationSec": 5109,
+      "topicCount": 16,
+      "minuteClipCount": 66
+    },
+    {
+      "id": "zc-179",
+      "number": 179,
+      "title": "Ура, короникулы!",
+      "year": 2020,
+      "publishedAt": "2020-03-29T16:12:50+03:00",
+      "localCoverPath": "/covers/zc-179.jpg",
+      "dataPath": "/data/episodes/zc-179.json",
+      "durationSec": 7632,
+      "topicCount": 21,
+      "minuteClipCount": 105
+    },
+    {
+      "id": "zc-286",
+      "number": 286,
+      "title": "Тонкий сомелье уникальных фантазий",
+      "year": 2023,
+      "publishedAt": "2023-07-07T00:52:44+03:00",
+      "localCoverPath": "/covers/zc-286.jpg",
+      "dataPath": "/data/episodes/zc-286.json",
+      "durationSec": 8414,
+      "topicCount": 27,
+      "minuteClipCount": 129
+    },
+    {
+      "id": "zc-378",
+      "number": 378,
+      "title": "Прагматичные парни",
+      "year": 2026,
+      "publishedAt": "2026-04-25T18:49:02+03:00",
+      "localCoverPath": "/covers/zc-378.jpg",
+      "dataPath": "/data/episodes/zc-378.json",
+      "durationSec": 5524,
+      "topicCount": 20,
+      "minuteClipCount": 85
     }
   ],
   "itemSets": {
     "topics": {
       "path": "/data/items-topics.json",
-      "count": 978
+      "count": 1062
     },
     "minute": {
       "path": "/data/items-minute.json",
-      "count": 6264
+      "count": 6649
     }
   }
 }

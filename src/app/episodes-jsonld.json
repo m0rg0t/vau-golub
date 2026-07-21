@@ -301,6 +301,26 @@
   },
   {
     "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-236",
+    "url": "https://zavtracast.ru/236.html",
+    "name": "So Meta",
+    "episodeNumber": 236,
+    "datePublished": "2021-11-01T05:36:30+03:00",
+    "description": "Нас не было почти 3 недели, потому что мы болели и были очень заняты. Но мы все смогли, все сделали, выздоровели, а потому Завтракаст снова с вами! В этом выпуске обсуждаем переименование Facebook в Meta, новые трейлеры игр Suicide Squad и Halo Infinite, новые Macbook Pro, а также делимся впечатлениями от игры Guardians of the Galaxy, нового Джеймса Бонда и многое-многое-многое другое! Не забудьте, что в видеоверсии этого выпуска на нашем YouTube-канале мы разыгрываем игру “Сэкбой” для PS5 – достаточно оставить комментарий и подписаться на наш канал. https://youtu.be/XtOexmSwRTk",
+    "image": "https://vau-golub.ru/covers/zc-236.jpg",
+    "timeRequired": "PT4H29M20S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast236_mixdown.mp3",
+      "duration": "PT4H29M20S",
+      "encodingFormat": "audio/mpeg"
+    }
+  },
+  {
+    "@type": "PodcastEpisode",
     "@id": "https://vau-golub.ru/#episode-zc-308",
     "url": "https://zavtracast.ru/308.html",
     "name": "Причина дефрагментации",

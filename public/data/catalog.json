@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "fingerprint": "d3d4518c2c30bc2a57c4a991ab01eba178d8b7cb0f385476f7a3a21f157067ad",
+  "fingerprint": "90791a81b3900574ce24c3e3cd02dab6db31ba3bb395df31966618d10ebf2e90",
   "episodes": [
     {
       "id": "zc-02",
@@ -181,6 +181,18 @@
       "durationSec": 13924,
       "topicCount": 29,
       "minuteClipCount": 208
+    },
+    {
+      "id": "zc-236",
+      "number": 236,
+      "title": "So Meta",
+      "year": 2021,
+      "publishedAt": "2021-11-01T05:36:30+03:00",
+      "localCoverPath": "/covers/zc-236.jpg",
+      "dataPath": "/data/episodes/zc-236.json",
+      "durationSec": 16160,
+      "topicCount": 28,
+      "minuteClipCount": 222
     },
     {
       "id": "zc-308",
@@ -558,11 +570,11 @@
   "itemSets": {
     "topics": {
       "path": "/data/items-topics.json",
-      "count": 1149
+      "count": 1177
     },
     "minute": {
       "path": "/data/items-minute.json",
-      "count": 7366
+      "count": 7588
     }
   }
 }

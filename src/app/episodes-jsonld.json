@@ -938,5 +938,25 @@
       "duration": "PT3H12M56S",
       "encodingFormat": "audio/mpeg"
     }
+  },
+  {
+    "@type": "PodcastEpisode",
+    "@id": "https://vau-golub.ru/#episode-zc-30",
+    "url": "https://zavtracast.ru/30.html",
+    "name": "Очень странные дела с подкастом",
+    "episodeNumber": 30,
+    "datePublished": "2016-07-26T02:44:47+03:00",
+    "description": "Очень странный, многострадальный, но тем не менее — желанный и ожидаемый юбилейный выпуск Завтракаста. Мы пытались записать его с трех попыток, постоянно переносили сбор ведущих на самое неудобное время из всех возможных. Но в итоге он перед вами — Завтракаст номер тридцать. Несмотря на то, что у нас мертвый сезон на новости, все ваши любимые новости про игры, Microsoft, Apple, VR, Покемонов и бухлишко присутствуют. Кроме того, мы делаем важные анонсы и общаемся с необычным гостем.",
+    "image": "https://vau-golub.ru/covers/zc-30.jpg",
+    "timeRequired": "PT2H23M50S",
+    "partOfSeries": {
+      "@id": "https://vau-golub.ru/#zavtracast-series"
+    },
+    "associatedMedia": {
+      "@type": "AudioObject",
+      "contentUrl": "https://media.blubrry.com/zavtracast/zavtracast.ru/p/zavtracast30_mixdown.mp3",
+      "duration": "PT2H23M50S",
+      "encodingFormat": "audio/mpeg"
+    }
   }
 ]

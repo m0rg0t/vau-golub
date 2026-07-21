@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "fingerprint": "90791a81b3900574ce24c3e3cd02dab6db31ba3bb395df31966618d10ebf2e90",
+  "fingerprint": "42fea96d11e27792158c55628ffc9351c3ae5b65d7bb3bcf2ab1ae0e26c72d56",
   "episodes": [
     {
       "id": "zc-02",
@@ -565,16 +565,28 @@
       "durationSec": 11576,
       "topicCount": 14,
       "minuteClipCount": 156
+    },
+    {
+      "id": "zc-30",
+      "number": 30,
+      "title": "Очень странные дела с подкастом",
+      "year": 2016,
+      "publishedAt": "2016-07-26T02:44:47+03:00",
+      "localCoverPath": "/covers/zc-30.jpg",
+      "dataPath": "/data/episodes/zc-30.json",
+      "durationSec": 8630,
+      "topicCount": 18,
+      "minuteClipCount": 123
     }
   ],
   "itemSets": {
     "topics": {
       "path": "/data/items-topics.json",
-      "count": 1177
+      "count": 1195
     },
     "minute": {
       "path": "/data/items-minute.json",
-      "count": 7588
+      "count": 7711
     }
   }
 }

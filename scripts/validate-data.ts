@@ -1,5 +1,6 @@
 import { resolve } from "node:path";
 
+import { isMainModule } from "./lib/entrypoint";
 import { loadSelectedEpisodes, projectRoot } from "./lib/catalog";
 import { validateEpisodeData } from "./lib/editorial";
 import { argumentValue, readJson } from "./lib/files";
@@ -20,6 +21,6 @@ async function main(): Promise<void> {
   }
 }
 
-if (import.meta.main) {
+if (isMainModule(import.meta)) {
   await main();
 }

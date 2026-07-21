@@ -1,4 +1,5 @@
 import { loadSelectedEpisodes } from "./lib/catalog";
+import { isMainModule } from "./lib/entrypoint";
 import type { EpisodeMetadata } from "../src/domain/schema";
 
 export async function verifyAudioRange(
@@ -46,6 +47,6 @@ async function main(): Promise<void> {
   }
 }
 
-if (import.meta.main) {
+if (isMainModule(import.meta)) {
   await main();
 }

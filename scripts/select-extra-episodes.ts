@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 
 import {
@@ -24,6 +24,24 @@ async function writeJson(path: string, value: unknown): Promise<void> {
   await writeFile(path, `${JSON.stringify(value, null, 2)}\n`, "utf8");
 }
 
+type AdditionalSelection = ReturnType<typeof AdditionalSelectionSchema.parse>;
+
+// Выборка дополняется за несколько запусков (в т.ч. параллельными агентами),
+// поэтому уже записанные эпизоды сохраняются, а не затираются новым списком.
+async function readExistingEpisodes(
+  path: string,
+): Promise<AdditionalSelection["episodes"]> {
+  try {
+    const raw = await readFile(path, "utf8");
+    return AdditionalSelectionSchema.parse(JSON.parse(raw)).episodes;
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code === "ENOENT") {
+      return [];
+    }
+    throw error;
+  }
+}
+
 async function main(): Promise<void> {
   const numbers = (argumentValue("--numbers") ?? "")
     .split(",")
@@ -46,6 +64,9 @@ async function main(): Promise<void> {
   const resolved = await Promise.all(
     selected.map((episode) => resolveEpisodeCover(episode)),
   );
+  const selectionPath = resolve(projectRoot, "data", "selection-extra.json");
+  const existingEpisodes = await readExistingEpisodes(selectionPath);
+  const selectedIds = new Set(resolved.map((episode) => episode.id));
   const snapshotAt = new Date().toISOString();
   const selection = AdditionalSelectionSchema.parse({
     schemaVersion: 1,
@@ -56,19 +77,22 @@ async function main(): Promise<void> {
       snapshotAt,
     },
     selectionAlgorithm: "curated-extra-v1",
-    episodes: resolved.map((episode) => ({
-      year: episode.year,
-      id: episode.id,
-      sourceId: episode.sourceId,
-      sourceGuid: episode.sourceGuid,
-      slug: episode.slug,
-      number: episode.number,
-      publishedAt: episode.publishedAt,
-      pageUrl: episode.pageUrl,
-    })),
+    episodes: [
+      ...existingEpisodes.filter((episode) => !selectedIds.has(episode.id)),
+      ...resolved.map((episode) => ({
+        year: episode.year,
+        id: episode.id,
+        sourceId: episode.sourceId,
+        sourceGuid: episode.sourceGuid,
+        slug: episode.slug,
+        number: episode.number,
+        publishedAt: episode.publishedAt,
+        pageUrl: episode.pageUrl,
+      })),
+    ],
   });
 
-  await writeJson(resolve(projectRoot, "data", "selection-extra.json"), selection);
+  await writeJson(selectionPath, selection);
   await Promise.all(
     resolved.map((episode) =>
       writeJson(

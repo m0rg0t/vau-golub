@@ -1,5 +1,6 @@
 import { resolve } from "node:path";
 
+import { isMainModule } from "./lib/entrypoint";
 import { AudioManifestSchema } from "./lib/audio";
 import { loadSelectedEpisodes, projectRoot } from "./lib/catalog";
 import { readJson, requestedEpisode, writeJsonAtomic } from "./lib/files";
@@ -36,6 +37,6 @@ async function main(): Promise<void> {
   }
 }
 
-if (import.meta.main) {
+if (isMainModule(import.meta)) {
   await main();
 }

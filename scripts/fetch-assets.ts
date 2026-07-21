@@ -6,6 +6,7 @@ import { Readable } from "node:stream";
 import { pipeline } from "node:stream/promises";
 import { promisify } from "node:util";
 
+import { isMainModule } from "./lib/entrypoint";
 import { requestedEpisode } from "./lib/files";
 import { loadSelectedEpisodes, projectRoot } from "./lib/catalog";
 
@@ -123,6 +124,6 @@ async function main(): Promise<void> {
   }
 }
 
-if (import.meta.main) {
+if (isMainModule(import.meta)) {
   await main();
 }

@@ -3,6 +3,7 @@ import { mkdir, rename } from "node:fs/promises";
 import { resolve } from "node:path";
 import { promisify } from "node:util";
 
+import { isMainModule } from "./lib/entrypoint";
 import { AudioManifestSchema, chooseChunkBoundaries, parseSilenceMidpoints } from "./lib/audio";
 import { loadSelectedEpisodes, projectRoot } from "./lib/catalog";
 import { fileSha256, requestedEpisode, writeJsonAtomic } from "./lib/files";
@@ -148,6 +149,6 @@ async function main(): Promise<void> {
   }
 }
 
-if (import.meta.main) {
+if (isMainModule(import.meta)) {
   await main();
 }

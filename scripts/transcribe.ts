@@ -1,6 +1,7 @@
 import { access } from "node:fs/promises";
 import { resolve } from "node:path";
 
+import { isMainModule } from "./lib/entrypoint";
 import { AudioManifestSchema } from "./lib/audio";
 import { loadSelectedEpisodes, projectRoot } from "./lib/catalog";
 import {
@@ -148,6 +149,6 @@ async function main(): Promise<void> {
   }
 }
 
-if (import.meta.main) {
+if (isMainModule(import.meta)) {
   await main();
 }

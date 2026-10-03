@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./fixtures";
 
 test("keeps shell and transcript data available offline without caching MP3", async ({
   context,

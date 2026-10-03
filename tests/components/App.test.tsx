@@ -133,6 +133,18 @@ describe("radio app", () => {
     vi.restoreAllMocks();
   });
 
+  it.each(["getItem", "setItem"] as const)("keeps playback usable when storage %s throws", async (method) => {
+    vi.spyOn(Storage.prototype, method).mockImplementation(() => {
+      throw new DOMException("Storage unavailable", "SecurityError");
+    });
+    render(<App />);
+    expect(await screen.findByRole("heading", { name: "Скандал года" })).toBeVisible();
+    fireEvent.click(screen.getByRole("button", { name: "Одна минута" }));
+    expect(await screen.findByRole("heading", { name: "Минута 1" })).toBeVisible();
+    fireEvent.change(screen.getByRole("slider", { name: "Громкость" }), { target: { value: "0.4" } });
+    expect(screen.getByRole("slider", { name: "Громкость" })).toHaveValue("0.4");
+  });
+
   it("loads a real catalog item and switches listening modes", async () => {
     render(<App />);
 

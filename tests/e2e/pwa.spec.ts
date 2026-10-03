@@ -1,10 +1,19 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./fixtures";
 
 test("keeps shell and transcript data available offline without caching MP3", async ({
   context,
   page,
 }) => {
-  await page.goto("/");
+  const evidence: string[] = [];
+  page.on('console', message => evidence.push(`console ${message.type()}: ${message.text()}`));
+  page.on('pageerror', error => evidence.push(`pageerror: ${error.message}`));
+  page.on('requestfailed', request => evidence.push(`failed: ${request.url()} ${request.failure()?.errorText}`));
+  const remoteRequests: string[] = [];
+  context.on('request', request => {
+    if (!['localhost', '127.0.0.1'].includes(new URL(request.url()).hostname)) remoteRequests.push(request.url());
+  });
+  const initialResponse = await page.goto("/");
+  const initialHeaders = await initialResponse?.allHeaders();
   await expect(page.getByRole("button", { name: "Слушать" })).toBeEnabled({
     timeout: 15_000,
   });
@@ -36,10 +45,35 @@ test("keeps shell and transcript data available offline without caching MP3", as
     false,
   );
 
+  // A dataset cache is not proof that the current hydration chunks are ready.
+  await expect.poll(async () => page.evaluate(async () => {
+    const urls = performance.getEntriesByType('resource').map(entry => entry.name)
+      .filter(url => new URL(url).pathname.startsWith('/_next/'));
+    return urls.length > 0 && (await Promise.all(urls.map(url => caches.match(url)))).every(Boolean);
+  }), { timeout: 30_000 }).toBe(true);
+
   await context.setOffline(true);
-  await page.reload();
-  await expect(page.getByText("Обложки и текст доступны офлайн.")).toBeVisible();
+  try {
+    await page.reload();
+    await expect(page.getByText("Обложки и текст доступны офлайн.")).toBeVisible();
+  } catch (error) {
+    const cacheEvidence = await page.evaluate(async () => {
+      const results = [];
+      for (const name of await caches.keys()) {
+        const cache = await caches.open(name);
+        for (const request of await cache.keys()) {
+          if (!request.url.includes('/_next/') && !request.url.endsWith('/catalog.json')) continue;
+          const response = await cache.match(request);
+          results.push({ url: request.url, requestHeaders: [...request.headers], responseHeaders: response ? [...response.headers] : [], type: response?.type, status: response?.status });
+        }
+      }
+      return { controlled: Boolean(navigator.serviceWorker.controller), results };
+    });
+    console.log('OFFLINE_DIAGNOSTICS', JSON.stringify({ initialHeaders, evidence, remoteRequests, body: await page.locator('body').innerText(), cacheEvidence }));
+    throw error;
+  }
   await expect(page.getByRole("button", { name: "Вся расшифровка" })).toBeEnabled();
   await page.getByRole("button", { name: "Вся расшифровка" }).click();
   await expect(page.getByText("Расшифровка эфира")).toBeVisible();
+  expect(remoteRequests).toEqual([]);
 });

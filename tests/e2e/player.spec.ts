@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./fixtures";
 
 test("switches modes and preserves minute history", async ({ page }) => {
   await page.goto("/");
@@ -44,3 +44,17 @@ test("opens source information and the full transcript", async ({ page }) => {
     transcript.getByRole("button", { name: /^Перейти к \d+:\d{2}$/ }).first(),
   ).toBeVisible();
 });
+
+for (const method of ['getItem', 'setItem'] as const) {
+  test(`storage ${method} failure leaves the player usable`, async ({ page }) => {
+    await page.addInitScript((method) => {
+      Storage.prototype[method] = () => { throw new DOMException('Storage unavailable', 'SecurityError'); };
+    }, method);
+    await page.goto('/');
+    await expect(page.getByRole('button', { name: 'Слушать', exact: true })).toBeEnabled({ timeout: 15_000 });
+    await page.getByRole('button', { name: 'Одна минута' }).click();
+    await expect(page.locator('#current-title')).toContainText(/^Минута \d+$/);
+    await page.getByRole('button', { name: 'Дальше' }).click();
+    await expect(page.getByRole('button', { name: 'Назад', exact: true })).toBeEnabled();
+  });
+}

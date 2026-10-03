@@ -4,7 +4,7 @@
 finished minutes from the Завтракаст podcast archive. Next.js (vinext) + Cloudflare
 Pages; pushing `main` deploys production.
 
-- Node: `.nvmrc` pins 20.19.3, but `vinext build` needs Node 22 (`nvm use 22` for build/test).
+- Node: `.nvmrc` selects Node 24 LTS; current test tools require Node >=24.15.0.
 - Verify with `npm run typecheck && npm run lint && npm test` before committing.
 - Brand strings come from `src/app/brand.ts` — never hardcode the product name.
 - Multiple agents may work in this tree in parallel: stage only your own paths

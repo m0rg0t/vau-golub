@@ -103,9 +103,19 @@ function formatTime(seconds: number): string {
   ].join(":");
 }
 
+function readStoredValue(key: string): string | null {
+  try { return window.localStorage.getItem(key); } catch { return null; }
+}
+
+function writeStoredValue(key: string, value: string): void {
+  try { window.localStorage.setItem(key, value); } catch {
+    // Restricted storage or quota exhaustion must not interrupt this session.
+  }
+}
+
 function readStoredJson(key: string): unknown {
   try {
-    const value = window.localStorage.getItem(key);
+    const value = readStoredValue(key);
     return value ? (JSON.parse(value) as unknown) : null;
   } catch {
     return null;
@@ -337,8 +347,8 @@ export function App() {
 
   useEffect(() => {
     let active = true;
-    const storedMode = window.localStorage.getItem(`${STORAGE_PREFIX}:mode`);
-    const storedVolumeValue = window.localStorage.getItem(
+    const storedMode = readStoredValue(`${STORAGE_PREFIX}:mode`);
+    const storedVolumeValue = readStoredValue(
       `${STORAGE_PREFIX}:volume`,
     );
     const storedVolume =
@@ -472,7 +482,7 @@ export function App() {
     for (const nextMode of ["topics", "minute"] as const) {
       const state = queues[nextMode];
       if (state) {
-        window.localStorage.setItem(
+        writeStoredValue(
           `${STORAGE_PREFIX}:queue:${nextMode}`,
           JSON.stringify(state),
         );
@@ -481,11 +491,11 @@ export function App() {
   }, [catalog, queues]);
 
   useEffect(() => {
-    window.localStorage.setItem(`${STORAGE_PREFIX}:mode`, mode);
+    writeStoredValue(`${STORAGE_PREFIX}:mode`, mode);
   }, [mode]);
 
   useEffect(() => {
-    window.localStorage.setItem(
+    writeStoredValue(
       `${STORAGE_PREFIX}:volume`,
       String(playback.volume),
     );
@@ -1120,7 +1130,13 @@ export function App() {
                   className="transport-button"
                   type="button"
                   onClick={() => {
-                    dispatchPlayback({ type: "skip" });
+                    if (playbackRef.current.item?.id !== currentItem.id) {
+                      // The title can be shown before the episode request has
+                      // installed its media item. Navigation still works then.
+                      moveQueue("next");
+                    } else {
+                      dispatchPlayback({ type: "skip" });
+                    }
                   }}
                 >
                   <ArrowRight aria-hidden="true" />

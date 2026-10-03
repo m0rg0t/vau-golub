@@ -1,33 +1,12 @@
-import { describe, expect, it } from "vitest";
+import { expect, test } from "./fixtures";
 
-async function render() {
-  const workerUrl = new URL("../dist/server/index.js", import.meta.url);
-  workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
-  const { default: worker } = await import(workerUrl.href);
-
-  return worker.fetch(
-    new Request("http://localhost/", {
-      headers: { accept: "text/html" },
-    }),
-    {
-      ASSETS: {
-        fetch: async () => new Response("Not found", { status: 404 }),
-      },
-    },
-    {
-      waitUntil() {},
-      passThroughOnException() {},
-    },
-  );
-}
-
-describe("static application shell", () => {
-  it("renders the Russian product identity without starter metadata", async () => {
-    const response = await render();
+test.describe("static application shell", () => {
+  test("renders the Russian product identity without starter metadata", async ({ request }) => {
+    const response = await request.get("/", { headers: { accept: "text/html" } });
     const html = await response.text();
 
-    expect(response.status).toBe(200);
-    expect(response.headers.get("content-type")).toMatch(/^text\/html\b/i);
+    expect(response.status()).toBe(200);
+    expect(response.headers()["content-type"]).toMatch(/^text\/html\b/i);
     expect(html).toContain(
       "<title>Синдром Дефицита Вау Голубь — случайные темы из архива подкаста Завтракаст</title>",
     );
@@ -37,7 +16,7 @@ describe("static application shell", () => {
     expect(html).toContain('lang="ru"');
     // Canonical URL and Open Graph identity for search engines and shares.
     expect(html).toMatch(
-      /<link[^>]+rel="canonical"[^>]+href="https:\/\/vau-golub\.ru\/"/,
+      /<link[^>]+rel="canonical"[^>]+href="https:\/\/vau-golub\.ru\/?"/,
     );
     expect(html).toMatch(/<meta[^>]+property="og:title"/);
     // Structured data (WebApplication / PodcastSeries / PodcastEpisode graph).

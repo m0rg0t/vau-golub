@@ -29,6 +29,6 @@ export default defineConfig({
     : {
         command: production ? "npm start -- --port 3100" : "npm run dev",
         url: baseURL,
-        reuseExistingServer: true,
+        reuseExistingServer: !process.env.CI,
       },
 });

@@ -12,7 +12,8 @@ test("keeps shell and transcript data available offline without caching MP3", as
   context.on('request', request => {
     if (!['localhost', '127.0.0.1'].includes(new URL(request.url()).hostname)) remoteRequests.push(request.url());
   });
-  await page.goto("/");
+  const initialResponse = await page.goto("/");
+  const initialHeaders = await initialResponse?.allHeaders();
   await expect(page.getByRole("button", { name: "Слушать" })).toBeEnabled({
     timeout: 15_000,
   });
@@ -52,8 +53,8 @@ test("keeps shell and transcript data available offline without caching MP3", as
   }), { timeout: 30_000 }).toBe(true);
 
   await context.setOffline(true);
-  await page.reload();
   try {
+    await page.reload();
     await expect(page.getByText("Обложки и текст доступны офлайн.")).toBeVisible();
   } catch (error) {
     const cacheEvidence = await page.evaluate(async () => {
@@ -68,7 +69,7 @@ test("keeps shell and transcript data available offline without caching MP3", as
       }
       return { controlled: Boolean(navigator.serviceWorker.controller), results };
     });
-    console.log('OFFLINE_DIAGNOSTICS', JSON.stringify({ evidence, remoteRequests, body: await page.locator('body').innerText(), cacheEvidence }));
+    console.log('OFFLINE_DIAGNOSTICS', JSON.stringify({ initialHeaders, evidence, remoteRequests, body: await page.locator('body').innerText(), cacheEvidence }));
     throw error;
   }
   await expect(page.getByRole("button", { name: "Вся расшифровка" })).toBeEnabled();

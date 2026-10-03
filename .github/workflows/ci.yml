@@ -21,6 +21,8 @@ jobs:
         with:
           node-version-file: .nvmrc
           cache: npm
+      - name: Install media probe for existing icon checks
+        run: sudo apt-get update && sudo apt-get install --yes --no-install-recommends ffmpeg
       - run: npm ci
       - run: npm run typecheck && npm run lint && npm test
       - run: npx playwright install --with-deps chromium

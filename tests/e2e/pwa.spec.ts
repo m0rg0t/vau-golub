@@ -56,7 +56,19 @@ test("keeps shell and transcript data available offline without caching MP3", as
   try {
     await expect(page.getByText("Обложки и текст доступны офлайн.")).toBeVisible();
   } catch (error) {
-    console.log('OFFLINE_DIAGNOSTICS', JSON.stringify({ evidence, remoteRequests, body: await page.locator('body').innerText(), caches: await collectCachedUrls() }));
+    const cacheEvidence = await page.evaluate(async () => {
+      const results = [];
+      for (const name of await caches.keys()) {
+        const cache = await caches.open(name);
+        for (const request of await cache.keys()) {
+          if (!request.url.includes('/_next/') && !request.url.endsWith('/catalog.json')) continue;
+          const response = await cache.match(request);
+          results.push({ url: request.url, requestHeaders: [...request.headers], responseHeaders: response ? [...response.headers] : [], type: response?.type, status: response?.status });
+        }
+      }
+      return { controlled: Boolean(navigator.serviceWorker.controller), results };
+    });
+    console.log('OFFLINE_DIAGNOSTICS', JSON.stringify({ evidence, remoteRequests, body: await page.locator('body').innerText(), cacheEvidence }));
     throw error;
   }
   await expect(page.getByRole("button", { name: "Вся расшифровка" })).toBeEnabled();

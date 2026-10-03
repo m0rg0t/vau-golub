@@ -1130,7 +1130,13 @@ export function App() {
                   className="transport-button"
                   type="button"
                   onClick={() => {
-                    dispatchPlayback({ type: "skip" });
+                    if (playbackRef.current.item?.id !== currentItem.id) {
+                      // The title can be shown before the episode request has
+                      // installed its media item. Navigation still works then.
+                      moveQueue("next");
+                    } else {
+                      dispatchPlayback({ type: "skip" });
+                    }
                   }}
                 >
                   <ArrowRight aria-hidden="true" />

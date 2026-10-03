@@ -36,6 +36,13 @@ test("keeps shell and transcript data available offline without caching MP3", as
     false,
   );
 
+  // A dataset cache is not proof that the current hydration chunks are ready.
+  await expect.poll(async () => page.evaluate(async () => {
+    const urls = performance.getEntriesByType('resource').map(entry => entry.name)
+      .filter(url => new URL(url).pathname.startsWith('/_next/'));
+    return urls.length > 0 && (await Promise.all(urls.map(url => caches.match(url)))).every(Boolean);
+  }), { timeout: 30_000 }).toBe(true);
+
   await context.setOffline(true);
   await page.reload();
   await expect(page.getByText("Обложки и текст доступны офлайн.")).toBeVisible();

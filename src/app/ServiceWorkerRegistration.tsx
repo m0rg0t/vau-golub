@@ -8,6 +8,18 @@ export function ServiceWorkerRegistration() {
       return;
     }
     let registration: ServiceWorkerRegistration | null = null;
+    let disposed = false;
+    const cacheUrls = (urls: string[]) => {
+      void navigator.serviceWorker.ready.then((readyRegistration) => {
+        if (!disposed) readyRegistration.active?.postMessage({ type: "CACHE_URLS", urls });
+      });
+    };
+    // Hydration can finish importing chunks after the initial page load and
+    // before the first worker controls it. Capture those completed downloads.
+    const observer = typeof PerformanceObserver === "function"
+      ? new PerformanceObserver((list) => cacheUrls(list.getEntries().map((entry) => entry.name)))
+      : null;
+    observer?.observe({ type: "resource", buffered: true });
     navigator.serviceWorker
       .register("/sw.js")
       .then((swRegistration) => {
@@ -29,12 +41,7 @@ export function ServiceWorkerRegistration() {
               .getEntriesByType("resource")
               .map((entry) => entry.name),
           ];
-          void navigator.serviceWorker.ready.then((readyRegistration) => {
-            readyRegistration.active?.postMessage({
-              type: "CACHE_URLS",
-              urls: ["/", ...runtimeAssets],
-            });
-          });
+          cacheUrls(["/", ...runtimeAssets]);
         };
         if (document.readyState === "complete") {
           cacheRuntimeAssets();
@@ -53,8 +60,11 @@ export function ServiceWorkerRegistration() {
       }
     };
     document.addEventListener("visibilitychange", handleVisibility);
-    return () =>
+    return () => {
+      disposed = true;
+      observer?.disconnect();
       document.removeEventListener("visibilitychange", handleVisibility);
+    };
   }, []);
 
   return null;

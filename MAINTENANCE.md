@@ -5,7 +5,7 @@ The current stack is Vinext 1.0.1, Next 16.3.8, React/RSC 19.3, Vite 8.3.2,
 Cloudflare Vite plugin 1.62.5, Wrangler 4.147 and Vitest 5.0.3.
 
 - `npm run typecheck && npm run lint && npm test`: source/config checks, full
-  Cloudflare-targeted build and 53 data/domain/component tests
+  Cloudflare-targeted build and 54 data/domain/component tests
 - `npx playwright install chromium && PLAYWRIGHT_PRODUCTION=1 npm run test:e2e`:
   14 desktop/mobile scenarios including production HTML/metadata, accessible
   player navigation, transcript, denied storage and offline PWA behavior
@@ -40,6 +40,8 @@ links, transcripts, editorial selections and branding are unchanged.
   registry's latest braces is still 3.0.3; audit's suggested major downgrades of
   Next/Vinext are not a compatible fix. Do not claim an audit-clean result.
   Review untrusted glob inputs and update when upstream publishes a fix.
+
+Navigation also advances while the current episode data is still loading; a synthetic stalled-request test reproduces the previous ignored click. Runtime asset caching now observes late hydration downloads so offline reload can hydrate the app. Browser coverage waits for both dataset and runtime caches before disconnecting. CI explicitly installs ffprobe for the existing icon-dimension checks.
 
 No deployment, merge, credential changes or production data writes occurred.
 Physical-device PWA installation and real streamed playback need release checks.

@@ -16,7 +16,7 @@ test.describe("static application shell", () => {
     expect(html).toContain('lang="ru"');
     // Canonical URL and Open Graph identity for search engines and shares.
     expect(html).toMatch(
-      /<link[^>]+rel="canonical"[^>]+href="https:\/\/vau-golub\.ru\/"/,
+      /<link[^>]+rel="canonical"[^>]+href="https:\/\/vau-golub\.ru\/?"/,
     );
     expect(html).toMatch(/<meta[^>]+property="og:title"/);
     // Structured data (WebApplication / PodcastSeries / PodcastEpisode graph).
